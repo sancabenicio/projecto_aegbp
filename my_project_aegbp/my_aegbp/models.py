@@ -554,7 +554,7 @@ class GeneralSettings(models.Model):
 
 
 class UserProfile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, verbose_name=_("Usuário"))
+    user = models.OneToOneField(User, on_delete=models.CASCADE, verbose_name=_("utilizador"))
     profile_picture = models.ImageField(upload_to='profile_pictures/', blank=True, null=True, verbose_name=_("Foto de Perfil"))
     job_title = models.CharField(max_length=100, blank=True, default='', verbose_name=_("Cargo"))
     address = models.CharField(max_length=255, blank=True, default='', verbose_name=_("Endereço"))
@@ -577,8 +577,8 @@ class UserProfile(models.Model):
         return self.user.username
 
     class Meta:
-        verbose_name = _("Perfil de Usuário")
-        verbose_name_plural = _("Perfis de Usuários")
+        verbose_name = _("Perfil de utilizador")
+        verbose_name_plural = _("Perfis de utilizadors")
 
 
 @receiver(post_save, sender=User)

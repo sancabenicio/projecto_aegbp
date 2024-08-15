@@ -1134,17 +1134,17 @@ def register(request):
                     user.save()
                     admin_group, created = Group.objects.get_or_create(name='admin')
                     user.groups.add(admin_group)
-                    messages.success(request, _('Usuário registrado com sucesso!'))
-                    return redirect('login')
+                    messages.success(request, _('utilizador registrado com sucesso!'))
+                    return render(request, 'registration/registration_success.html')
                 except IntegrityError:
-                    form.add_error('email', _('Um usuário com este email já existe.'))
+                    form.add_error('email', _('Um utilizador com este email já existe.'))
         else:
             form = CustomUserCreationForm()
         return render(request, 'registration/register.html', {'form': form})
     except Exception as e:
-        logger.error(_("Erro ao registrar usuário: {e}").format(e=e), exc_info=True)
-        mail_admins(_("Erro ao registrar usuário"), str(e))
-        return render(request, 'error.html', {'message': _('Ocorreu um erro ao registrar o usuário.')})
+        logger.error(_("Erro ao registrar utilizador: {e}").format(e=e), exc_info=True)
+        mail_admins(_("Erro ao registrar utilizador"), str(e))
+        return render(request, 'error.html', {'message': _('Ocorreu um erro ao registrar o utilizador.')})
     
 def user_login(request):
     try:
@@ -1182,9 +1182,9 @@ def user_profile(request):
         profile, created = UserProfile.objects.get_or_create(user=request.user)
         return render(request, 'user_profile/profile.html', {'profile': profile})
     except Exception as e:
-        logger.error(_("Erro ao carregar perfil do usuário: {e}").format(e=e), exc_info=True)
-        mail_admins(_("Erro ao carregar perfil do usuário"), str(e))
-        return render(request, 'error.html', {'message': _('Ocorreu um erro ao carregar o perfil do usuário.')})
+        logger.error(_("Erro ao carregar perfil do utilizador: {e}").format(e=e), exc_info=True)
+        mail_admins(_("Erro ao carregar perfil do utilizador"), str(e))
+        return render(request, 'error.html', {'message': _('Ocorreu um erro ao carregar o perfil do utilizador.')})
 
 @login_required
 def edit_profile(request):

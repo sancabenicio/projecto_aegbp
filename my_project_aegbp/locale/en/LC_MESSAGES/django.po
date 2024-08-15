@@ -159,11 +159,11 @@ msgid "Confirmar Senha"
 msgstr "Confirm Password"
 
 #: my_aegbp/forms.py:45 my_aegbp/views.py:1139
-msgid "Um usuário com este email já existe."
+msgid "Um utilizador com este email já existe."
 msgstr "A user with this email already exists."
 
 #: my_aegbp/forms.py:57
-msgid "Erro ao criar usuário: "
+msgid "Erro ao criar utilizador: "
 msgstr "Error creating user: "
 
 #: my_aegbp/forms.py:61 my_aegbp/forms.py:65
@@ -921,7 +921,7 @@ msgid "Configurações Gerais"
 msgstr "General Settings"
 
 #: my_aegbp/models.py:324 my_aegbp/templates/registration/login.html:28
-msgid "Usuário"
+msgid "utilizador"
 msgstr "User"
 
 #: my_aegbp/models.py:326
@@ -933,11 +933,11 @@ msgid "CEP"
 msgstr "Postal Code"
 
 #: my_aegbp/models.py:337
-msgid "Perfil de Usuário"
+msgid "Perfil de utilizador"
 msgstr "User Profile"
 
 #: my_aegbp/models.py:338
-msgid "Perfis de Usuários"
+msgid "Perfis de utilizadors"
 msgstr "User Profiles"
 
 #: my_aegbp/models.py:352
@@ -1356,7 +1356,7 @@ msgid "Registo de Utilizador"
 msgstr "User Registration"
 
 #: my_aegbp/templates/base.html:298
-msgid "Perfil do Usuário"
+msgid "Perfil do utilizador"
 msgstr "User Profile"
 
 #: my_aegbp/templates/base.html:317
@@ -3362,20 +3362,20 @@ msgid "Ocorreu um erro ao deletar o patrocinador."
 msgstr "An error occurred while deleting the sponsor."
 
 #: my_aegbp/views.py:1136
-msgid "Usuário registrado com sucesso!"
+msgid "utilizador registrado com sucesso!"
 msgstr "User registered successfully!"
 
 #: my_aegbp/views.py:1144
 #, python-brace-format
-msgid "Erro ao registrar usuário: {e}"
+msgid "Erro ao registrar utilizador: {e}"
 msgstr "Error registering user: {e}"
 
 #: my_aegbp/views.py:1145
-msgid "Erro ao registrar usuário"
+msgid "Erro ao registrar utilizador"
 msgstr "Error registering user"
 
 #: my_aegbp/views.py:1146
-msgid "Ocorreu um erro ao registrar o usuário."
+msgid "Ocorreu um erro ao registrar o utilizador."
 msgstr "An error occurred while registering the user."
 
 #: my_aegbp/views.py:1160
@@ -3406,15 +3406,15 @@ msgstr "An error occurred while logging out."
 
 #: my_aegbp/views.py:1184
 #, python-brace-format
-msgid "Erro ao carregar perfil do usuário: {e}"
+msgid "Erro ao carregar perfil do utilizador: {e}"
 msgstr "Error loading user profile: {e}"
 
 #: my_aegbp/views.py:1185
-msgid "Erro ao carregar perfil do usuário"
+msgid "Erro ao carregar perfil do utilizador"
 msgstr "Error loading user profile"
 
 #: my_aegbp/views.py:1186
-msgid "Ocorreu um erro ao carregar o perfil do usuário."
+msgid "Ocorreu um erro ao carregar o perfil do utilizador."
 msgstr "An error occurred while loading the user profile."
 
 #: my_aegbp/views.py:1201

@@ -25,7 +25,7 @@
                 <form method="post">
                     {% csrf_token %}
                     <div class="form-group">
-                        <label for="{{ form.username.id_for_label }}">{% trans "Usuário" %}:</label>
+                        <label for="{{ form.username.id_for_label }}">{% trans "utilizador" %}:</label>
                         {{ form.username }}
                         {% if form.username.errors %}
                             <div class="invalid-feedback">

@@ -1,28 +1,18 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% trans "Registro Bem-Sucedido" %}</title>
-    {% load static %}
-    <!-- Link para o arquivo CSS personalizado -->
-    <link rel="stylesheet" href="{% static 'css/custom-styles.css' %}">
-    <!-- Link para o Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrap.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-6 text-center">
-                <h1 class="display-4 text-success">{% trans "Registro Bem-Sucedido!" %}</h1>
-                <p class="lead">{% trans "Sua conta foi criada com sucesso. Agora você pode fazer login e começar a usar o sistema." %}</p>
-                <a href="{% url 'login' %}" class="btn btn-primary">{% trans "Faça Login" %}</a>
-                <p class="mt-3">{% trans "Se você não recebeu um e-mail de verificação," %} <a href="{% url 'resend_verification_email' %}">{% trans "clique aqui" %}</a> {% trans "para reenviar." %}</p>
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Registro Bem-sucedido" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="alert alert-success text-center">
+                <h2>{% trans "Registro Bem-sucedido!" %}</h2>
+                <p>{% trans "Seu utilizador foi registrado com sucesso." %}</p>
+                <a href="{% url 'index' %}" class="btn btn-primary">{% trans "Home" %}</a>
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrap.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+</div>
+{% endblock %}

@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Configurações de inatividade
     var idleTime = 0;
-    const warningTime = 10; // Minutos de inatividade antes de avisar o usuário
-    const logoutTime = 15; // Minutos de inatividade antes de desconectar o usuário
+    const warningTime = 10; // Minutos de inatividade antes de avisar o utilizador
+    const logoutTime = 15; // Minutos de inatividade antes de desconectar o utilizador
 
     // Incrementa o contador de inatividade a cada minuto
     setInterval(timerIncrement, 60000); // 1 minuto
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Reseta o contador de inatividade ao detectar interação do usuário
+    // Reseta o contador de inatividade ao detectar interação do utilizador
     document.addEventListener('mousemove', resetIdleTime);
     document.addEventListener('keypress', resetIdleTime);
 

@@ -42,7 +42,7 @@ class CustomUserCreationForm(UserCreationForm):
     def clean_email(self):
         email = self.cleaned_data.get('email')
         if User.objects.filter(email=email).exists():
-            raise ValidationError(_("Um usuário com este email já existe."))
+            raise ValidationError(_("Um utilizador com este email já existe."))
         CustomEmailValidator()(email)
         return email
 
@@ -54,7 +54,7 @@ class CustomUserCreationForm(UserCreationForm):
             if commit:
                 user.save()
         except IntegrityError as e:
-            raise ValidationError(_("Erro ao criar usuário: ") + str(e))
+            raise ValidationError(_("Erro ao criar utilizador: ") + str(e))
         return user
 
 class CustomAuthenticationForm(AuthenticationForm):

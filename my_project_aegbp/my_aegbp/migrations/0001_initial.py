@@ -415,11 +415,11 @@ class Migration(migrations.Migration):
                 ('state', models.CharField(blank=True, default='', max_length=100, verbose_name='Estado')),
                 ('zip_code', models.CharField(blank=True, default='', max_length=10, verbose_name='CEP')),
                 ('description', models.TextField(blank=True, default='', verbose_name='Descrição')),
-                ('user', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL, verbose_name='Usuário')),
+                ('user', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL, verbose_name='utilizador')),
             ],
             options={
-                'verbose_name': 'Perfil de Usuário',
-                'verbose_name_plural': 'Perfis de Usuários',
+                'verbose_name': 'Perfil de utilizador',
+                'verbose_name_plural': 'Perfis de utilizadors',
             },
         ),
         migrations.CreateModel(
