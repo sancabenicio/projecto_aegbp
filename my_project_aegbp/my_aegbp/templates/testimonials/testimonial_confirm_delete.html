@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Confirmar Exclusão do Testemunho" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <header>
+        <h1>{% trans "Confirmar Exclusão" %}</h1>
+        <nav>
+            <a href="{% url 'index' %}" class="btn btn-secondary">{% trans "Home" %}</a>
+            <a href="{% url 'testimonial_create' %}" class="btn btn-primary">{% trans "Adicionar Testemunho" %}</a>
+        </nav>
+    </header>
+    <main>
+        <h2>{% trans "Tem certeza que deseja excluir o testemunho:" %} "{{ testimonial.title }}"?</h2>
+        <form method="POST" class="mt-4">
+            {% csrf_token %}
+            <a href="{% url 'testimonials' %}" class="btn btn-secondary">{% trans "Cancelar" %}</a>
+            <button type="submit" class="btn btn-danger">{% trans "Sim, Excluir" %}</button>
+        </form>
+    </main>
+</div>
+{% endblock %}
