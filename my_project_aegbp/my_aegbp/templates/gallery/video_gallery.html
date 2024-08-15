@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% trans "Galeria de Vídeos" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <header>
+        <h1>{% trans "Galeria de Vídeos" %}</h1>
+        <nav>
+            <a href="{% url 'index' %}" class="btn btn-secondary">{% trans "Home" %}</a>
+            <a href="{% url 'video_create' %}" class="btn btn-primary">{% trans "Adicionar Vídeo" %}</a>
+            <a href="{% url 'photo_gallery' %}" class="btn btn-info">{% trans "Galeria de Fotos" %}</a>
+            <a href="{% url 'calendar_view' %}" class="btn btn-warning">{% trans "Calendário de Eventos" %}</a>
+        </nav>
+    </header>
+    <div class="row mt-4">
+        {% for video in videos %}
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <div class="video-container">
+                        {% if video.file %}
+                            <video controls class="card-img-top" id="video-{{ video.id }}">
+                                <source src="{{ video.video_url }}" type="video/mp4">
+                                <source src="{{ video.video_url }}" type="video/quicktime">
+                                {% trans "Seu navegador não suporta o elemento de vídeo. Por favor, baixe o vídeo para assistir." %}
+                            </video>
+                        {% elif video.link %}
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="{{ video.embed_url }}" allowfullscreen></iframe>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ video.title }}</h5>
+                        <p class="card-text">{{ video.description }}</p>
+                        <a href="{% url 'video_update' video.id %}" class="btn btn-warning btn-sm">{% trans "Editar" %}</a>
+                        <form method="post" action="{% url 'video_delete' video.id %}" style="display:inline;">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-danger btn-sm">{% trans "Excluir" %}</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <div class="col-12 text-center">
+                <p class="lead text-muted">{% trans "Nenhum vídeo disponível no momento." %}</p>
+                <a href="{% url 'video_create' %}" class="btn btn-primary">{% trans "Adicionar o primeiro vídeo" %}</a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+<style>
+    .video-container {
+        width: 100%;
+        height: 200px; /* Ajuste a altura conforme necessário */
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video-container video, .video-container .embed-responsive {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const videos = document.querySelectorAll("video");
+
+        videos.forEach(video => {
+            video.addEventListener("loadedmetadata", () => {
+                video.controls = true;
+            });
+
+            video.addEventListener("canplay", () => {
+                video.controls = true;
+            });
+
+            video.addEventListener("error", (e) => {
+                console.error("Erro ao carregar o vídeo: ", e.target);
+                alert("Não foi possível carregar este vídeo. Tente outro formato ou baixe-o.");
+            });
+
+            video.addEventListener("seeking", () => {
+                console.log(`Seeking: ${video.currentTime}`);
+            });
+
+            video.addEventListener("seeked", () => {
+                console.log(`Seek concluído em: ${video.currentTime} segundos`);
+            });
+
+            video.addEventListener("progress", () => {
+                let buffered = video.buffered;
+                if (buffered.length > 0) {
+                    let bufferedTime = buffered.end(buffered.length - 1);
+                    if (bufferedTime > video.currentTime) {
+                        video.controls = true;
+                    }
+                }
+            });
+
+            const playbackRates = [0.5, 1, 1.5, 2];
+            video.playbackRate = 1;
+
+            video.addEventListener("contextmenu", (event) => {
+                event.preventDefault();
+                let currentRateIndex = playbackRates.indexOf(video.playbackRate);
+                let nextRateIndex = (currentRateIndex + 1) % playbackRates.length;
+                video.playbackRate = playbackRates[nextRateIndex];
+                alert(`Velocidade de reprodução: ${video.playbackRate}x`);
+            });
+        });
+    });
+</script>

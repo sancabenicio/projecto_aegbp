@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Políticas de Privacidade" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% trans "Políticas de Privacidade" %}</h1>
+    <a href="{% url 'privacy_policy_create' %}" class="btn btn-primary mb-3">{% trans "Adicionar Nova Política de Privacidade" %}</a>
+    <ul class="list-group">
+        {% for policy in policies %}
+            <li class="list-group-item">
+                <a href="{% url 'privacy_policy_detail' policy.id %}">
+                    {% trans "Atualizado em:" %} {{ policy.last_updated|date:"d M Y H:i" }}
+                </a>
+            </li>
+        {% empty %}
+            <li class="list-group-item">{% trans "Nenhuma política de privacidade encontrada." %}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

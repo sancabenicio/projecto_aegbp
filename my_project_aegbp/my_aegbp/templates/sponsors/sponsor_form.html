@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% if form.instance.id %}{% trans "Editar" %}{% else %}{% trans "Criar" %}{% endif %} {% trans "Patrocinador" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% if form.instance.id %}{% trans "Editar" %}{% else %}{% trans "Criar" %}{% endif %} {% trans "Patrocinador" %}</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">{% trans "Salvar" %}</button>
+    </form>
+    <a href="{% url 'sponsor_list' %}" class="btn btn-secondary mt-3">{% trans "Voltar para a lista de patrocinadores" %}</a>
+</div>
+{% endblock %}

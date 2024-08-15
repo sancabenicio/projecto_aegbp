@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% trans "Upload Documento" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% trans "Upload Documento" %}</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">{% trans "Upload" %}</button>
+    </form>
+    <a href="{% url 'document_list' %}" class="btn btn-secondary mt-3">{% trans "Voltar para a Lista de Documentos" %}</a>
+</div>
+{% endblock %}

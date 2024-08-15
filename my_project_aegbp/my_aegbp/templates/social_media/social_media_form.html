@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% trans "Adicionar/Editar Rede Social" %}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">{% trans "Salvar" %}</button>
+        <a href="{% url 'social_media_list' %}" class="btn btn-secondary mt-3">{% trans "Voltar" %}</a>
+    </form>
+</div>
+{% endblock %}

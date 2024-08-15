@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Responder Contato" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% trans "Responder Contato" %}</h1>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label>{% trans "Nome" %}</label>
+            <input type="text" class="form-control" value="{{ contato.name }}" readonly>
+        </div>
+        <div class="form-group">
+            <label>{% trans "Email" %}</label>
+            <input type="text" class="form-control" value="{{ contato.email }}" readonly>
+        </div>
+        <div class="form-group">
+            <label>{% trans "Assunto" %}</label>
+            <input type="text" class="form-control" value="{{ contato.subject }}" readonly>
+        </div>
+        <div class="form-group">
+            <label>{% trans "Mensagem" %}</label>
+            <textarea class="form-control" rows="5" readonly>{{ contato.message }}</textarea>
+        </div>
+        <div class="form-group">
+            {{ form.response.label_tag }} {{ form.response }}
+            {% for error in form.response.errors %}
+                <div class="error-message text-danger">{{ error }}</div>
+            {% endfor %}
+        </div>
+        <button type="submit" class="btn btn-primary">{% trans "Enviar Resposta" %}</button>
+    </form>
+</div>
+{% endblock %}

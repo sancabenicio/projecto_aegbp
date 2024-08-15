@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% trans "Perguntas Frequentes" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <header>
+        <h1>{% trans "Perguntas Frequentes" %}</h1>
+        <nav>
+            <a href="{% url 'faq_create' %}" class="btn btn-primary">{% trans "Adicionar FAQ" %}</a>
+            <a href="{% url 'category_list' %}" class="btn btn-info">{% trans "Listar Categorias" %}</a>
+        </nav>
+    </header>
+    <main class="mt-4">
+        {% if faqs %}
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>{% trans "Pergunta" %}</th>
+                        <th>{% trans "Resposta" %}</th>
+                        <th>{% trans "Categoria" %}</th>
+                        <th>{% trans "Ações" %}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for faq in faqs %}
+                        <tr>
+                            <td>{{ faq.question }}</td>
+                            <td>{{ faq.answer }}</td>
+                            <td>{{ faq.category.name }}</td>
+                            <td>
+                                <a href="{% url 'faq_update' faq.id %}" class="btn btn-secondary btn-sm">{% trans "Editar" %}</a>
+                                <form method="post" action="{% url 'faq_delete' faq.id %}" class="d-inline">
+                                    {% csrf_token %}
+                                    <button type="submit" class="btn btn-danger btn-sm">{% trans "Deletar" %}</button>
+                                </form>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p>{% trans "Nenhuma FAQ encontrada." %}</p>
+        {% endif %}
+    </main>
+</div>
+{% endblock %}

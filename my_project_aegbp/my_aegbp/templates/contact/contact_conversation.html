@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Conversa com Contato" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5" style="background-color: white;">
+    <h1 style="color: black;">{% trans "Conversa com" %} <span style="color: black;">{{ contato.name }}</span></h1>
+    <div class="card" style="background-color: white;">
+        <div class="card-body">
+            <h5 class="card-title" style="color: black;">{{ contato.subject }}</h5>
+            <p class="card-text" style="color: black;">{{ contato.message }}</p>
+            <p><small class="text-muted">{% trans "Enviado em" %} {{ contato.date_sent }}</small></p>
+        </div>
+    </div>
+    <hr>
+    <h2 style="color: black;">{% trans "Mensagens" %}</h2>
+    <div class="list-group" style="background-color: white;">
+        {% for message in contato.messages.all %}
+        <div class="list-group-item" style="background-color: white;">
+            <h5 style="color: black;">{{ message.sender }}</h5>
+            <p class="message-content" style="color: black;">{{ message.content }}</p>
+            <p><small class="text-muted">{{ message.timestamp }}</small></p>
+        </div>
+        {% endfor %}
+    </div>
+    <hr>
+    <h2 style="color: black;">{% trans "Enviar Resposta" %}</h2>
+    <form method="post" style="background-color: white;">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">{% trans "Enviar Resposta" %}</button>
+    </form>
+    <a href="{% url 'contact_list' %}" class="btn btn-secondary mt-3">{% trans "Voltar" %}</a>
+</div>
+{% endblock %}

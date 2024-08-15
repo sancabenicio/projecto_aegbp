@@ -1,0 +1,159 @@
+/* my_aegbp/static/css/admin_styles.css */
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dashboard h1 {
+    margin-bottom: 20px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-body .icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.card-body h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn {
+    font-size: 0.875rem;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Botão e Cor do Ícone Personalizados para cada seção */
+.text-primary, .btn-primary, .btn-outline-primary {
+    color: #007bff !important;
+}
+.text-info, .btn-info, .btn-outline-info {
+    color: #17a2b8 !important;
+}
+.text-success, .btn-success, .btn-outline-success {
+    color: #28a745 !important;
+}
+.text-warning, .btn-warning, .btn-outline-warning {
+    color: #ffc107 !important;
+}
+.text-secondary, .btn-secondary, .btn-outline-secondary {
+    color: #6c757d !important;
+}
+.text-teal, .btn-teal, .btn-outline-teal {
+    color: #20c997 !important;
+}
+.text-purple, .btn-purple, .btn-outline-purple {
+    color: #6f42c1 !important;
+}
+.text-orange, .btn-orange, .btn-outline-orange {
+    color: #fd7e14 !important;
+}
+.text-blue, .btn-blue, .btn-outline-blue {
+    color: #007bff !important;
+}
+.text-pink, .btn-pink, .btn-outline-pink {
+    color: #e83e8c !important;
+}
+.text-brown, .btn-brown, .btn-outline-brown {
+    color: #795548 !important;
+}
+
+.btn:hover, .btn-outline:hover {
+    filter: brightness(85%);
+}
+
+/* Outline buttons */
+.btn-outline {
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.btn-outline-primary {
+    border-color: #007bff;
+}
+.btn-outline-info {
+    border-color: #17a2b8;
+}
+.btn-outline-success {
+    border-color: #28a745;
+}
+.btn-outline-warning {
+    border-color: #ffc107;
+}
+.btn-outline-secondary {
+    border-color: #6c757d;
+}
+.btn-outline-teal {
+    border-color: #20c997;
+}
+.btn-outline-purple {
+    border-color: #6f42c1;
+}
+.btn-outline-orange {
+    border-color: #fd7e14;
+}
+.btn-outline-blue {
+    border-color: #007bff;
+}
+.btn-outline-pink {
+    border-color: #e83e8c;
+}
+.btn-outline-brown {
+    border-color: #795548;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    margin-top: 30px;
+}
+
+.footer p {
+    margin: 0;
+    color: #666;
+    font-size: 0.875rem;
+}
+
+.dropdown-menu.show {
+    display: block;
+}

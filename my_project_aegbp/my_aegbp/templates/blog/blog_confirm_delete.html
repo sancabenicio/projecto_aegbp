@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}{% trans "Confirmar Exclusão" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h2>{% trans "Confirmar Exclusão da Postagem" %}</h2>
+                </div>
+                <div class="card-body">
+                    <p>{% trans "Você tem certeza de que deseja excluir a postagem" %} "<strong>{{ post.title }}</strong>"?</p>
+                    <p>{% trans "Esta ação não poderá ser desfeita." %}</p>
+
+                    <form method="post" action="{% url 'blog_delete' post.id %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger">{% trans "Excluir" %}</button>
+                        <a href="{% url 'blog_list' %}" class="btn btn-secondary">{% trans "Cancelar" %}</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

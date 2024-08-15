@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <title>{% block title %}{{ post.title }}{% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container mt-5">
+        <header>
+            <h1>{{ post.title }}</h1>
+            <nav>
+                <a href="{% url 'blog_list' %}" class="btn btn-secondary">{% trans "Voltar ao Blog" %}</a>
+            </nav>
+        </header>
+        <main>
+            <article>
+                {% if post.image %}
+                    <img src="{{ post.image.url }}" class="img-fluid mb-3" alt="{{ post.title }}">
+                {% endif %}
+                <p>{{ post.content }}</p>
+            </article>
+            <section>
+                <h2>{% trans "Comentários" %}</h2>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-primary">{% trans "Adicionar Comentário" %}</button>
+                </form>
+                <div class="comments mt-4">
+                    {% for comment in post.comments.all %}
+                        <div class="comment">
+                            <p><strong>{{ comment.author }}:</strong> {{ comment.content }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </section>
+        </main>
+    </div>
+    {% endblock %}
+</body>
+</html>

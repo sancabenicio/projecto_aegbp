@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% trans "Excluir Rede Social" %}</h1>
+    <p>{% trans "Tem certeza de que deseja excluir esta rede social?" %}</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">{% trans "Sim, Excluir" %}</button>
+        <a href="{% url 'social_media_list' %}" class="btn btn-secondary">{% trans "Cancelar" %}</a>
+    </form>
+</div>
+{% endblock %}

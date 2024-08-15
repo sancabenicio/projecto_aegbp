@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% trans "Testemunhos" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <header>
+        <h1>{% trans "Testemunhos" %}</h1>
+        <nav>
+            <a href="{% url 'index' %}" class="btn btn-secondary">{% trans "Home" %}</a>
+            <a href="{% url 'testimonial_create' %}" class="btn btn-primary">{% trans "Adicionar Testemunho" %}</a>
+        </nav>
+    </header>
+    <main>
+        <div class="testimonials">
+            {% for testimonial in testimonials %}
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p class="card-text"><strong>{{ testimonial.name }}:</strong> {{ testimonial.content }}</p>
+                        <p class="card-text"><em>{% trans "Data:" %} {{ testimonial.date|date:"d M Y" }}</em></p>
+                        <a href="{% url 'testimonial_update' testimonial.id %}" class="btn btn-warning btn-sm">{% trans "Editar" %}</a>
+                        <a href="{% url 'testimonial_delete' testimonial.id %}" class="btn btn-danger btn-sm">{% trans "Excluir" %}</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </main>
+</div>
+{% endblock %}

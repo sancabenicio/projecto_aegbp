@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% if form.instance.id %}{% trans "Atualizar" %}{% else %}{% trans "Criar" %}{% endif %} {% trans "Oportunidade" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% if form.instance.id %}{% trans "Atualizar" %}{% else %}{% trans "Criar" %}{% endif %} {% trans "Oportunidade" %}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">{% trans "Enviar" %}</button>
+    </form>
+    <a href="{% url 'volunteer_opportunities' %}" class="btn btn-secondary mt-3">{% trans "Voltar às Oportunidades" %}</a>
+</div>
+{% endblock %}

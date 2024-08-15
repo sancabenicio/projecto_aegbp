@@ -1,0 +1,11 @@
+{% load i18n %}
+<div class="social-feed container text-center mt-4">
+    {% for social in social_medias %}
+        {% if social.platform == 'facebook' %}
+            <div class="fb-like" data-href="{{ social.url }}" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+        {% elif social.platform == 'twitter' %}
+            <a class="twitter-follow-button" href="{{ social.url }}">{% trans "Follow" %} {{ social.profile_name }}</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        {% endif %}
+    {% endfor %}
+</div>

@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Contatos" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <header class="d-flex justify-content-between align-items-center mb-4">
+        <h1>{% trans "Lista de Contatos" %}</h1>
+        <nav>
+            <a href="{% url 'index' %}" class="btn btn-secondary">{% trans "Home" %}</a>
+            <a href="{% url 'contact_create' %}" class="btn btn-primary ml-2">{% trans "Criar Contato" %}</a>
+        </nav>
+    </header>
+    <main class="mt-4">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped bg-white">
+                <thead class="thead-blue">
+                    <tr>
+                        <th>{% trans "Nome" %}</th>
+                        <th>{% trans "Email" %}</th>
+                        <th>{% trans "Assunto" %}</th>
+                        <th>{% trans "Mensagem" %}</th>
+                        <th>{% trans "Data" %}</th>
+                        <th>{% trans "Ações" %}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for contato in contatos %}
+                    <tr>
+                        <td>{{ contato.name }}</td>
+                        <td>{{ contato.email }}</td>
+                        <td>{{ contato.subject }}</td>
+                        <td>{{ contato.message }}</td>
+                        <td>{{ contato.date_sent }}</td>
+                        <td>
+                            <a href="{% url 'contact_conversation' contato.id %}" class="btn btn-primary btn-sm">{% trans "Ver Conversa" %}</a>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="6">{% trans "Nenhum contato encontrado." %}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+{% endblock %}

@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <title>{% block title %}{% trans "Blog" %}{% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container mt-5">
+        <header>
+            <h1>{% trans "Blog" %}</h1>
+            <nav>
+                <a href="{% url 'index' %}" class="btn btn-secondary">{% trans "Home" %}</a>
+                <a href="{% url 'blog_create' %}" class="btn btn-primary">{% trans "Adicionar Postagem" %}</a>
+            </nav>
+        </header>
+        <main>
+            <h2>{% trans "Postagens" %}</h2>
+            <div class="row">
+                {% for post in posts %}
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="image-container">
+                            {% if post.image %}
+                                <img src="{{ post.image.url }}" class="card-img-top" alt="{{ post.title }}">
+                            {% endif %}
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">{{ post.title }}</h3>
+                            <p class="card-text">{{ post.content|slice:":100" }}...</p>
+                            <a href="{% url 'blog_post' post.id %}" class="btn btn-primary">{% trans "Leia mais" %}</a>
+                            <a href="{% url 'blog_update' post.id %}" class="btn btn-warning">{% trans "Editar" %}</a>
+                            <form method="post" action="{% url 'blog_delete' post.id %}" style="display:inline;">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-danger">{% trans "Excluir" %}</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </main>
+    </div>
+    {% endblock %}
+</body>
+</html>
+
+<style>
+    .image-container {
+        width: 100%;
+        height: 200px; /* Ajuste a altura conforme necessário */
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        /* object-fit: cover faz com que a imagem cubra completamente a área, cortando as bordas se necessário */
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .card-body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+</style>

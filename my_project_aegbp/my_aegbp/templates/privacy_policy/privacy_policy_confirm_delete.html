@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Confirmar Exclusão" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% trans "Confirmar Exclusão" %}</h1>
+    <p>{% trans "Tem certeza de que deseja excluir esta política de privacidade?" %}</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">{% trans "Excluir" %}</button>
+        <a href="{% url 'privacy_policy_detail' policy.id %}" class="btn btn-secondary">{% trans "Cancelar" %}</a>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% trans "Confirmar Deleção" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% trans "Tem certeza de que deseja deletar" %} "{{ opportunity.title }}"?</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">{% trans "Confirmar" %}</button>
+    </form>
+    <a href="{% url 'volunteer_opportunities' %}" class="btn btn-secondary mt-3">{% trans "Cancelar" %}</a>
+</div>
+{% endblock %}

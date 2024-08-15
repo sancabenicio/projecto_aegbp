@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% if form.instance.pk %}{% trans "Editar" %}{% else %}{% trans "Adicionar" %}{% endif %} {% trans "Testemunho" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <header>
+        <h1>{% if form.instance.pk %}{% trans "Editar" %}{% else %}{% trans "Adicionar" %}{% endif %} {% trans "Testemunho" %}</h1>
+        <nav>
+            <a href="{% url 'testimonials' %}" class="btn btn-secondary">{% trans "Voltar aos Testemunhos" %}</a>
+        </nav>
+    </header>
+    <main>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">{% trans "Salvar" %}</button>
+        </form>
+    </main>
+</div>
+{% endblock %}

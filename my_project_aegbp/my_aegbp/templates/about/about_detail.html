@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{{ about_item.title }}</h1>
+    {% if about_item.image %}
+    <img src="{{ about_item.image.url }}" class="img-fluid" alt="{{ about_item.title }}">
+    {% endif %}
+    <p class="mt-3">{{ about_item.description }}</p>
+    <a href="{% url 'about_update' about_item.id %}" class="btn btn-warning">{% trans "Editar" %}</a>
+    <form action="{% url 'about_delete' about_item.id %}" method="post" style="display:inline;">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">{% trans "Excluir" %}</button>
+    </form>
+    <a href="{% url 'about_list' %}" class="btn btn-secondary">{% trans "Voltar" %}</a>
+</div>
+{% endblock %}

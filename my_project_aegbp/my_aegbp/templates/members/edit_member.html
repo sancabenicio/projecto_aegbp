@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Editar Membro" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% trans "Editar Membro" %}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    {{ form.full_name.label_tag }} {{ form.full_name }}
+                    {{ form.full_name.errors }}
+                </div>
+                <div class="form-group">
+                    {{ form.birth_date.label_tag }} {{ form.birth_date }}
+                    {{ form.birth_date.errors }}
+                </div>
+                <div class="form-group">
+                    {{ form.document_number.label_tag }} {{ form.document_number }}
+                    {{ form.document_number.errors }}
+                </div>
+                <div class="form-group">
+                    {{ form.document_type.label_tag }} {{ form.document_type }}
+                    {{ form.document_type.errors }}
+                </div>
+                <div class="form-group">
+                    {{ form.document_validity.label_tag }} {{ form.document_validity }}
+                    {{ form.document_validity.errors }}
+                </div>
+                <div class="form-group">
+                    {{ form.nationality.label_tag }} {{ form.nationality }}
+                    {{ form.nationality.errors }}
+                </div>
+                <div class="form-group">
+                    {{ form.gender.label_tag }} {{ form.gender }}
+                    {{ form.gender.errors }}
+                </div>
+                <div class="form-group" id="other-gender-field" style="display:none;">
+                    {{ form.other_gender.label_tag }} {{ form.other_gender }}
+                    {{ form.other_gender.errors }}
+                </div>
+                <div class="form-group" id="prefer-not-to-say-field" style="display:none;">
+                    {{ form.prefer_not_to_say.label_tag }} {{ form.prefer_not_to_say }}
+                    {{ form.prefer_not_to_say.errors }}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    {{ form.address.label_tag }} {{ form.address }}
+                    {{ form.address.errors }}
+                </div>
+                <div class="form-group">
+                    {{ form.postal_code.label_tag }} {{ form.postal_code }}
+                    {{ form.postal_code.errors }}
+                </div>
+                <div class="form-group">
+                    {{ form.city.label_tag }} {{ form.city }}
+                    {{ form.city.errors }}
+                </div>
+                <div class="form-group">
+                    {{ form.phone.label_tag }} {{ form.phone }}
+                    {{ form.phone.errors }}
+                </div>
+                <div class="form-group">
+                    {{ form.email.label_tag }} {{ form.email }}
+                    {{ form.email.errors }}
+                </div>
+                <div class="form-group">
+                    {{ form.is_student.label_tag }} {{ form.is_student }}
+                    {{ form.is_student.errors }}
+                </div>
+                <div id="student-fields" style="display:none;">
+                    <div class="form-group">
+                        {{ form.school.label_tag }} {{ form.school }}
+                        {{ form.school.errors }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.education_type.label_tag }} {{ form.education_type }}
+                        {{ form.education_type.errors }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.course.label_tag }} {{ form.course }}
+                        {{ form.course.errors }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.academic_year.label_tag }} {{ form.academic_year }}
+                        {{ form.academic_year.errors }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    {{ form.is_scholar.label_tag }} {{ form.is_scholar }}
+                    {{ form.is_scholar.errors }}
+                </div>
+                <div class="form-group">
+                    {{ form.is_working_student.label_tag }} {{ form.is_working_student }}
+                    {{ form.is_working_student.errors }}
+                </div>
+                <div class="form-group" id="occupation-field" style="display:none;">
+                    {{ form.occupation.label_tag }} {{ form.occupation }}
+                    {{ form.occupation.errors }}
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">{% trans "Salvar" %}</button>
+    </form>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    function toggleOtherGenderField() {
+        var gender = document.querySelector('input[name="gender"]:checked').value;
+        var otherGenderField = document.getElementById('other-gender-field');
+        var preferNotToSayField = document.getElementById('prefer-not-to-say-field');
+        if (gender === 'O') {
+            otherGenderField.style.display = 'block';
+            preferNotToSayField.style.display = 'none';
+        } else if (gender === 'P') {
+            otherGenderField.style.display = 'none';
+            preferNotToSayField.style.display = 'block';
+        } else {
+            otherGenderField.style.display = 'none';
+            preferNotToSayField.style.display = 'none';
+        }
+    }
+
+    function toggleStudentFields() {
+        var isStudent = document.querySelector('input[name="is_student"]:checked').value;
+        var studentFields = document.getElementById('student-fields');
+        var occupationField = document.getElementById('occupation-field');
+        if (isStudent === 'True') {
+            studentFields.style.display = 'block';
+            occupationField.style.display = 'none';
+        } else {
+            studentFields.style.display = 'none';
+            occupationField.style.display = 'block';
+        }
+    }
+
+    document.querySelectorAll('input[name="gender"]').forEach(function(elem) {
+        elem.addEventListener('change', toggleOtherGenderField);
+    });
+
+    document.querySelectorAll('input[name="is_student"]').forEach(function(elem) {
+        elem.addEventListener('change', toggleStudentFields);
+    });
+
+    toggleOtherGenderField();
+    toggleStudentFields();
+});
+</script>
+{% endblock %}

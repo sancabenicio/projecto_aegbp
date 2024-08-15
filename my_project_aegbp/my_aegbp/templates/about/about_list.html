@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% trans "Seções Sobre" %}</h1>
+    <a href="{% url 'about_create' %}" class="btn btn-primary mb-3">{% trans "Adicionar Nova Seção" %}</a>
+    <div class="row">
+        {% for item in about_items %}
+        <div class="col-md-4">
+            <div class="card mb-3">
+                {% if item.image %}
+                <img src="{{ item.image.url }}" class="card-img-top" alt="{{ item.title }}">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ item.title }}</h5>
+                    <p class="card-text">{{ item.description|truncatewords:20 }}</p>
+                    <a href="{% url 'about_detail' item.id %}" class="btn btn-info">{% trans "Ver Mais" %}</a>
+                    <a href="{% url 'about_update' item.id %}" class="btn btn-warning">{% trans "Editar" %}</a>
+                    <form action="{% url 'about_delete' item.id %}" method="post" style="display:inline;">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger">{% trans "Excluir" %}</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <p>{% trans "Nenhuma seção 'Sobre' encontrada." %}</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

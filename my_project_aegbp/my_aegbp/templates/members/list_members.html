@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% trans "Lista de Membros" %}</h1>
+    <div class="d-flex justify-content-between mb-3">
+        <div>
+            <a href="{% url 'download_members_excel' %}" class="btn btn-success">{% trans "Download Excel" %}</a>
+            <a href="{% url 'add_member' %}" class="btn btn-primary">{% trans "Adicionar Novo Membro" %}</a>
+        </div>
+        <a href="{% url 'list_pending_members' %}" class="btn btn-warning">{% trans "Pendentes" %}</a>
+    </div>
+    <table class="table table-bordered table-hover bg-white">
+        <thead class="thead-blue">
+            <tr>
+                <th>{% trans "Nome Completo" %}</th>
+                <th>{% trans "Data de Nascimento" %}</th>
+                <th>{% trans "Documento" %}</th>
+                <th>{% trans "Nacionalidade" %}</th>
+                <th>{% trans "Status" %}</th>
+                <th>{% trans "Ações" %}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for member in members %}
+                <tr class="{% if member.status == 'pending' %}table-warning{% elif member.status == 'rejected' %}table-danger{% endif %}">
+                    <td>{{ member.full_name }}</td>
+                    <td>{{ member.birth_date }}</td>
+                    <td>{{ member.document_number }} ({{ member.get_document_type_display }})</td>
+                    <td>{{ member.nationality }}</td>
+                    <td>{{ member.get_status_display }}</td>
+                    <td class="d-flex justify-content-between">
+                        {% if member.status == 'approved' %}
+                            <a href="{% url 'edit_member' member.id %}" class="btn btn-warning btn-sm mr-1">{% trans "Editar" %}</a>
+                            <a href="{% url 'delete_member' member.id %}" class="btn btn-danger btn-sm mr-1">{% trans "Excluir" %}</a>
+                        {% elif member.status == 'pending' %}
+                            <a href="{% url 'approve_member' member.id %}" class="btn btn-success btn-sm mr-1">{% trans "Aprovar" %}</a>
+                            <a href="{% url 'reject_member' member.id %}" class="btn btn-danger btn-sm mr-1">{% trans "Rejeitar" %}</a>
+                        {% endif %}
+                        <a href="{% url 'member_detail' member.id %}" class="btn btn-info btn-sm">{% trans "Ver Mais" %}</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

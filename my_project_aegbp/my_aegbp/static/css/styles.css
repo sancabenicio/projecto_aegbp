@@ -1,0 +1,343 @@
+/* Estilos gerais */
+body {
+    background-color: #f8f9fc;
+}
+
+.header {
+    background-color: #007bff;
+}
+
+.header .navbar-brand {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.header .search-wrapper {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .search-input {
+    border: none;
+    outline: none;
+}
+
+.header .dropdown .btn-light {
+    color: #007bff;
+    background-color: white;
+    border-color: white;
+}
+
+.header .dropdown .dropdown-menu {
+    border: none;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #f8f9fc;
+    padding-top: 60px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #007bff;
+    color: white;
+    text-align: center;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: #333;
+}
+
+#sidebar ul li a:hover {
+    color: #007bff;
+    background: #fff;
+}
+
+#sidebar ul li.active > a {
+    background: #007bff;
+    color: white;
+}
+
+.container-fluid {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 0.75rem;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+.icon {
+    font-size: 3rem;
+    color: #007bff;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-lg {
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+}
+
+.footer {
+    background-color: #f8f9fc;
+    border-top: 1px solid #e0e0e0;
+    padding: 1rem 0;
+}
+
+/* Estilos para modo escuro */
+.dark-mode {
+    background-color: #2e2e2e;
+    color: #ffffff;
+}
+
+.dark-mode .header {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .navbar-brand {
+    color: white;
+}
+
+.dark-mode .search-wrapper {
+    background-color: #444;
+}
+
+.dark-mode .search-input {
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode .btn-light {
+    color: white;
+    background-color: #444;
+}
+
+.dark-mode .dropdown-menu {
+    background-color: #444;
+}
+
+.dark-mode #sidebar {
+    background: #1e1e1e;
+}
+
+.dark-mode #sidebar .sidebar-header {
+    background: #444;
+    color: white;
+}
+
+.dark-mode #sidebar ul.components {
+    border-bottom: 1px solid #575757;
+}
+
+.dark-mode #sidebar ul p {
+    color: #ddd;
+}
+
+.dark-mode #sidebar ul li a {
+    color: #ddd;
+}
+
+.dark-mode #sidebar ul li a:hover {
+    color: #fff;
+    background: #575757;
+}
+
+.dark-mode #sidebar ul li.active > a {
+    background: #444;
+    color: white;
+}
+
+.dark-mode .container-fluid {
+    background-color: #2e2e2e;
+    color: #ffffff;
+}
+
+.dark-mode .card {
+    background-color: #3e3e3e;
+    color: #ffffff;
+}
+
+.dark-mode .card-title {
+    color: #ffffff;
+}
+
+.dark-mode .card-text {
+    color: #ccc;
+}
+
+.dark-mode .icon {
+    color: #ffffff;
+}
+
+.dark-mode .btn-outline-primary {
+    color: #ffffff;
+    border-color: #575757;
+}
+
+.dark-mode .btn-outline-primary:hover {
+    background-color: #575757;
+    color: #ffffff;
+}
+
+.dark-mode .btn-primary {
+    background-color: #575757;
+    border-color: #575757;
+}
+
+.dark-mode .footer {
+    background-color: #1e1e1e;
+    border-top: 1px solid #444;
+    color: #ccc;
+}
+
+.is-invalid {
+    border-color: #dc3545;
+}
+
+.is-invalid + .invalid-feedback {
+    display: block;
+    color: #dc3545;
+}
+
+.bg-dark {
+    background-color: #343a40 !important;
+}
+
+.text-light {
+    color: #f8f9fa !important;
+}
+
+.table-dark {
+    background-color: #454d55 !important;
+}
+
+.table-dark th,
+.table-dark td {
+    border-color: #4e555b !important;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-check {
+    margin-bottom: 1rem;
+}
+
+.dark-mode {
+    background-color: #2e2e2e;
+    color: #ffffff;
+}
+
+.dark-mode .table {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark-mode .table th,
+.dark-mode .table td {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.thead-blue th {
+    background-color: #007bff; /* Cor azul */
+    color: #ffffff;
+}
+
+.dark-mode .thead-blue th {
+    background-color: #0056b3; /* Azul mais escuro para modo noturno */
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.notification-badge {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    font-size: 12px;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+.dropdown-item {
+    cursor: pointer;
+}
+
+.text-dark-mode {
+    color: #000000; /* Preto */
+}
+
+.card-dark-mode {
+    background-color: #f8f9fa; /* Claro para contraste */
+    color: #000000; /* Preto */
+}
+
+.list-group-item-dark-mode {
+    background-color: #f8f9fa; /* Claro para contraste */
+    color: #000000; /* Preto */
+}
+
+.message-content {
+    color: #000000; /* Preto */
+}

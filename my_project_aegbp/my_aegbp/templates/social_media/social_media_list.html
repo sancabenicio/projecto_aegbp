@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% trans "Redes Sociais" %}</h1>
+    <a href="{% url 'social_media_create' %}" class="btn btn-primary mb-3">{% trans "Adicionar Nova Rede Social" %}</a>
+    {% if social_medias %}
+    <table class="table table-bordered table-striped bg-white">
+        <thead class="bg-primary text-white">
+            <tr>
+                <th>{% trans "Plataforma" %}</th>
+                <th>{% trans "Nome do Perfil" %}</th>
+                <th>{% trans "URL" %}</th>
+                <th>{% trans "Ações" %}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for social in social_medias %}
+            <tr>
+                <td>{{ social.get_platform_display }}</td>
+                <td>{{ social.profile_name }}</td>
+                <td><a href="{{ social.url }}" target="_blank">{{ social.url }}</a></td>
+                <td>
+                    <a href="{% url 'social_media_update' social.id %}" class="btn btn-warning btn-sm">{% trans "Editar" %}</a>
+                    <form method="post" action="{% url 'social_media_delete' social.id %}" class="d-inline">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger btn-sm">{% trans "Excluir" %}</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>{% trans "Nenhuma rede social cadastrada." %}</p>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% if form.instance.pk %}{% trans "Editar" %}{% else %}{% trans "Adicionar" %}{% endif %} {% trans "Documento" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">{% if form.instance.pk %}{% trans "Editar" %}{% else %}{% trans "Adicionar" %}{% endif %} {% trans "Documento" %}</h1>
+            <nav>
+                <a href="{% url 'document_list' %}" class="btn btn-secondary mb-3">{% trans "Voltar à Lista de Documentos" %}</a>
+            </nav>
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">{% trans "Salvar" %}</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

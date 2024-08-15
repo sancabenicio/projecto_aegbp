@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% trans "Formulário de Doação" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% trans "Formulário de Doação" %}</h1>
+    <form method="post" enctype="multipart/form-data"> 
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">{% trans "Enviar" %}</button>
+    </form>
+    <a href="{% url 'donation_list' %}" class="btn btn-secondary mt-3">{% trans "Voltar para a Lista de Doações" %}</a>
+</div>
+{% endblock %}

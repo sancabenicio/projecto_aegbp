@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% trans "Detalhes da Doação" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="mb-4">{% trans "Detalhes da Doação" %}</h1>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <p><strong>{% trans "Nome" %}:</strong> {{ donation.name }}</p>
+            <p><strong>{% trans "Valor" %}:</strong> € {{ donation.amount }}</p>
+            <p><strong>{% trans "Data" %}:</strong> {{ donation.date }}</p>
+            <p><strong>{% trans "Descrição" %}:</strong> {{ donation.description }}</p>
+
+            {% if donation.proof %}
+                <p><strong>{% trans "Comprovativo de Doação" %}:</strong></p>
+                <a href="{{ donation.proof.url }}" class="btn btn-info mb-3" download>
+                    {% trans "Baixar Comprovativo" %}
+                </a>
+            {% else %}
+                <p><strong>{% trans "Comprovativo de Doação" %}:</strong> {% trans "Nenhum comprovativo disponível." %}</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 mb-2">
+            <a href="{% url 'donation_update' donation.id %}" class="btn btn-warning w-100">{% trans "Editar" %}</a>
+        </div>
+        <div class="col-md-4 mb-2">
+            <a href="{% url 'donation_delete' donation.id %}" class="btn btn-danger w-100">{% trans "Excluir" %}</a>
+        </div>
+        <div class="col-md-4 mb-2">
+            <a href="{% url 'donation_list' %}" class="btn btn-secondary w-100">{% trans "Voltar para a Lista de Doações" %}</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

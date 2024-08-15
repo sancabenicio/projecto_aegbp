@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% trans "Contato - Sucesso" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <header>
+        <h1>{% trans "Contato - Sucesso" %}</h1>
+        <nav>
+            <a href="{% url 'index' %}" class="btn btn-secondary">{% trans "Home" %}</a>
+        </nav>
+    </header>
+    <main>
+        <h2>{% trans "Obrigado por entrar em contato!" %}</h2>
+        <p>{% trans "Recebemos sua mensagem e entraremos em contato com você em breve." %}</p>
+    </main>
+</div>
+{% endblock %}

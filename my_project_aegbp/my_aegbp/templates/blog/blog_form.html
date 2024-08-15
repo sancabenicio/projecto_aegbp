@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <title>{% block title %}{% if form.instance.pk %}{% trans "Editar" %}{% else %}{% trans "Adicionar" %}{% endif %} {% trans "Postagem" %}{% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title">{% if form.instance.pk %}{% trans "Editar" %}{% else %}{% trans "Adicionar" %}{% endif %} {% trans "Postagem" %}</h1>
+                <nav>
+                    <a href="{% url 'blog_list' %}" class="btn btn-secondary mb-3">{% trans "Voltar ao Blog" %}</a>
+                </nav>
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-primary">{% trans "Salvar" %}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% trans "Lista de Doações" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% trans "Doações" %}</h1>
+    <div class="d-flex justify-content-between mb-3">
+        <a href="{% url 'donation_create' %}" class="btn btn-primary">{% trans "Adicionar Nova Doação" %}</a>
+        <a href="{% url 'settings_list' %}" class="btn btn-info">{% trans "Visualizar IBAN e MB Way" %}</a>
+    </div>
+    {% if donations %}
+    <ul class="list-group">
+        {% for donation in donations %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <a href="{% url 'donation_info' donation.id %}">{{ donation.name }}</a>
+            <div>
+                <a href="{% url 'donation_info' donation.id %}" class="btn btn-info btn-sm">{% trans "Ver Detalhes" %}</a>
+                <a href="{% url 'donation_update' donation.id %}" class="btn btn-warning btn-sm">{% trans "Editar" %}</a>
+                <a href="{% url 'donation_delete' donation.id %}" class="btn btn-danger btn-sm">{% trans "Excluir" %}</a>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>{% trans "Nenhuma doação disponível." %}</p>
+    {% endif %}
+</div>
+{% endblock %}

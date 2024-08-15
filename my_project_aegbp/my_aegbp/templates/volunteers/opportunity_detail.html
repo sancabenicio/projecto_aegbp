@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{{ opportunity.title }}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{{ opportunity.title }}</h1>
+    <p>{{ opportunity.description }}</p>
+    <p>{% trans "Local" %}: {{ opportunity.location }}</p>
+    <p>{% trans "Data" %}: {{ opportunity.date }}</p>
+    <a href="{% url 'register_volunteer' opportunity.id %}" class="btn btn-primary">{% trans "Registrar como Voluntário" %}</a>
+    <a href="{% url 'volunteer_update' opportunity.id %}" class="btn btn-warning">{% trans "Editar" %}</a>
+    <form method="post" action="{% url 'volunteer_delete' opportunity.id %}" class="d-inline">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">{% trans "Deletar" %}</button>
+    </form>
+    <a href="{% url 'volunteer_opportunities' %}" class="btn btn-secondary mt-3">{% trans "Voltar às Oportunidades" %}</a>
+</div>
+{% endblock %}

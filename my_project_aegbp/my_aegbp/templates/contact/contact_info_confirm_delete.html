@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Excluir Informações de Contato" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% trans "Excluir Informações de Contato" %}</h1>
+    <p>{% trans "Você tem certeza que deseja excluir as informações de contato?" %}</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">{% trans "Excluir" %}</button>
+        <a href="{% url 'contact_info_list' %}" class="btn btn-secondary">{% trans "Cancelar" %}</a>
+    </form>
+</div>
+{% endblock %}

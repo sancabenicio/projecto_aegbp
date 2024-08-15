@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% trans "Detalhes do Membro" %}</h1>
+    <div class="card shadow-lg">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">{{ member.full_name }}</h2>
+        </div>
+        <div class="card-body">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <p><strong>{% trans "Data de Nascimento:" %}</strong> {{ member.birth_date }}</p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>{% trans "Número do Documento:" %}</strong> {{ member.document_number }} ({{ member.get_document_type_display }})</p>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <p><strong>{% trans "Validade do Documento:" %}</strong> {{ member.document_validity }}</p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>{% trans "Nacionalidade:" %}</strong> {{ member.nationality }}</p>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <p><strong>{% trans "Gênero:" %}</strong> {{ member.get_gender_display }}{% if member.gender == 'O' %} ({{ member.other_gender }}){% endif %}</p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>{% trans "Telefone:" %}</strong> {{ member.phone }}</p>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <p><strong>{% trans "Email:" %}</strong> {{ member.email }}</p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>{% trans "Endereço:" %}</strong> {{ member.address }}</p>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <p><strong>{% trans "Código Postal:" %}</strong> {{ member.postal_code }}</p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>{% trans "Cidade:" %}</strong> {{ member.city }}</p>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <p><strong>{% trans "Estudante:" %}</strong> {{ member.is_student|yesno:_("Sim,Não") }}</p>
+                    {% if member.is_student %}
+                        <p><strong>{% trans "Escola/Faculdade:" %}</strong> {{ member.school }}</p>
+                        <p><strong>{% trans "Tipo de Educação:" %}</strong> {{ member.get_education_type_display }}</p>
+                        <p><strong>{% trans "Curso:" %}</strong> {{ member.course }}</p>
+                        <p><strong>{% trans "Ano Curricular:" %}</strong> {{ member.academic_year }}</p>
+                        <p><strong>{% trans "Bolseiro:" %}</strong> {{ member.is_scholar|yesno:_("Sim,Não") }}</p>
+                        <p><strong>{% trans "Estudante Trabalhador:" %}</strong> {{ member.is_working_student|yesno:_("Sim,Não") }}</p>
+                    {% endif %}
+                </div>
+                <div class="col-md-6">
+                    <p><strong>{% trans "Ocupação:" %}</strong> {{ member.occupation }}</p>
+                    <p><strong>{% trans "Status:" %}</strong> {{ member.get_status_display }}</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end mt-4">
+                <a href="{% url 'list_pending_members' %}" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> {% trans "Voltar" %}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

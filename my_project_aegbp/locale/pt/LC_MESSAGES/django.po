@@ -1,0 +1,5238 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-14 19:30+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: my_aegbp/admin.py:21
+msgid "Image Preview"
+msgstr ""
+
+#: my_aegbp/admin.py:51
+msgid "Logo Preview"
+msgstr ""
+
+#: my_aegbp/admin.py:120 my_aegbp/forms.py:724
+msgid "Apenas uma seção 'Sobre' é permitida."
+msgstr ""
+
+#: my_aegbp/context_processors.py:6 my_aegbp/templates/base.html:247
+#: my_aegbp/templates/gallery/photo_gallery.html:4
+#: my_aegbp/templates/gallery/photo_gallery.html:9
+#: my_aegbp/templates/gallery/video_gallery.html:13 my_aegbp/views.py:92
+msgid "Galeria de Fotos"
+msgstr ""
+
+#: my_aegbp/context_processors.py:6
+msgid "Veja as fotos mais recentes da nossa atividade."
+msgstr ""
+
+#: my_aegbp/context_processors.py:7 my_aegbp/templates/base.html:250
+#: my_aegbp/templates/gallery/photo_gallery.html:13
+#: my_aegbp/templates/gallery/video_gallery.html:4
+#: my_aegbp/templates/gallery/video_gallery.html:9 my_aegbp/views.py:101
+msgid "Galeria de Vídeos"
+msgstr ""
+
+#: my_aegbp/context_processors.py:7
+msgid "Assista aos vídeos mais recentes da nossa atividade."
+msgstr ""
+
+#: my_aegbp/context_processors.py:8 my_aegbp/templates/base.html:253
+msgid "Calendário"
+msgstr ""
+
+#: my_aegbp/context_processors.py:8 my_aegbp/views.py:111
+msgid "Confira os próximos eventos e atividades."
+msgstr ""
+
+#: my_aegbp/context_processors.py:9 my_aegbp/models.py:110
+#: my_aegbp/templates/base.html:256
+#: my_aegbp/templates/documents/document_list.html:4
+#: my_aegbp/templates/documents/document_list.html:9
+#: my_aegbp/templates/documents/document_list.html:16
+#: my_aegbp/templates/events/calendar.html:13 my_aegbp/views.py:119
+msgid "Documentos"
+msgstr ""
+
+#: my_aegbp/context_processors.py:9 my_aegbp/views.py:120
+msgid "Acesse os documentos importantes e relatórios."
+msgstr ""
+
+#: my_aegbp/context_processors.py:10 my_aegbp/templates/base.html:259
+#: my_aegbp/templates/blog/blog_list.html:6
+#: my_aegbp/templates/blog/blog_list.html:12 my_aegbp/views.py:128
+msgid "Blog"
+msgstr ""
+
+#: my_aegbp/context_processors.py:10
+msgid "Leia as últimas postagens no nosso blog."
+msgstr ""
+
+#: my_aegbp/context_processors.py:11
+#: my_aegbp/templates/testimonials/testimonials.html:4
+#: my_aegbp/templates/testimonials/testimonials.html:9 my_aegbp/views.py:137
+msgid "Testemunhos"
+msgstr ""
+
+#: my_aegbp/context_processors.py:11
+msgid "Leia os testemunhos de nossos membros."
+msgstr ""
+
+#: my_aegbp/context_processors.py:12 my_aegbp/views.py:146
+msgid "FAQs"
+msgstr ""
+
+#: my_aegbp/context_processors.py:12
+msgid "Respostas para as perguntas mais frequentes."
+msgstr ""
+
+#: my_aegbp/context_processors.py:13 my_aegbp/models.py:167
+#: my_aegbp/templates/base.html:268
+#: my_aegbp/templates/volunteers/opportunities.html:4
+#: my_aegbp/templates/volunteers/opportunities.html:9 my_aegbp/views.py:155
+msgid "Oportunidades de Voluntariado"
+msgstr ""
+
+#: my_aegbp/context_processors.py:13
+msgid "Participe como voluntário em nossos projetos."
+msgstr ""
+
+#: my_aegbp/context_processors.py:14 my_aegbp/models.py:195
+#: my_aegbp/templates/base.html:271 my_aegbp/templates/base.html:327
+#: my_aegbp/templates/projects/project_list.html:4
+#: my_aegbp/templates/projects/project_list.html:9 my_aegbp/views.py:173
+msgid "Projetos"
+msgstr ""
+
+#: my_aegbp/context_processors.py:14
+msgid "Conheça os projetos que estamos desenvolvendo."
+msgstr ""
+
+#: my_aegbp/context_processors.py:15 my_aegbp/models.py:308
+#: my_aegbp/templates/base.html:274
+#: my_aegbp/templates/donations/donation_list.html:8 my_aegbp/views.py:182
+msgid "Doações"
+msgstr ""
+
+#: my_aegbp/context_processors.py:15
+msgid "Apoie nossa atividade com sua doação."
+msgstr ""
+
+#: my_aegbp/context_processors.py:16 my_aegbp/models.py:123
+#: my_aegbp/templates/base.html:277 my_aegbp/views.py:191
+msgid "Patrocinadores"
+msgstr ""
+
+#: my_aegbp/context_processors.py:16 my_aegbp/views.py:192
+msgid "Conheça nossos patrocinadores."
+msgstr ""
+
+#: my_aegbp/forms.py:23
+msgid "Este email não é permitido."
+msgstr ""
+
+#: my_aegbp/forms.py:29
+msgid "Este URL não é permitido."
+msgstr ""
+
+#: my_aegbp/forms.py:35 my_aegbp/templates/registration/login.html:39
+msgid "Senha"
+msgstr ""
+
+#: my_aegbp/forms.py:36
+msgid "Confirmar Senha"
+msgstr ""
+
+#: my_aegbp/forms.py:45 my_aegbp/views.py:1139
+msgid "Um usuário com este email já existe."
+msgstr ""
+
+#: my_aegbp/forms.py:57
+msgid "Erro ao criar usuário: "
+msgstr ""
+
+#: my_aegbp/forms.py:61 my_aegbp/forms.py:65
+msgid "Nome de Utilizador"
+msgstr ""
+
+#: my_aegbp/forms.py:62 my_aegbp/forms.py:66
+msgid "Palavra-passe"
+msgstr ""
+
+#: my_aegbp/forms.py:78 my_aegbp/forms.py:105 my_aegbp/models.py:21
+#: my_aegbp/models.py:26 my_aegbp/models.py:39 my_aegbp/models.py:56
+#: my_aegbp/templates/events/event_form.html:4
+#: my_aegbp/templates/events/event_form.html:9
+#: my_aegbp/templates/search/results.html:32
+msgid "Evento"
+msgstr ""
+
+#: my_aegbp/forms.py:79 my_aegbp/forms.py:215 my_aegbp/models.py:40
+#: my_aegbp/models.py:132 my_aegbp/models.py:443
+msgid "Imagem"
+msgstr ""
+
+#: my_aegbp/forms.py:80 my_aegbp/models.py:41
+msgid "Legenda"
+msgstr ""
+
+#: my_aegbp/forms.py:86
+msgid "Esta legenda contém palavras proibidas."
+msgstr ""
+
+#: my_aegbp/forms.py:101 my_aegbp/forms.py:178 my_aegbp/forms.py:212
+#: my_aegbp/forms.py:262 my_aegbp/forms.py:414 my_aegbp/models.py:52
+#: my_aegbp/models.py:101 my_aegbp/models.py:127 my_aegbp/models.py:157
+#: my_aegbp/models.py:185 my_aegbp/models.py:441
+#: my_aegbp/templates/projects/project_list.html:20
+#: my_aegbp/templates/volunteers/opportunities.html:19
+msgid "Título"
+msgstr ""
+
+#: my_aegbp/forms.py:102 my_aegbp/forms.py:153 my_aegbp/forms.py:180
+#: my_aegbp/forms.py:263 my_aegbp/forms.py:417 my_aegbp/forms.py:463
+#: my_aegbp/forms.py:509 my_aegbp/forms.py:542 my_aegbp/models.py:13
+#: my_aegbp/models.py:53 my_aegbp/models.py:103 my_aegbp/models.py:116
+#: my_aegbp/models.py:158 my_aegbp/models.py:188 my_aegbp/models.py:300
+#: my_aegbp/models.py:331 my_aegbp/models.py:442
+#: my_aegbp/templates/donations/donation_info.html:15
+#: my_aegbp/templates/events/calendar.html:25
+#: my_aegbp/templates/user_profile/profile.html:27
+#: my_aegbp/templates/user_profile/profile.html:82
+#: my_aegbp/templates/volunteers/opportunities.html:20
+msgid "Descrição"
+msgstr ""
+
+#: my_aegbp/forms.py:103 my_aegbp/forms.py:179
+msgid "Ficheiro"
+msgstr ""
+
+#: my_aegbp/forms.py:104 my_aegbp/models.py:55
+msgid "Link"
+msgstr ""
+
+#: my_aegbp/forms.py:115
+msgid "O tamanho do vídeo não pode exceder {} MB."
+msgstr ""
+
+#: my_aegbp/forms.py:125
+msgid "Você deve fornecer um ficheiro de vídeo ou um link."
+msgstr ""
+
+#: my_aegbp/forms.py:131
+msgid ""
+"Formato de vídeo não suportado. Por favor, envie um arquivo de vídeo nos "
+"formatos: .mp4, .mov, .avi, .mkv."
+msgstr ""
+
+#: my_aegbp/forms.py:151 my_aegbp/forms.py:283 my_aegbp/forms.py:303
+#: my_aegbp/forms.py:361 my_aegbp/forms.py:439 my_aegbp/forms.py:460
+#: my_aegbp/forms.py:507 my_aegbp/models.py:11 my_aegbp/models.py:27
+#: my_aegbp/models.py:114 my_aegbp/models.py:171 my_aegbp/models.py:212
+#: my_aegbp/models.py:225 my_aegbp/models.py:249 my_aegbp/models.py:297
+#: my_aegbp/templates/categories/category_list.html:20
+#: my_aegbp/templates/contact/contact_list.html:19
+#: my_aegbp/templates/contact/contact_respond.html:12
+#: my_aegbp/templates/donations/donation_info.html:12
+#: my_aegbp/templates/events/calendar.html:23
+#: my_aegbp/templates/events/event_registrations.html:17
+#: my_aegbp/templates/volunteers/volunteer_registrations.html:20
+msgid "Nome"
+msgstr ""
+
+#: my_aegbp/forms.py:152 my_aegbp/forms.py:265 my_aegbp/forms.py:462
+#: my_aegbp/models.py:12 my_aegbp/models.py:160 my_aegbp/models.py:201
+#: my_aegbp/models.py:214 my_aegbp/models.py:299
+#: my_aegbp/templates/contact/contact_list.html:23
+#: my_aegbp/templates/donations/donation_info.html:14
+#: my_aegbp/templates/events/calendar.html:24
+#: my_aegbp/templates/volunteers/opportunities.html:21
+#: my_aegbp/templates/volunteers/opportunity_detail.html:11
+msgid "Data"
+msgstr ""
+
+#: my_aegbp/forms.py:154 my_aegbp/models.py:14
+msgid "Hora de Início"
+msgstr ""
+
+#: my_aegbp/forms.py:155 my_aegbp/models.py:15
+msgid "Hora de Término"
+msgstr ""
+
+#: my_aegbp/forms.py:164
+msgid "A hora de término não pode ser anterior à hora de início."
+msgstr ""
+
+#: my_aegbp/forms.py:190
+msgid "O tamanho do arquivo não pode exceder {} MB."
+msgstr ""
+
+#: my_aegbp/forms.py:197 my_aegbp/forms.py:271 my_aegbp/forms.py:470
+#: my_aegbp/forms.py:515
+msgid "A descrição deve ter pelo menos 10 caracteres."
+msgstr ""
+
+#: my_aegbp/forms.py:213 my_aegbp/forms.py:242 my_aegbp/forms.py:362
+#: my_aegbp/forms.py:700 my_aegbp/models.py:128 my_aegbp/models.py:145
+#: my_aegbp/models.py:213 my_aegbp/models.py:268 my_aegbp/models.py:429
+msgid "Conteúdo"
+msgstr ""
+
+#: my_aegbp/forms.py:214 my_aegbp/forms.py:241 my_aegbp/models.py:129
+#: my_aegbp/models.py:144
+msgid "Autor"
+msgstr ""
+
+#: my_aegbp/forms.py:221 my_aegbp/serializers.py:14
+msgid "O título deve ter pelo menos 5 caracteres."
+msgstr ""
+
+#: my_aegbp/forms.py:227
+msgid "O campo Autor é obrigatório."
+msgstr ""
+
+#: my_aegbp/forms.py:240 my_aegbp/models.py:143
+#: my_aegbp/templates/blog/blog_form.html:7
+#: my_aegbp/templates/blog/blog_form.html:14
+msgid "Postagem"
+msgstr ""
+
+#: my_aegbp/forms.py:248
+msgid "O conteúdo deve ter pelo menos 5 caracteres."
+msgstr ""
+
+#: my_aegbp/forms.py:264 my_aegbp/models.py:159
+msgid "Localização"
+msgstr ""
+
+#: my_aegbp/forms.py:284 my_aegbp/forms.py:304 my_aegbp/forms.py:440
+#: my_aegbp/forms.py:633 my_aegbp/models.py:28 my_aegbp/models.py:172
+#: my_aegbp/models.py:250 my_aegbp/models.py:385
+#: my_aegbp/templates/contact/contact_list.html:20
+#: my_aegbp/templates/contact/contact_respond.html:16
+#: my_aegbp/templates/events/event_registrations.html:18
+#: my_aegbp/templates/members/approve_member.html:38
+#: my_aegbp/templates/members/reject_member.html:37
+#: my_aegbp/templates/registration/password_reset_form.html:28
+#: my_aegbp/templates/user_profile/profile.html:54
+#: my_aegbp/templates/volunteers/volunteer_registrations.html:21
+msgid "Email"
+msgstr ""
+
+#: my_aegbp/forms.py:305 my_aegbp/models.py:251
+#: my_aegbp/templates/contact/contact_list.html:21
+#: my_aegbp/templates/contact/contact_respond.html:20
+msgid "Assunto"
+msgstr ""
+
+#: my_aegbp/forms.py:306 my_aegbp/forms.py:323 my_aegbp/models.py:252
+#: my_aegbp/models.py:275 my_aegbp/templates/contact/contact_list.html:22
+#: my_aegbp/templates/contact/contact_respond.html:24
+msgid "Mensagem"
+msgstr ""
+
+#: my_aegbp/forms.py:312
+msgid "A mensagem deve ter pelo menos 10 caracteres."
+msgstr ""
+
+#: my_aegbp/forms.py:332
+msgid "Ex: A108 Adam Street"
+msgstr ""
+
+#: my_aegbp/forms.py:333
+msgid "Ex: +1 5589 55488 55"
+msgstr ""
+
+#: my_aegbp/forms.py:334
+msgid "Ex: +1 6678 254445 41"
+msgstr ""
+
+#: my_aegbp/forms.py:335
+msgid "Ex: info@example.com"
+msgstr ""
+
+#: my_aegbp/forms.py:336
+msgid "Ex: contact@example.com"
+msgstr ""
+
+#: my_aegbp/forms.py:337
+msgid "Ex: Segunda - Sexta"
+msgstr ""
+
+#: my_aegbp/forms.py:338
+msgid "Ex: 09:00 - 17:00"
+msgstr ""
+
+#: my_aegbp/forms.py:341 my_aegbp/forms.py:538 my_aegbp/forms.py:629
+#: my_aegbp/models.py:280 my_aegbp/models.py:327 my_aegbp/models.py:381
+#: my_aegbp/templates/contact/contact_info_form.html:24
+#: my_aegbp/templates/members/approve_member.html:42
+#: my_aegbp/templates/members/reject_member.html:41
+#: my_aegbp/templates/user_profile/profile.html:58
+msgid "Endereço"
+msgstr ""
+
+#: my_aegbp/forms.py:342 my_aegbp/models.py:281
+#: my_aegbp/templates/contact/contact_info_form.html:28
+msgid "Telefone 1"
+msgstr ""
+
+#: my_aegbp/forms.py:343 my_aegbp/models.py:282
+#: my_aegbp/templates/contact/contact_info_form.html:32
+msgid "Telefone 2"
+msgstr ""
+
+#: my_aegbp/forms.py:344 my_aegbp/models.py:283
+#: my_aegbp/templates/contact/contact_info_form.html:36
+msgid "Email 1"
+msgstr ""
+
+#: my_aegbp/forms.py:345 my_aegbp/models.py:284
+#: my_aegbp/templates/contact/contact_info_form.html:40
+msgid "Email 2"
+msgstr ""
+
+#: my_aegbp/forms.py:346 my_aegbp/models.py:285
+#: my_aegbp/templates/contact/contact_info_form.html:45
+msgid "Dias da Semana"
+msgstr ""
+
+#: my_aegbp/forms.py:347 my_aegbp/templates/contact/contact_info_form.html:49
+msgid "Horário"
+msgstr ""
+
+#: my_aegbp/forms.py:368
+msgid "O conteúdo deve ter pelo menos 10 caracteres."
+msgstr ""
+
+#: my_aegbp/forms.py:381 my_aegbp/models.py:236
+#: my_aegbp/templates/faqs/faq_list.html:20
+#: my_aegbp/templates/faqs/faqs.html:20
+msgid "Pergunta"
+msgstr ""
+
+#: my_aegbp/forms.py:382 my_aegbp/models.py:237
+#: my_aegbp/templates/faqs/faq_list.html:21
+#: my_aegbp/templates/faqs/faqs.html:21
+msgid "Resposta"
+msgstr ""
+
+#: my_aegbp/forms.py:383 my_aegbp/models.py:231 my_aegbp/models.py:238
+#: my_aegbp/templates/faqs/faq_list.html:22
+#: my_aegbp/templates/faqs/faqs.html:22
+msgid "Categoria"
+msgstr ""
+
+#: my_aegbp/forms.py:389
+msgid "A resposta deve ter pelo menos 5 caracteres."
+msgstr ""
+
+#: my_aegbp/forms.py:400
+msgid "Nome da Categoria"
+msgstr ""
+
+#: my_aegbp/forms.py:415 my_aegbp/models.py:186
+#: my_aegbp/templates/projects/project_list.html:21
+msgid "Data de Início"
+msgstr ""
+
+#: my_aegbp/forms.py:416 my_aegbp/models.py:187
+#: my_aegbp/templates/projects/project_list.html:22
+msgid "Data de Término"
+msgstr ""
+
+#: my_aegbp/forms.py:426
+msgid "A data de término não pode ser anterior à data de início."
+msgstr ""
+
+#: my_aegbp/forms.py:461
+msgid "Quantia"
+msgstr ""
+
+#: my_aegbp/forms.py:464 my_aegbp/templates/donations/donation_info.html:18
+#: my_aegbp/templates/donations/donation_info.html:23
+msgid "Comprovativo de Doação"
+msgstr ""
+
+#: my_aegbp/forms.py:483 my_aegbp/models.py:312
+#: my_aegbp/templates/settings/settings_list.html:17
+msgid "IBAN"
+msgstr ""
+
+#: my_aegbp/forms.py:484
+msgid "Número de MB Way"
+msgstr ""
+
+#: my_aegbp/forms.py:492
+msgid "Número de MB Way inválido. Deve ser um número de telemóvel válido."
+msgstr ""
+
+#: my_aegbp/forms.py:508 my_aegbp/models.py:115
+msgid "Logo"
+msgstr ""
+
+#: my_aegbp/forms.py:522
+msgid "Senha antiga"
+msgstr ""
+
+#: my_aegbp/forms.py:523
+#: my_aegbp/templates/registration/custom_password_reset_confirm.html:77
+msgid "Nova senha"
+msgstr ""
+
+#: my_aegbp/forms.py:537 my_aegbp/models.py:325
+msgid "Foto de Perfil"
+msgstr ""
+
+#: my_aegbp/forms.py:539 my_aegbp/forms.py:631 my_aegbp/models.py:328
+#: my_aegbp/models.py:383 my_aegbp/templates/user_profile/profile.html:64
+msgid "Cidade"
+msgstr ""
+
+#: my_aegbp/forms.py:540 my_aegbp/models.py:329
+#: my_aegbp/templates/user_profile/profile.html:70
+msgid "Estado"
+msgstr ""
+
+#: my_aegbp/forms.py:541 my_aegbp/forms.py:630 my_aegbp/models.py:382
+msgid "Código Postal"
+msgstr ""
+
+#: my_aegbp/forms.py:565
+msgid "Este campo é obrigatório."
+msgstr ""
+
+#: my_aegbp/forms.py:567
+msgid "Senha antiga incorreta."
+msgstr ""
+
+#: my_aegbp/forms.py:586
+msgid "Especifique o gênero"
+msgstr ""
+
+#: my_aegbp/forms.py:586 my_aegbp/forms.py:627 my_aegbp/models.py:380
+msgid "Outro Gênero"
+msgstr ""
+
+#: my_aegbp/forms.py:587 my_aegbp/forms.py:604 my_aegbp/forms.py:628
+#: my_aegbp/models.py:360
+msgid "Prefiro não dizer"
+msgstr ""
+
+#: my_aegbp/forms.py:588 my_aegbp/forms.py:625 my_aegbp/models.py:378
+#: my_aegbp/templates/members/approve_member.html:26
+#: my_aegbp/templates/members/list_members.html:20
+#: my_aegbp/templates/members/reject_member.html:25
+msgid "Nacionalidade"
+msgstr ""
+
+#: my_aegbp/forms.py:604 my_aegbp/models.py:357
+msgid "Masculino"
+msgstr ""
+
+#: my_aegbp/forms.py:604 my_aegbp/models.py:358
+msgid "Feminino"
+msgstr ""
+
+#: my_aegbp/forms.py:604 my_aegbp/models.py:359 my_aegbp/models.py:462
+msgid "Outro"
+msgstr ""
+
+#: my_aegbp/forms.py:610 my_aegbp/forms.py:615 my_aegbp/forms.py:616
+msgid "Sim"
+msgstr ""
+
+#: my_aegbp/forms.py:610 my_aegbp/forms.py:615 my_aegbp/forms.py:616
+msgid "Não"
+msgstr ""
+
+#: my_aegbp/forms.py:620 my_aegbp/models.py:373
+#: my_aegbp/templates/members/approve_member.html:14
+#: my_aegbp/templates/members/list_members.html:17
+#: my_aegbp/templates/members/reject_member.html:13
+msgid "Nome Completo"
+msgstr ""
+
+#: my_aegbp/forms.py:621 my_aegbp/models.py:374
+#: my_aegbp/templates/members/approve_member.html:18
+#: my_aegbp/templates/members/list_members.html:18
+#: my_aegbp/templates/members/reject_member.html:17
+msgid "Data de Nascimento"
+msgstr ""
+
+#: my_aegbp/forms.py:622 my_aegbp/models.py:375
+msgid "Número do Documento"
+msgstr ""
+
+#: my_aegbp/forms.py:623 my_aegbp/models.py:376
+msgid "Tipo de Documento"
+msgstr ""
+
+#: my_aegbp/forms.py:624 my_aegbp/models.py:377
+msgid "Validade do Documento"
+msgstr ""
+
+#: my_aegbp/forms.py:626 my_aegbp/models.py:379
+#: my_aegbp/templates/members/approve_member.html:30
+#: my_aegbp/templates/members/reject_member.html:29
+msgid "Gênero"
+msgstr ""
+
+#: my_aegbp/forms.py:632
+msgid "Telemóvel"
+msgstr ""
+
+#: my_aegbp/forms.py:634 my_aegbp/templates/members/approve_member.html:46
+#: my_aegbp/templates/members/reject_member.html:45
+msgid "Estudante?"
+msgstr ""
+
+#: my_aegbp/forms.py:635 my_aegbp/templates/members/approve_member.html:50
+#: my_aegbp/templates/members/reject_member.html:49
+msgid "Escola/Faculdade"
+msgstr ""
+
+#: my_aegbp/forms.py:636
+msgid "Tipo de Ensino"
+msgstr ""
+
+#: my_aegbp/forms.py:637 my_aegbp/models.py:389
+#: my_aegbp/templates/members/approve_member.html:54
+#: my_aegbp/templates/members/reject_member.html:53
+msgid "Curso"
+msgstr ""
+
+#: my_aegbp/forms.py:638 my_aegbp/templates/members/approve_member.html:58
+#: my_aegbp/templates/members/reject_member.html:57
+msgid "Ano Curricular"
+msgstr ""
+
+#: my_aegbp/forms.py:639
+msgid "Bolseiro(a)?"
+msgstr ""
+
+#: my_aegbp/forms.py:640
+msgid "Estudante Trabalhador?"
+msgstr ""
+
+#: my_aegbp/forms.py:641
+msgid "Caso não seja estudante, por favor, indique a ocupação atual"
+msgstr ""
+
+#: my_aegbp/forms.py:647
+msgid "Este email já está em uso."
+msgstr ""
+
+#: my_aegbp/forms.py:654
+msgid "Este número de documento já está em uso."
+msgstr ""
+
+#: my_aegbp/forms.py:660 my_aegbp/models.py:412
+msgid "A data de nascimento não pode ser no futuro."
+msgstr ""
+
+#: my_aegbp/forms.py:663 my_aegbp/models.py:415
+msgid "A idade do membro deve ser de pelo menos 14 anos."
+msgstr ""
+
+#: my_aegbp/forms.py:669 my_aegbp/models.py:417
+msgid "O ano curricular deve ser maior que zero."
+msgstr ""
+
+#: my_aegbp/forms.py:677 my_aegbp/models.py:409
+msgid "Por favor, especifique o gênero."
+msgstr ""
+
+#: my_aegbp/forms.py:686
+msgid "Erro ao salvar membro: "
+msgstr ""
+
+#: my_aegbp/forms.py:699 my_aegbp/models.py:267
+msgid "Remetente"
+msgstr ""
+
+#: my_aegbp/middleware.py:45
+#, python-format
+msgid "Exceção ocorreu: %(error)s"
+msgstr ""
+
+#: my_aegbp/middleware.py:47
+msgid "Exceção ocorreu"
+msgstr ""
+
+#: my_aegbp/middleware.py:48
+#, python-format
+msgid ""
+"Erro: %(error)s\n"
+"URL: %(url)s"
+msgstr ""
+
+#: my_aegbp/middleware.py:52 my_aegbp/views.py:238
+msgid "Ocorreu um erro inesperado."
+msgstr ""
+
+#: my_aegbp/models.py:22 my_aegbp/templates/events/calendar.html:18
+msgid "Eventos"
+msgstr ""
+
+#: my_aegbp/models.py:34
+msgid "Inscrição"
+msgstr ""
+
+#: my_aegbp/models.py:35
+msgid "Inscrições"
+msgstr ""
+
+#: my_aegbp/models.py:44 my_aegbp/models.py:47
+#: my_aegbp/templates/gallery/photo_form.html:4
+#: my_aegbp/templates/gallery/photo_form.html:9
+#: my_aegbp/templates/search/results.html:36
+msgid "Foto"
+msgstr ""
+
+#: my_aegbp/models.py:48
+msgid "Fotos"
+msgstr ""
+
+#: my_aegbp/models.py:52
+msgid "Título Padrão"
+msgstr ""
+
+#: my_aegbp/models.py:53
+msgid "Descrição Padrão"
+msgstr ""
+
+#: my_aegbp/models.py:54 my_aegbp/models.py:102
+msgid "Arquivo"
+msgstr ""
+
+#: my_aegbp/models.py:96 my_aegbp/templates/gallery/video_form.html:4
+#: my_aegbp/templates/gallery/video_form.html:9
+#: my_aegbp/templates/search/results.html:40
+msgid "Vídeo"
+msgstr ""
+
+#: my_aegbp/models.py:97
+msgid "Vídeos"
+msgstr ""
+
+#: my_aegbp/models.py:109 my_aegbp/templates/documents/document_form.html:4
+#: my_aegbp/templates/documents/document_form.html:10
+#: my_aegbp/templates/members/approve_member.html:22
+#: my_aegbp/templates/members/list_members.html:19
+#: my_aegbp/templates/members/reject_member.html:21
+#: my_aegbp/templates/search/results.html:44
+msgid "Documento"
+msgstr ""
+
+#: my_aegbp/models.py:122 my_aegbp/templates/search/results.html:20
+#: my_aegbp/templates/sponsors/sponsor_form.html:4
+#: my_aegbp/templates/sponsors/sponsor_form.html:8
+msgid "Patrocinador"
+msgstr ""
+
+#: my_aegbp/models.py:130 my_aegbp/models.py:146 my_aegbp/models.py:444
+msgid "Data de Criação"
+msgstr ""
+
+#: my_aegbp/models.py:131 my_aegbp/models.py:445
+msgid "Data de Atualização"
+msgstr ""
+
+#: my_aegbp/models.py:138
+msgid "Postagem do Blog"
+msgstr ""
+
+#: my_aegbp/models.py:139
+msgid "Postagens do Blog"
+msgstr ""
+
+#: my_aegbp/models.py:152
+msgid "Comentário"
+msgstr ""
+
+#: my_aegbp/models.py:153 my_aegbp/templates/blog/blog_post.html:25
+msgid "Comentários"
+msgstr ""
+
+#: my_aegbp/models.py:159
+msgid "Desconhecido"
+msgstr ""
+
+#: my_aegbp/models.py:166 my_aegbp/templates/search/results.html:52
+msgid "Oportunidade de Voluntariado"
+msgstr ""
+
+#: my_aegbp/models.py:173
+#: my_aegbp/templates/volunteers/volunteer_opportunity_form.html:4
+#: my_aegbp/templates/volunteers/volunteer_opportunity_form.html:8
+msgid "Oportunidade"
+msgstr ""
+
+#: my_aegbp/models.py:174
+msgid "Data de Inscrição"
+msgstr ""
+
+#: my_aegbp/models.py:180
+msgid "Voluntário"
+msgstr ""
+
+#: my_aegbp/models.py:181
+msgid "Voluntários"
+msgstr ""
+
+#: my_aegbp/models.py:194 my_aegbp/models.py:199
+#: my_aegbp/templates/projects/project_form.html:4
+#: my_aegbp/templates/projects/project_form.html:8
+#: my_aegbp/templates/search/results.html:64
+msgid "Projeto"
+msgstr ""
+
+#: my_aegbp/models.py:200
+msgid "Relatório"
+msgstr ""
+
+#: my_aegbp/models.py:207
+msgid "Impacto do Projeto"
+msgstr ""
+
+#: my_aegbp/models.py:208
+msgid "Impactos do Projeto"
+msgstr ""
+
+#: my_aegbp/models.py:220 my_aegbp/templates/search/results.html:28
+msgid "Depoimento"
+msgstr ""
+
+#: my_aegbp/models.py:221 my_aegbp/templates/base.html:262
+msgid "Depoimentos"
+msgstr ""
+
+#: my_aegbp/models.py:232 my_aegbp/templates/categories/category_list.html:4
+#: my_aegbp/templates/categories/category_list.html:9
+msgid "Categorias"
+msgstr ""
+
+#: my_aegbp/models.py:244 my_aegbp/templates/search/results.html:60
+msgid "Pergunta Frequente"
+msgstr ""
+
+#: my_aegbp/models.py:245 my_aegbp/templates/base.html:265
+#: my_aegbp/templates/faqs/faq_list.html:4
+#: my_aegbp/templates/faqs/faq_list.html:9 my_aegbp/templates/faqs/faqs.html:4
+#: my_aegbp/templates/faqs/faqs.html:9
+msgid "Perguntas Frequentes"
+msgstr ""
+
+#: my_aegbp/models.py:253
+msgid "Data de Envio"
+msgstr ""
+
+#: my_aegbp/models.py:254
+msgid "novo"
+msgstr ""
+
+#: my_aegbp/models.py:254 my_aegbp/models.py:394
+#: my_aegbp/templates/members/list_members.html:21
+msgid "Status"
+msgstr ""
+
+#: my_aegbp/models.py:255 my_aegbp/models.py:395
+msgid "Lido"
+msgstr ""
+
+#: my_aegbp/models.py:261 my_aegbp/templates/search/results.html:56
+msgid "Mensagem de Contato"
+msgstr ""
+
+#: my_aegbp/models.py:262
+msgid "Mensagens de Contato"
+msgstr ""
+
+#: my_aegbp/models.py:266 my_aegbp/views.py:164
+msgid "Contato"
+msgstr ""
+
+#: my_aegbp/models.py:269
+msgid "Data/Hora"
+msgstr ""
+
+#: my_aegbp/models.py:276
+#: my_aegbp/templates/contact/contact_conversation.html:17
+msgid "Mensagens"
+msgstr ""
+
+#: my_aegbp/models.py:286
+msgid "Horários"
+msgstr ""
+
+#: my_aegbp/models.py:289 my_aegbp/models.py:293
+#: my_aegbp/templates/base.html:283
+#: my_aegbp/templates/contact/contact_info_list.html:3
+#: my_aegbp/templates/contact/contact_info_list.html:8
+msgid "Informações de Contato"
+msgstr ""
+
+#: my_aegbp/models.py:292
+msgid "Informação de Contato"
+msgstr ""
+
+#: my_aegbp/models.py:298 my_aegbp/templates/donations/donation_info.html:13
+msgid "Valor"
+msgstr ""
+
+#: my_aegbp/models.py:301
+msgid "Comprovante"
+msgstr ""
+
+#: my_aegbp/models.py:307 my_aegbp/templates/search/results.html:24
+msgid "Doação"
+msgstr ""
+
+#: my_aegbp/models.py:313
+msgid "Número MB Way"
+msgstr ""
+
+#: my_aegbp/models.py:319
+msgid "Configuração Geral"
+msgstr ""
+
+#: my_aegbp/models.py:320 my_aegbp/templates/settings/settings_list.html:8
+msgid "Configurações Gerais"
+msgstr ""
+
+#: my_aegbp/models.py:324 my_aegbp/templates/registration/login.html:28
+msgid "Usuário"
+msgstr ""
+
+#: my_aegbp/models.py:326
+msgid "Cargo"
+msgstr ""
+
+#: my_aegbp/models.py:330 my_aegbp/templates/user_profile/profile.html:76
+msgid "CEP"
+msgstr ""
+
+#: my_aegbp/models.py:337
+msgid "Perfil de Usuário"
+msgstr ""
+
+#: my_aegbp/models.py:338
+msgid "Perfis de Usuários"
+msgstr ""
+
+#: my_aegbp/models.py:352
+msgid "Cartão de Cidadão"
+msgstr ""
+
+#: my_aegbp/models.py:353
+msgid "Passaporte"
+msgstr ""
+
+#: my_aegbp/models.py:354
+msgid "Autorização de Residência"
+msgstr ""
+
+#: my_aegbp/models.py:363
+msgid "Superior"
+msgstr ""
+
+#: my_aegbp/models.py:364
+msgid "Profissional"
+msgstr ""
+
+#: my_aegbp/models.py:365
+msgid "Secundário"
+msgstr ""
+
+#: my_aegbp/models.py:368
+msgid "Pendente"
+msgstr ""
+
+#: my_aegbp/models.py:369
+msgid "Aprovado"
+msgstr ""
+
+#: my_aegbp/models.py:370
+msgid "Rejeitado"
+msgstr ""
+
+#: my_aegbp/models.py:384 my_aegbp/templates/members/approve_member.html:34
+#: my_aegbp/templates/members/reject_member.html:33
+msgid "Telefone"
+msgstr ""
+
+#: my_aegbp/models.py:386
+msgid "É Estudante"
+msgstr ""
+
+#: my_aegbp/models.py:387
+msgid "Escola"
+msgstr ""
+
+#: my_aegbp/models.py:388
+msgid "Tipo de Educação"
+msgstr ""
+
+#: my_aegbp/models.py:390
+msgid "Ano Acadêmico"
+msgstr ""
+
+#: my_aegbp/models.py:391
+msgid "É Bolseiro"
+msgstr ""
+
+#: my_aegbp/models.py:392
+msgid "É Estudante Trabalhador"
+msgstr ""
+
+#: my_aegbp/models.py:393
+msgid "Ocupação"
+msgstr ""
+
+#: my_aegbp/models.py:424
+msgid "Membro"
+msgstr ""
+
+#: my_aegbp/models.py:425
+msgid "Membros"
+msgstr ""
+
+#: my_aegbp/models.py:430
+msgid "Última Atualização"
+msgstr ""
+
+#: my_aegbp/models.py:436 my_aegbp/templates/base.html:329
+#: my_aegbp/templates/privacy_policy/privacy_policy_detail.html:8
+msgid "Política de Privacidade"
+msgstr ""
+
+#: my_aegbp/models.py:437
+#: my_aegbp/templates/privacy_policy/privacy_policy_list.html:4
+#: my_aegbp/templates/privacy_policy/privacy_policy_list.html:8
+msgid "Políticas de Privacidade"
+msgstr ""
+
+#: my_aegbp/models.py:451 my_aegbp/models.py:452
+#: my_aegbp/templates/base.html:286
+msgid "Sobre"
+msgstr ""
+
+#: my_aegbp/models.py:457
+msgid "Facebook"
+msgstr ""
+
+#: my_aegbp/models.py:458
+msgid "Twitter"
+msgstr ""
+
+#: my_aegbp/models.py:459
+msgid "Instagram"
+msgstr ""
+
+#: my_aegbp/models.py:460
+msgid "LinkedIn"
+msgstr ""
+
+#: my_aegbp/models.py:461
+msgid "YouTube"
+msgstr ""
+
+#: my_aegbp/models.py:465
+#: my_aegbp/templates/social_media/social_media_list.html:12
+msgid "Plataforma"
+msgstr ""
+
+#: my_aegbp/models.py:466
+#: my_aegbp/templates/social_media/social_media_list.html:13
+msgid "Nome do Perfil"
+msgstr ""
+
+#: my_aegbp/models.py:467
+#: my_aegbp/templates/social_media/social_media_list.html:14
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2637
+msgid "URL"
+msgstr ""
+
+#: my_aegbp/models.py:473
+msgid "Mídia Social"
+msgstr ""
+
+#: my_aegbp/models.py:474
+msgid "Mídias Sociais"
+msgstr ""
+
+#: my_aegbp/serializers.py:24
+msgid "A URL do vídeo deve começar com 'https://'."
+msgstr ""
+
+#: my_aegbp/serializers.py:34
+msgid "A data do evento não pode estar no passado."
+msgstr ""
+
+#: my_aegbp/serializers.py:44
+msgid "O tamanho do documento não pode exceder 5MB."
+msgstr ""
+
+#: my_aegbp/serializers.py:68
+msgid "O conteúdo deve ter pelo menos 50 caracteres."
+msgstr ""
+
+#: my_aegbp/serializers.py:90
+msgid "O conteúdo do comentário deve ter pelo menos 10 caracteres."
+msgstr ""
+
+#: my_aegbp/serializers.py:100
+msgid "O prazo não pode estar no passado."
+msgstr ""
+
+#: my_aegbp/serializers.py:110
+msgid "Os voluntários devem ter pelo menos 18 anos de idade."
+msgstr ""
+
+#: my_aegbp/serializers.py:120
+msgid "Digite um endereço de email válido."
+msgstr ""
+
+#: my_aegbp/serializers.py:135
+msgid "A pergunta deve ter pelo menos 5 caracteres."
+msgstr ""
+
+#: my_aegbp/serializers.py:145
+msgid "O orçamento deve ser maior que zero."
+msgstr ""
+
+#: my_aegbp/serializers.py:155 my_aegbp/views_react.py:95
+msgid "O valor da doação deve ser maior que zero."
+msgstr ""
+
+#: my_aegbp/serializers.py:185 my_aegbp/views_react.py:136
+msgid "Já existe um membro com este email."
+msgstr ""
+
+#: my_aegbp/serializers.py:200
+msgid "A URL da rede social deve começar com 'https://'."
+msgstr ""
+
+#: my_aegbp/templates/about/about_confirm_delete.html:6
+#: my_aegbp/templates/blog/blog_confirm_delete.html:3
+#: my_aegbp/templates/donations/donation_confirm_delete.html:4
+#: my_aegbp/templates/donations/donation_confirm_delete.html:8
+#: my_aegbp/templates/events/event_confirm_delete.html:4
+#: my_aegbp/templates/events/event_confirm_delete.html:8
+#: my_aegbp/templates/members/confirm_delete.html:4
+#: my_aegbp/templates/members/confirm_delete.html:8
+#: my_aegbp/templates/members/confirm_delete.html:12
+#: my_aegbp/templates/privacy_policy/privacy_policy_confirm_delete.html:4
+#: my_aegbp/templates/privacy_policy/privacy_policy_confirm_delete.html:8
+#: my_aegbp/templates/projects/project_confirm_delete.html:4
+#: my_aegbp/templates/settings/settings_confirm_delete.html:4
+#: my_aegbp/templates/settings/settings_confirm_delete.html:8
+#: my_aegbp/templates/sponsors/sponsor_confirm_delete.html:4
+#: my_aegbp/templates/sponsors/sponsor_confirm_delete.html:8
+msgid "Confirmar Exclusão"
+msgstr ""
+
+#: my_aegbp/templates/about/about_confirm_delete.html:7
+msgid "Tem certeza de que deseja excluir a seção"
+msgstr ""
+
+#: my_aegbp/templates/about/about_confirm_delete.html:10
+#: my_aegbp/templates/about/about_detail.html:14
+#: my_aegbp/templates/about/about_list.html:22
+#: my_aegbp/templates/blog/blog_confirm_delete.html:19
+#: my_aegbp/templates/blog/blog_list.html:36
+#: my_aegbp/templates/contact/contact_info_confirm_delete.html:11
+#: my_aegbp/templates/contact/contact_info_list.html:35
+#: my_aegbp/templates/documents/document_list.html:24
+#: my_aegbp/templates/donations/donation_info.html:33
+#: my_aegbp/templates/donations/donation_list.html:21
+#: my_aegbp/templates/events/calendar.html:38
+#: my_aegbp/templates/gallery/photo_gallery.html:32
+#: my_aegbp/templates/gallery/video_gallery.html:40
+#: my_aegbp/templates/members/list_members.html:36
+#: my_aegbp/templates/privacy_policy/privacy_policy_confirm_delete.html:12
+#: my_aegbp/templates/privacy_policy/privacy_policy_detail.html:16
+#: my_aegbp/templates/settings/settings_confirm_delete.html:12
+#: my_aegbp/templates/settings/settings_list.html:20
+#: my_aegbp/templates/social_media/social_media_list.html:28
+#: my_aegbp/templates/sponsors/sponsor_list.html:25
+#: my_aegbp/templates/testimonials/testimonials.html:23
+msgid "Excluir"
+msgstr ""
+
+#: my_aegbp/templates/about/about_confirm_delete.html:11
+#: my_aegbp/templates/about/about_form.html:11
+#: my_aegbp/templates/blog/blog_confirm_delete.html:20
+#: my_aegbp/templates/contact/contact_info_confirm_delete.html:12
+#: my_aegbp/templates/donations/donation_confirm_delete.html:13
+#: my_aegbp/templates/events/event_confirm_delete.html:13
+#: my_aegbp/templates/faqs/faq_confirm_delete.html:16
+#: my_aegbp/templates/members/approve_member.html:66
+#: my_aegbp/templates/members/confirm_delete.html:13
+#: my_aegbp/templates/members/reject_member.html:64
+#: my_aegbp/templates/privacy_policy/privacy_policy_confirm_delete.html:13
+#: my_aegbp/templates/projects/project_confirm_delete.html:12
+#: my_aegbp/templates/settings/settings_confirm_delete.html:13
+#: my_aegbp/templates/social_media/social_media_confirm_delete.html:11
+#: my_aegbp/templates/sponsors/sponsor_confirm_delete.html:13
+#: my_aegbp/templates/user_profile/profile_confirm_delete.html:19
+#: my_aegbp/templates/user_profile/profile_form.html:34
+#: my_aegbp/templates/volunteers/volunteer_opportunity_confirm_delete.html:13
+msgid "Cancelar"
+msgstr ""
+
+#: my_aegbp/templates/about/about_detail.html:11
+#: my_aegbp/templates/about/about_list.html:19
+#: my_aegbp/templates/blog/blog_form.html:7
+#: my_aegbp/templates/blog/blog_form.html:14
+#: my_aegbp/templates/blog/blog_list.html:33
+#: my_aegbp/templates/categories/category_list.html:29
+#: my_aegbp/templates/contact/contact_info_list.html:32
+#: my_aegbp/templates/documents/document_form.html:4
+#: my_aegbp/templates/documents/document_form.html:10
+#: my_aegbp/templates/documents/document_list.html:23
+#: my_aegbp/templates/donations/donation_info.html:30
+#: my_aegbp/templates/donations/donation_list.html:20
+#: my_aegbp/templates/events/calendar.html:37
+#: my_aegbp/templates/events/event_form.html:4
+#: my_aegbp/templates/events/event_form.html:9
+#: my_aegbp/templates/faqs/faq_list.html:33
+#: my_aegbp/templates/faqs/faqs.html:33
+#: my_aegbp/templates/gallery/photo_form.html:4
+#: my_aegbp/templates/gallery/photo_form.html:9
+#: my_aegbp/templates/gallery/photo_gallery.html:29
+#: my_aegbp/templates/gallery/video_form.html:4
+#: my_aegbp/templates/gallery/video_form.html:9
+#: my_aegbp/templates/gallery/video_gallery.html:37
+#: my_aegbp/templates/members/list_members.html:35
+#: my_aegbp/templates/members/member_detail.html:71
+#: my_aegbp/templates/privacy_policy/privacy_policy_detail.html:13
+#: my_aegbp/templates/projects/project_form.html:4
+#: my_aegbp/templates/projects/project_form.html:8
+#: my_aegbp/templates/projects/project_list.html:33
+#: my_aegbp/templates/settings/settings_list.html:19
+#: my_aegbp/templates/social_media/social_media_list.html:25
+#: my_aegbp/templates/sponsors/sponsor_form.html:4
+#: my_aegbp/templates/sponsors/sponsor_form.html:8
+#: my_aegbp/templates/sponsors/sponsor_list.html:24
+#: my_aegbp/templates/testimonials/testimonial_form.html:4
+#: my_aegbp/templates/testimonials/testimonial_form.html:9
+#: my_aegbp/templates/testimonials/testimonials.html:22
+#: my_aegbp/templates/volunteers/opportunities.html:35
+#: my_aegbp/templates/volunteers/opportunity_detail.html:13
+msgid "Editar"
+msgstr ""
+
+#: my_aegbp/templates/about/about_detail.html:16
+#: my_aegbp/templates/contact/contact_conversation.html:34
+#: my_aegbp/templates/members/member_detail.html:74
+#: my_aegbp/templates/members/member_detail_pend.html:71
+#: my_aegbp/templates/social_media/social_media_form.html:11
+msgid "Voltar"
+msgstr ""
+
+#: my_aegbp/templates/about/about_form.html:6
+msgid "Editar Seção"
+msgstr ""
+
+#: my_aegbp/templates/about/about_form.html:6
+#: my_aegbp/templates/about/about_list.html:7
+msgid "Adicionar Nova Seção"
+msgstr ""
+
+#: my_aegbp/templates/about/about_form.html:10
+#: my_aegbp/templates/blog/blog_form.html:21
+#: my_aegbp/templates/categories/category_form.html:18
+#: my_aegbp/templates/contact/contact_info_form.html:53
+#: my_aegbp/templates/documents/document_form.html:17
+#: my_aegbp/templates/donations/bank_details_form.html:12
+#: my_aegbp/templates/events/event_form.html:18
+#: my_aegbp/templates/faqs/faq_form.html:18
+#: my_aegbp/templates/gallery/photo_form.html:18
+#: my_aegbp/templates/gallery/video_form.html:18
+#: my_aegbp/templates/members/edit_member.html:108
+#: my_aegbp/templates/privacy_policy/privacy_policy_form.html:22
+#: my_aegbp/templates/projects/project_form.html:12
+#: my_aegbp/templates/settings/settings_form.html:12
+#: my_aegbp/templates/social_media/social_media_form.html:10
+#: my_aegbp/templates/sponsors/sponsor_form.html:12
+#: my_aegbp/templates/testimonials/testimonial_form.html:18
+#: my_aegbp/templates/user_profile/profile_form.html:32
+msgid "Salvar"
+msgstr ""
+
+#: my_aegbp/templates/about/about_list.html:6
+msgid "Seções Sobre"
+msgstr ""
+
+#: my_aegbp/templates/about/about_list.html:18
+#: my_aegbp/templates/members/list_members.html:41
+msgid "Ver Mais"
+msgstr ""
+
+#: my_aegbp/templates/base.html:8
+msgid "Painel AEGB-Porto"
+msgstr ""
+
+#: my_aegbp/templates/base.html:169 my_aegbp/templates/index.html:13
+msgid "Logo AEGB-Porto"
+msgstr ""
+
+#: my_aegbp/templates/base.html:170 my_aegbp/templates/base.html:240
+#: my_aegbp/templates/base.html:315
+msgid "AEGB-Porto"
+msgstr ""
+
+#: my_aegbp/templates/base.html:174
+msgid "Search..."
+msgstr ""
+
+#: my_aegbp/templates/base.html:175
+#: myenv/lib/python3.12/site-packages/haystack/forms.py:24
+msgid "Search"
+msgstr ""
+
+#: my_aegbp/templates/base.html:207
+msgid "Novo membro:"
+msgstr ""
+
+#: my_aegbp/templates/base.html:217
+#: my_aegbp/templates/user_profile/profile.html:18
+msgid "Avatar padrão"
+msgstr ""
+
+#: my_aegbp/templates/base.html:222
+msgid "Perfil"
+msgstr ""
+
+#: my_aegbp/templates/base.html:225
+msgid "Sair"
+msgstr ""
+
+#: my_aegbp/templates/base.html:231
+#: my_aegbp/templates/registration/login.html:49
+msgid "Entrar"
+msgstr ""
+
+#: my_aegbp/templates/base.html:244
+msgid "Painel"
+msgstr ""
+
+#: my_aegbp/templates/base.html:280
+#: my_aegbp/templates/contact/contact_list.html:3
+msgid "Contatos"
+msgstr ""
+
+#: my_aegbp/templates/base.html:289
+msgid "Gestão de Membros"
+msgstr ""
+
+#: my_aegbp/templates/base.html:292
+msgid "Gestão de Redes Sociais"
+msgstr ""
+
+#: my_aegbp/templates/base.html:295
+msgid "Registo de Utilizador"
+msgstr ""
+
+#: my_aegbp/templates/base.html:298
+msgid "Perfil do Usuário"
+msgstr ""
+
+#: my_aegbp/templates/base.html:317
+msgid ""
+"Promovendo a educação e o desenvolvimento cultural em Porto. Participe de "
+"nossos eventos, acompanhe nossas atividades e ajude a fazer a diferença."
+msgstr ""
+
+#: my_aegbp/templates/base.html:323
+msgid "Links Rápidos"
+msgstr ""
+
+#: my_aegbp/templates/base.html:325
+msgid "Início"
+msgstr ""
+
+#: my_aegbp/templates/base.html:326
+msgid "Sobre Nós"
+msgstr ""
+
+#: my_aegbp/templates/base.html:328
+msgid "Contate-Nos"
+msgstr ""
+
+#: my_aegbp/templates/base.html:335
+msgid "Siga-nos"
+msgstr ""
+
+#: my_aegbp/templates/base.html:368
+msgid "Todos os direitos reservados."
+msgstr ""
+
+#: my_aegbp/templates/blog/blog_confirm_delete.html:11
+msgid "Confirmar Exclusão da Postagem"
+msgstr ""
+
+#: my_aegbp/templates/blog/blog_confirm_delete.html:14
+msgid "Você tem certeza de que deseja excluir a postagem"
+msgstr ""
+
+#: my_aegbp/templates/blog/blog_confirm_delete.html:15
+msgid "Esta ação não poderá ser desfeita."
+msgstr ""
+
+#: my_aegbp/templates/blog/blog_form.html:7
+#: my_aegbp/templates/blog/blog_form.html:14
+#: my_aegbp/templates/documents/document_form.html:4
+#: my_aegbp/templates/documents/document_form.html:10
+#: my_aegbp/templates/events/event_form.html:4
+#: my_aegbp/templates/events/event_form.html:9
+#: my_aegbp/templates/gallery/photo_form.html:4
+#: my_aegbp/templates/gallery/photo_form.html:9
+#: my_aegbp/templates/gallery/video_form.html:4
+#: my_aegbp/templates/gallery/video_form.html:9
+#: my_aegbp/templates/index.html:29
+#: my_aegbp/templates/testimonials/testimonial_form.html:4
+#: my_aegbp/templates/testimonials/testimonial_form.html:9
+msgid "Adicionar"
+msgstr ""
+
+#: my_aegbp/templates/blog/blog_form.html:16
+#: my_aegbp/templates/blog/blog_post.html:14
+msgid "Voltar ao Blog"
+msgstr ""
+
+#: my_aegbp/templates/blog/blog_list.html:14
+#: my_aegbp/templates/contact/contact_info_list.html:10
+#: my_aegbp/templates/contact/contact_list.html:10
+#: my_aegbp/templates/contact/contact_success.html:11
+#: my_aegbp/templates/documents/document_list.html:11
+#: my_aegbp/templates/events/calendar.html:11
+#: my_aegbp/templates/gallery/photo_gallery.html:11
+#: my_aegbp/templates/gallery/video_gallery.html:11
+#: my_aegbp/templates/testimonials/testimonials.html:11
+msgid "Home"
+msgstr ""
+
+#: my_aegbp/templates/blog/blog_list.html:15
+msgid "Adicionar Postagem"
+msgstr ""
+
+#: my_aegbp/templates/blog/blog_list.html:19
+msgid "Postagens"
+msgstr ""
+
+#: my_aegbp/templates/blog/blog_list.html:32
+msgid "Leia mais"
+msgstr ""
+
+#: my_aegbp/templates/blog/blog_post.html:29
+msgid "Adicionar Comentário"
+msgstr ""
+
+#: my_aegbp/templates/categories/category_form.html:4
+#: my_aegbp/templates/categories/category_form.html:9
+#: my_aegbp/templates/categories/category_list.html:11
+msgid "Adicionar Categoria"
+msgstr ""
+
+#: my_aegbp/templates/categories/category_form.html:11
+msgid "Voltar para Lista de Categorias"
+msgstr ""
+
+#: my_aegbp/templates/categories/category_list.html:12
+msgid "Voltar a Perguntas Frequentes"
+msgstr ""
+
+#: my_aegbp/templates/categories/category_list.html:21
+#: my_aegbp/templates/contact/contact_list.html:24
+#: my_aegbp/templates/events/calendar.html:26
+#: my_aegbp/templates/faqs/faq_list.html:23
+#: my_aegbp/templates/faqs/faqs.html:23
+#: my_aegbp/templates/members/list_members.html:22
+#: my_aegbp/templates/projects/project_list.html:23
+#: my_aegbp/templates/social_media/social_media_list.html:15
+#: my_aegbp/templates/volunteers/opportunities.html:22
+msgid "Ações"
+msgstr ""
+
+#: my_aegbp/templates/categories/category_list.html:30
+#: my_aegbp/templates/faqs/faq_confirm_delete.html:15
+#: my_aegbp/templates/faqs/faq_list.html:36
+#: my_aegbp/templates/faqs/faqs.html:36
+#: my_aegbp/templates/projects/project_list.html:34
+#: my_aegbp/templates/volunteers/opportunity_detail.html:16
+msgid "Deletar"
+msgstr ""
+
+#: my_aegbp/templates/categories/category_list.html:37
+msgid "Nenhuma categoria encontrada."
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_conversation.html:4
+msgid "Conversa com Contato"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_conversation.html:8
+msgid "Conversa com"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_conversation.html:13
+msgid "Enviado em"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_conversation.html:28
+#: my_aegbp/templates/contact/contact_conversation.html:32
+#: my_aegbp/templates/contact/contact_respond.html:33
+msgid "Enviar Resposta"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_form.html:4
+#: my_aegbp/templates/contact/contact_form.html:8 my_aegbp/views.py:1052
+msgid "Formulário de Contato"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_form.html:12
+#: my_aegbp/templates/donations/donation_form.html:12
+#: my_aegbp/templates/volunteers/volunteer_form.html:12
+#: my_aegbp/templates/volunteers/volunteer_opportunity_form.html:12
+msgid "Enviar"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_info_confirm_delete.html:3
+#: my_aegbp/templates/contact/contact_info_confirm_delete.html:7
+msgid "Excluir Informações de Contato"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_info_confirm_delete.html:8
+msgid "Você tem certeza que deseja excluir as informações de contato?"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_info_form.html:5
+#: my_aegbp/templates/contact/contact_info_form.html:15
+msgid "Editar Informações de Contato"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_info_form.html:7
+#: my_aegbp/templates/contact/contact_info_form.html:17
+#: my_aegbp/templates/contact/contact_info_list.html:11
+msgid "Adicionar Informações de Contato"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_info_list.html:19
+#: my_aegbp/templates/members/member_detail.html:41
+#: my_aegbp/templates/members/member_detail_pend.html:41
+msgid "Endereço:"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_info_list.html:22
+#: my_aegbp/templates/members/member_detail.html:33
+#: my_aegbp/templates/members/member_detail_pend.html:33
+msgid "Telefone:"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_info_list.html:25
+#: my_aegbp/templates/members/member_detail.html:38
+#: my_aegbp/templates/members/member_detail_pend.html:38
+msgid "Email:"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_info_list.html:28
+msgid "Horário:"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_info_list.html:38
+msgid "Nenhuma informação de contato cadastrada."
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_list.html:8
+msgid "Lista de Contatos"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_list.html:11
+msgid "Criar Contato"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_list.html:36
+msgid "Ver Conversa"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_list.html:41
+msgid "Nenhum contato encontrado."
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_respond.html:4
+#: my_aegbp/templates/contact/contact_respond.html:8
+msgid "Responder Contato"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_success.html:4
+#: my_aegbp/templates/contact/contact_success.html:9
+msgid "Contato - Sucesso"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_success.html:15
+msgid "Obrigado por entrar em contato!"
+msgstr ""
+
+#: my_aegbp/templates/contact/contact_success.html:16
+msgid "Recebemos sua mensagem e entraremos em contato com você em breve."
+msgstr ""
+
+#: my_aegbp/templates/documents/document_form.html:12
+msgid "Voltar à Lista de Documentos"
+msgstr ""
+
+#: my_aegbp/templates/documents/document_list.html:12
+msgid "Adicionar Documento"
+msgstr ""
+
+#: my_aegbp/templates/documents/document_list.html:22
+msgid "Download"
+msgstr ""
+
+#: my_aegbp/templates/documents/upload_document.html:4
+#: my_aegbp/templates/documents/upload_document.html:8
+msgid "Upload Documento"
+msgstr ""
+
+#: my_aegbp/templates/documents/upload_document.html:12
+#: my_aegbp/templates/gallery/upload_photo.html:12
+#: my_aegbp/templates/gallery/upload_video.html:12
+msgid "Upload"
+msgstr ""
+
+#: my_aegbp/templates/documents/upload_document.html:14
+msgid "Voltar para a Lista de Documentos"
+msgstr ""
+
+#: my_aegbp/templates/donations/bank_details_form.html:4
+#: my_aegbp/templates/donations/bank_details_form.html:8
+msgid "Editar Detalhes Bancários"
+msgstr ""
+
+#: my_aegbp/templates/donations/bank_details_form.html:14
+msgid "Voltar para os Detalhes da Doação"
+msgstr ""
+
+#: my_aegbp/templates/donations/donation_confirm_delete.html:9
+msgid "Tem certeza de que deseja excluir"
+msgstr ""
+
+#: my_aegbp/templates/donations/donation_confirm_delete.html:12
+#: my_aegbp/templates/events/event_confirm_delete.html:12
+#: my_aegbp/templates/projects/project_confirm_delete.html:11
+#: my_aegbp/templates/sponsors/sponsor_confirm_delete.html:12
+#: my_aegbp/templates/volunteers/volunteer_opportunity_confirm_delete.html:11
+msgid "Confirmar"
+msgstr ""
+
+#: my_aegbp/templates/donations/donation_form.html:4
+#: my_aegbp/templates/donations/donation_form.html:8
+msgid "Formulário de Doação"
+msgstr ""
+
+#: my_aegbp/templates/donations/donation_form.html:14
+#: my_aegbp/templates/donations/donation_info.html:36
+msgid "Voltar para a Lista de Doações"
+msgstr ""
+
+#: my_aegbp/templates/donations/donation_info.html:4
+#: my_aegbp/templates/donations/donation_info.html:8
+msgid "Detalhes da Doação"
+msgstr ""
+
+#: my_aegbp/templates/donations/donation_info.html:20
+msgid "Baixar Comprovativo"
+msgstr ""
+
+#: my_aegbp/templates/donations/donation_info.html:23
+msgid "Nenhum comprovativo disponível."
+msgstr ""
+
+#: my_aegbp/templates/donations/donation_list.html:4
+msgid "Lista de Doações"
+msgstr ""
+
+#: my_aegbp/templates/donations/donation_list.html:10
+msgid "Adicionar Nova Doação"
+msgstr ""
+
+#: my_aegbp/templates/donations/donation_list.html:11
+msgid "Visualizar IBAN e MB Way"
+msgstr ""
+
+#: my_aegbp/templates/donations/donation_list.html:19
+msgid "Ver Detalhes"
+msgstr ""
+
+#: my_aegbp/templates/donations/donation_list.html:27
+msgid "Nenhuma doação disponível."
+msgstr ""
+
+#: my_aegbp/templates/events/calendar.html:4
+#: my_aegbp/templates/events/calendar.html:9
+#: my_aegbp/templates/gallery/photo_gallery.html:14
+#: my_aegbp/templates/gallery/video_gallery.html:14 my_aegbp/views.py:110
+msgid "Calendário de Eventos"
+msgstr ""
+
+#: my_aegbp/templates/events/calendar.html:12
+msgid "Adicionar Evento"
+msgstr ""
+
+#: my_aegbp/templates/events/calendar.html:39
+#: my_aegbp/templates/events/register_for_event.html:12
+#: my_aegbp/templates/members/register_member.html:108
+#: my_aegbp/templates/registration/register.html:116
+#: my_aegbp/templates/volunteers/opportunities.html:33
+#: my_aegbp/templates/volunteers/register_volunteer.html:12
+msgid "Registrar"
+msgstr ""
+
+#: my_aegbp/templates/events/calendar.html:40
+msgid "Listar Inscritos"
+msgstr ""
+
+#: my_aegbp/templates/events/calendar.html:40
+msgid "Inscritos"
+msgstr ""
+
+#: my_aegbp/templates/events/calendar.html:46
+msgid "Nenhum evento encontrado."
+msgstr ""
+
+#: my_aegbp/templates/events/event_confirm_delete.html:9
+msgid "Tem certeza de que deseja excluir o evento"
+msgstr ""
+
+#: my_aegbp/templates/events/event_form.html:11
+#: my_aegbp/templates/events/event_registrations.html:10
+msgid "Voltar ao Calendário"
+msgstr ""
+
+#: my_aegbp/templates/events/event_registrations.html:4
+#: my_aegbp/templates/events/event_registrations.html:9
+msgid "Registros para"
+msgstr ""
+
+#: my_aegbp/templates/events/event_registrations.html:29
+#: my_aegbp/templates/volunteers/volunteer_registrations.html:35
+msgid "Nenhum registro encontrado."
+msgstr ""
+
+#: my_aegbp/templates/events/register_for_event.html:4
+#: my_aegbp/templates/events/register_for_event.html:8
+msgid "Registrar para o Evento"
+msgstr ""
+
+#: my_aegbp/templates/events/register_for_event.html:14
+msgid "Voltar para o Calendário"
+msgstr ""
+
+#: my_aegbp/templates/faqs/faq_confirm_delete.html:4
+#: my_aegbp/templates/faqs/faq_confirm_delete.html:9
+msgid "Deletar FAQ"
+msgstr ""
+
+#: my_aegbp/templates/faqs/faq_confirm_delete.html:12
+msgid "Você tem certeza que deseja deletar a FAQ:"
+msgstr ""
+
+#: my_aegbp/templates/faqs/faq_form.html:4
+#: my_aegbp/templates/faqs/faq_form.html:9
+#: my_aegbp/templates/faqs/faq_list.html:11
+#: my_aegbp/templates/faqs/faqs.html:11
+msgid "Adicionar FAQ"
+msgstr ""
+
+#: my_aegbp/templates/faqs/faq_form.html:11
+msgid "Voltar para Lista de FAQs"
+msgstr ""
+
+#: my_aegbp/templates/faqs/faq_list.html:12
+#: my_aegbp/templates/faqs/faqs.html:12
+msgid "Listar Categorias"
+msgstr ""
+
+#: my_aegbp/templates/faqs/faq_list.html:44
+#: my_aegbp/templates/faqs/faqs.html:44
+msgid "Nenhuma FAQ encontrada."
+msgstr ""
+
+#: my_aegbp/templates/gallery/photo_form.html:11
+#: my_aegbp/templates/gallery/video_form.html:11
+msgid "Voltar à Galeria"
+msgstr ""
+
+#: my_aegbp/templates/gallery/photo_gallery.html:12
+msgid "Adicionar Foto"
+msgstr ""
+
+#: my_aegbp/templates/gallery/photo_gallery.html:39
+msgid "Nenhuma foto disponível no momento."
+msgstr ""
+
+#: my_aegbp/templates/gallery/photo_gallery.html:40
+msgid "Adicionar a primeira foto"
+msgstr ""
+
+#: my_aegbp/templates/gallery/upload_photo.html:4
+#: my_aegbp/templates/gallery/upload_photo.html:8
+msgid "Upload Foto"
+msgstr ""
+
+#: my_aegbp/templates/gallery/upload_photo.html:14
+msgid "Voltar para a Galeria"
+msgstr ""
+
+#: my_aegbp/templates/gallery/upload_video.html:4
+#: my_aegbp/templates/gallery/upload_video.html:8
+msgid "Upload Vídeo"
+msgstr ""
+
+#: my_aegbp/templates/gallery/upload_video.html:14
+msgid "Voltar para a Galeria de Vídeos"
+msgstr ""
+
+#: my_aegbp/templates/gallery/video_gallery.html:12
+msgid "Adicionar Vídeo"
+msgstr ""
+
+#: my_aegbp/templates/gallery/video_gallery.html:26
+msgid ""
+"Seu navegador não suporta o elemento de vídeo. Por favor, baixe o vídeo para "
+"assistir."
+msgstr ""
+
+#: my_aegbp/templates/gallery/video_gallery.html:47
+msgid "Nenhum vídeo disponível no momento."
+msgstr ""
+
+#: my_aegbp/templates/gallery/video_gallery.html:48
+msgid "Adicionar o primeiro vídeo"
+msgstr ""
+
+#: my_aegbp/templates/index.html:6
+msgid "Dashboard - AEGB-Porto"
+msgstr ""
+
+#: my_aegbp/templates/index.html:14
+msgid "Bem-vindo de volta"
+msgstr ""
+
+#: my_aegbp/templates/index.html:15
+msgid "Associação de Estudante da Guiné-Bissau no Porto."
+msgstr ""
+
+#: my_aegbp/templates/index.html:28
+msgid "Explorar"
+msgstr ""
+
+#: my_aegbp/templates/members/approve_member.html:4
+#: my_aegbp/templates/members/approve_member.html:8
+msgid "Aprovar Membro"
+msgstr ""
+
+#: my_aegbp/templates/members/approve_member.html:9
+msgid "Tem certeza de que deseja aprovar o membro?"
+msgstr ""
+
+#: my_aegbp/templates/members/approve_member.html:47
+#: my_aegbp/templates/members/member_detail.html:54
+#: my_aegbp/templates/members/member_detail.html:60
+#: my_aegbp/templates/members/member_detail.html:61
+#: my_aegbp/templates/members/member_detail_pend.html:54
+#: my_aegbp/templates/members/member_detail_pend.html:60
+#: my_aegbp/templates/members/member_detail_pend.html:61
+#: my_aegbp/templates/members/reject_member.html:46
+msgid "Sim,Não"
+msgstr ""
+
+#: my_aegbp/templates/members/approve_member.html:65
+#: my_aegbp/templates/members/list_members.html:38
+#: my_aegbp/templates/members/list_pending_members.html:17
+msgid "Aprovar"
+msgstr ""
+
+#: my_aegbp/templates/members/confirm_delete.html:9
+msgid "Tem certeza de que deseja excluir o membro"
+msgstr ""
+
+#: my_aegbp/templates/members/edit_member.html:4
+#: my_aegbp/templates/members/edit_member.html:8
+msgid "Editar Membro"
+msgstr ""
+
+#: my_aegbp/templates/members/list_members.html:6
+msgid "Lista de Membros"
+msgstr ""
+
+#: my_aegbp/templates/members/list_members.html:9
+msgid "Download Excel"
+msgstr ""
+
+#: my_aegbp/templates/members/list_members.html:10
+msgid "Adicionar Novo Membro"
+msgstr ""
+
+#: my_aegbp/templates/members/list_members.html:12
+msgid "Pendentes"
+msgstr ""
+
+#: my_aegbp/templates/members/list_members.html:39
+#: my_aegbp/templates/members/list_pending_members.html:18
+#: my_aegbp/templates/members/reject_member.html:63
+msgid "Rejeitar"
+msgstr ""
+
+#: my_aegbp/templates/members/list_pending_members.html:4
+#: my_aegbp/templates/members/list_pending_members.html:8
+msgid "Membros Pendentes"
+msgstr ""
+
+#: my_aegbp/templates/members/list_pending_members.html:19
+msgid "Ver mais"
+msgstr ""
+
+#: my_aegbp/templates/members/list_pending_members.html:26
+msgid "Não existem membros pendentes para aprovar ou rejeitar."
+msgstr ""
+
+#: my_aegbp/templates/members/member_detail.html:6
+#: my_aegbp/templates/members/member_detail_pend.html:6
+msgid "Detalhes do Membro"
+msgstr ""
+
+#: my_aegbp/templates/members/member_detail.html:14
+#: my_aegbp/templates/members/member_detail_pend.html:14
+msgid "Data de Nascimento:"
+msgstr ""
+
+#: my_aegbp/templates/members/member_detail.html:17
+#: my_aegbp/templates/members/member_detail_pend.html:17
+msgid "Número do Documento:"
+msgstr ""
+
+#: my_aegbp/templates/members/member_detail.html:22
+#: my_aegbp/templates/members/member_detail_pend.html:22
+msgid "Validade do Documento:"
+msgstr ""
+
+#: my_aegbp/templates/members/member_detail.html:25
+#: my_aegbp/templates/members/member_detail_pend.html:25
+msgid "Nacionalidade:"
+msgstr ""
+
+#: my_aegbp/templates/members/member_detail.html:30
+#: my_aegbp/templates/members/member_detail_pend.html:30
+msgid "Gênero:"
+msgstr ""
+
+#: my_aegbp/templates/members/member_detail.html:46
+#: my_aegbp/templates/members/member_detail_pend.html:46
+msgid "Código Postal:"
+msgstr ""
+
+#: my_aegbp/templates/members/member_detail.html:49
+#: my_aegbp/templates/members/member_detail_pend.html:49
+msgid "Cidade:"
+msgstr ""
+
+#: my_aegbp/templates/members/member_detail.html:54
+#: my_aegbp/templates/members/member_detail_pend.html:54
+msgid "Estudante:"
+msgstr ""
+
+#: my_aegbp/templates/members/member_detail.html:56
+#: my_aegbp/templates/members/member_detail_pend.html:56
+msgid "Escola/Faculdade:"
+msgstr ""
+
+#: my_aegbp/templates/members/member_detail.html:57
+#: my_aegbp/templates/members/member_detail_pend.html:57
+msgid "Tipo de Educação:"
+msgstr ""
+
+#: my_aegbp/templates/members/member_detail.html:58
+#: my_aegbp/templates/members/member_detail_pend.html:58
+msgid "Curso:"
+msgstr ""
+
+#: my_aegbp/templates/members/member_detail.html:59
+#: my_aegbp/templates/members/member_detail_pend.html:59
+msgid "Ano Curricular:"
+msgstr ""
+
+#: my_aegbp/templates/members/member_detail.html:60
+#: my_aegbp/templates/members/member_detail_pend.html:60
+msgid "Bolseiro:"
+msgstr ""
+
+#: my_aegbp/templates/members/member_detail.html:61
+#: my_aegbp/templates/members/member_detail_pend.html:61
+msgid "Estudante Trabalhador:"
+msgstr ""
+
+#: my_aegbp/templates/members/member_detail.html:65
+#: my_aegbp/templates/members/member_detail_pend.html:65
+msgid "Ocupação:"
+msgstr ""
+
+#: my_aegbp/templates/members/member_detail.html:66
+#: my_aegbp/templates/members/member_detail_pend.html:66
+msgid "Status:"
+msgstr ""
+
+#: my_aegbp/templates/members/register_member.html:4
+#: my_aegbp/templates/members/register_member.html:8
+msgid "Registrar Novo Membro"
+msgstr ""
+
+#: my_aegbp/templates/members/reject_member.html:4
+#: my_aegbp/templates/members/reject_member.html:8
+msgid "Rejeitar Membro"
+msgstr ""
+
+#: my_aegbp/templates/members/reject_member.html:9
+msgid "Tem certeza de que deseja rejeitar o membro?"
+msgstr ""
+
+#: my_aegbp/templates/privacy_policy/privacy_policy_confirm_delete.html:9
+msgid "Tem certeza de que deseja excluir esta política de privacidade?"
+msgstr ""
+
+#: my_aegbp/templates/privacy_policy/privacy_policy_detail.html:4
+msgid "Detalhes da Política de Privacidade"
+msgstr ""
+
+#: my_aegbp/templates/privacy_policy/privacy_policy_detail.html:9
+msgid "Última atualização:"
+msgstr ""
+
+#: my_aegbp/templates/privacy_policy/privacy_policy_form.html:5
+#: my_aegbp/templates/privacy_policy/privacy_policy_form.html:13
+msgid "Nova Política de Privacidade"
+msgstr ""
+
+#: my_aegbp/templates/privacy_policy/privacy_policy_form.html:13
+msgid "Editar Política de Privacidade"
+msgstr ""
+
+#: my_aegbp/templates/privacy_policy/privacy_policy_form.html:22
+#: my_aegbp/templates/volunteers/volunteer_opportunity_form.html:4
+#: my_aegbp/templates/volunteers/volunteer_opportunity_form.html:8
+msgid "Atualizar"
+msgstr ""
+
+#: my_aegbp/templates/privacy_policy/privacy_policy_list.html:9
+msgid "Adicionar Nova Política de Privacidade"
+msgstr ""
+
+#: my_aegbp/templates/privacy_policy/privacy_policy_list.html:14
+msgid "Atualizado em:"
+msgstr ""
+
+#: my_aegbp/templates/privacy_policy/privacy_policy_list.html:18
+msgid "Nenhuma política de privacidade encontrada."
+msgstr ""
+
+#: my_aegbp/templates/projects/project_confirm_delete.html:8
+msgid "Tem certeza que deseja excluir o projeto"
+msgstr ""
+
+#: my_aegbp/templates/projects/project_detail.html:10
+msgid "Impactos"
+msgstr ""
+
+#: my_aegbp/templates/projects/project_detail.html:18
+msgid "Nenhum relatório de impacto disponível."
+msgstr ""
+
+#: my_aegbp/templates/projects/project_detail.html:21
+msgid "Voltar para Projetos"
+msgstr ""
+
+#: my_aegbp/templates/projects/project_form.html:4
+#: my_aegbp/templates/projects/project_form.html:8
+#: my_aegbp/templates/sponsors/sponsor_form.html:4
+#: my_aegbp/templates/sponsors/sponsor_form.html:8
+#: my_aegbp/templates/volunteers/volunteer_opportunity_form.html:4
+#: my_aegbp/templates/volunteers/volunteer_opportunity_form.html:8
+msgid "Criar"
+msgstr ""
+
+#: my_aegbp/templates/projects/project_form.html:14
+msgid "Voltar para a Lista de Projetos"
+msgstr ""
+
+#: my_aegbp/templates/projects/project_list.html:11
+msgid "Criar Projeto"
+msgstr ""
+
+#: my_aegbp/templates/projects/project_list.html:42
+msgid "Nenhum projeto disponível."
+msgstr ""
+
+#: my_aegbp/templates/registration/custom_password_reset.html:6
+#: my_aegbp/templates/registration/custom_password_reset.html:15
+#: my_aegbp/templates/registration/password_reset_form.html:6
+#: my_aegbp/templates/registration/password_reset_form.html:17
+msgid "Recuperar Senha"
+msgstr ""
+
+#: my_aegbp/templates/registration/custom_password_reset.html:18
+msgid "Digite seu e-mail para receber um link de recuperação de senha."
+msgstr ""
+
+#: my_aegbp/templates/registration/custom_password_reset.html:20
+msgid "Enviar Link"
+msgstr ""
+
+#: my_aegbp/templates/registration/custom_password_reset_complete.html:6
+#: my_aegbp/templates/registration/custom_password_reset_complete.html:62
+msgid "Senha Redefinida com Sucesso"
+msgstr ""
+
+#: my_aegbp/templates/registration/custom_password_reset_complete.html:65
+msgid ""
+"Sua senha foi redefinida com sucesso. Você já pode fazer login com sua nova "
+"senha."
+msgstr ""
+
+#: my_aegbp/templates/registration/custom_password_reset_complete.html:66
+#: my_aegbp/templates/registration/custom_password_reset_done.html:67
+#: my_aegbp/templates/registration/password_reset_form.html:41
+msgid "Voltar ao Login"
+msgstr ""
+
+#: my_aegbp/templates/registration/custom_password_reset_confirm.html:6
+#: my_aegbp/templates/registration/custom_password_reset_confirm.html:71
+#: my_aegbp/templates/registration/custom_password_reset_confirm.html:98
+msgid "Redefinir Senha"
+msgstr ""
+
+#: my_aegbp/templates/registration/custom_password_reset_confirm.html:88
+msgid "Confirmar nova senha"
+msgstr ""
+
+#: my_aegbp/templates/registration/custom_password_reset_done.html:6
+#: my_aegbp/templates/registration/custom_password_reset_done.html:62
+msgid "Redefinição de Senha Enviada"
+msgstr ""
+
+#: my_aegbp/templates/registration/custom_password_reset_done.html:65
+msgid ""
+"Enviamos um email com instruções para configurar sua senha, se uma conta "
+"existir com o email fornecido. Você receberá a mensagem em breve."
+msgstr ""
+
+#: my_aegbp/templates/registration/custom_password_reset_done.html:66
+msgid ""
+"Se você não recebeu um email, verifique sua pasta de spam ou se você "
+"forneceu o endereço correto."
+msgstr ""
+
+#: my_aegbp/templates/registration/custom_password_reset_email.html:2
+msgid "Clique no link abaixo para redefinir sua senha:"
+msgstr ""
+
+#: my_aegbp/templates/registration/custom_password_reset_error.html:6
+#: my_aegbp/templates/registration/custom_password_reset_error.html:62
+msgid "Erro na Redefinição de Senha"
+msgstr ""
+
+#: my_aegbp/templates/registration/custom_password_reset_error.html:65
+msgid ""
+"Ocorreu um erro ao tentar redefinir sua senha. Por favor, tente novamente "
+"mais tarde ou entre em contato com o suporte."
+msgstr ""
+
+#: my_aegbp/templates/registration/custom_password_reset_error.html:66
+msgid "Tentar Novamente"
+msgstr ""
+
+#: my_aegbp/templates/registration/login.html:6
+#: my_aegbp/templates/registration/login.html:17
+msgid "Login"
+msgstr ""
+
+#: my_aegbp/templates/registration/login.html:52
+msgid "Esqueceu sua senha?"
+msgstr ""
+
+#: my_aegbp/templates/registration/login.html:53
+#: my_aegbp/templates/registration/password_reset_form.html:42
+msgid "Não tem uma conta?"
+msgstr ""
+
+#: my_aegbp/templates/registration/login.html:53
+#: my_aegbp/templates/registration/password_reset_form.html:42
+msgid "Registre-se"
+msgstr ""
+
+#: my_aegbp/templates/registration/password_reset_form.html:38
+msgid "Enviar Link de Recuperação"
+msgstr ""
+
+#: my_aegbp/templates/registration/register.html:6
+#: my_aegbp/templates/registration/register.html:40
+msgid "Registrar-se"
+msgstr ""
+
+#: my_aegbp/templates/registration/registration_success.html:6
+msgid "Registro Bem-Sucedido"
+msgstr ""
+
+#: my_aegbp/templates/registration/registration_success.html:17
+msgid "Registro Bem-Sucedido!"
+msgstr ""
+
+#: my_aegbp/templates/registration/registration_success.html:18
+msgid ""
+"Sua conta foi criada com sucesso. Agora você pode fazer login e começar a "
+"usar o sistema."
+msgstr ""
+
+#: my_aegbp/templates/registration/registration_success.html:19
+msgid "Faça Login"
+msgstr ""
+
+#: my_aegbp/templates/registration/registration_success.html:20
+msgid "Se você não recebeu um e-mail de verificação,"
+msgstr ""
+
+#: my_aegbp/templates/registration/registration_success.html:20
+msgid "clique aqui"
+msgstr ""
+
+#: my_aegbp/templates/registration/registration_success.html:20
+msgid "para reenviar."
+msgstr ""
+
+#: my_aegbp/templates/search/results.html:4
+msgid "Resultados da busca"
+msgstr ""
+
+#: my_aegbp/templates/search/results.html:8
+msgid "Resultados da busca para"
+msgstr ""
+
+#: my_aegbp/templates/search/results.html:48
+msgid "Post do Blog"
+msgstr ""
+
+#: my_aegbp/templates/search/results.html:75
+msgid "Nenhum resultado encontrado."
+msgstr ""
+
+#: my_aegbp/templates/settings/settings_confirm_delete.html:9
+msgid "Tem certeza de que deseja excluir esta configuração?"
+msgstr ""
+
+#: my_aegbp/templates/settings/settings_form.html:4
+#: my_aegbp/templates/settings/settings_form.html:8
+msgid "Formulário de Configuração"
+msgstr ""
+
+#: my_aegbp/templates/settings/settings_form.html:14
+msgid "Voltar para a Lista"
+msgstr ""
+
+#: my_aegbp/templates/settings/settings_list.html:4
+msgid "Lista de Configurações Gerais"
+msgstr ""
+
+#: my_aegbp/templates/settings/settings_list.html:10
+msgid "Adicionar Nova Configuração"
+msgstr ""
+
+#: my_aegbp/templates/settings/settings_list.html:11
+msgid "Voltar para Doações"
+msgstr ""
+
+#: my_aegbp/templates/settings/settings_list.html:17
+msgid "MB Way"
+msgstr ""
+
+#: my_aegbp/templates/settings/settings_list.html:26
+msgid "Nenhuma configuração disponível."
+msgstr ""
+
+#: my_aegbp/templates/social_media/social_feed.html:7
+msgid "Follow"
+msgstr ""
+
+#: my_aegbp/templates/social_media/social_media_confirm_delete.html:6
+msgid "Excluir Rede Social"
+msgstr ""
+
+#: my_aegbp/templates/social_media/social_media_confirm_delete.html:7
+msgid "Tem certeza de que deseja excluir esta rede social?"
+msgstr ""
+
+#: my_aegbp/templates/social_media/social_media_confirm_delete.html:10
+msgid "Sim, Excluir"
+msgstr ""
+
+#: my_aegbp/templates/social_media/social_media_form.html:6
+msgid "Adicionar/Editar Rede Social"
+msgstr ""
+
+#: my_aegbp/templates/social_media/social_media_list.html:6
+msgid "Redes Sociais"
+msgstr ""
+
+#: my_aegbp/templates/social_media/social_media_list.html:7
+msgid "Adicionar Nova Rede Social"
+msgstr ""
+
+#: my_aegbp/templates/social_media/social_media_list.html:36
+msgid "Nenhuma rede social cadastrada."
+msgstr ""
+
+#: my_aegbp/templates/sponsors/sponsor_confirm_delete.html:9
+msgid "Tem certeza que deseja excluir o patrocinador"
+msgstr ""
+
+#: my_aegbp/templates/sponsors/sponsor_form.html:14
+msgid "Voltar para a lista de patrocinadores"
+msgstr ""
+
+#: my_aegbp/templates/sponsors/sponsor_list.html:4
+#: my_aegbp/templates/sponsors/sponsor_list.html:9
+msgid "Lista de Patrocinadores"
+msgstr ""
+
+#: my_aegbp/templates/sponsors/sponsor_list.html:11
+msgid "Criar Patrocinador"
+msgstr ""
+
+#: my_aegbp/templates/sponsors/sponsor_list.html:30
+msgid "Nenhum patrocinador disponível."
+msgstr ""
+
+#: my_aegbp/templates/testimonials/testimonial_form.html:4
+#: my_aegbp/templates/testimonials/testimonial_form.html:9
+msgid "Testemunho"
+msgstr ""
+
+#: my_aegbp/templates/testimonials/testimonial_form.html:11
+msgid "Voltar aos Testemunhos"
+msgstr ""
+
+#: my_aegbp/templates/testimonials/testimonials.html:12
+msgid "Adicionar Testemunho"
+msgstr ""
+
+#: my_aegbp/templates/testimonials/testimonials.html:21
+msgid "Data:"
+msgstr ""
+
+#: my_aegbp/templates/user_profile/profile.html:6
+#: my_aegbp/templates/user_profile/profile.html:36
+msgid "Detalhes da Conta"
+msgstr ""
+
+#: my_aegbp/templates/user_profile/profile.html:24
+msgid "Seguir"
+msgstr ""
+
+#: my_aegbp/templates/user_profile/profile.html:42
+msgid "Primeiro Nome"
+msgstr ""
+
+#: my_aegbp/templates/user_profile/profile.html:48
+msgid "Último Nome"
+msgstr ""
+
+#: my_aegbp/templates/user_profile/profile.html:85
+#: my_aegbp/templates/user_profile/profile_form.html:6
+#: my_aegbp/templates/user_profile/profile_form.html:14
+msgid "Editar Perfil"
+msgstr ""
+
+#: my_aegbp/templates/user_profile/profile.html:86
+#: my_aegbp/templates/user_profile/profile_confirm_delete.html:18
+msgid "Excluir Perfil"
+msgstr ""
+
+#: my_aegbp/templates/user_profile/profile_confirm_delete.html:6
+#: my_aegbp/templates/user_profile/profile_confirm_delete.html:14
+msgid "Confirmar Exclusão de Perfil"
+msgstr ""
+
+#: my_aegbp/templates/user_profile/profile_confirm_delete.html:15
+msgid ""
+"Tem certeza de que deseja excluir seu perfil? Esta ação não pode ser "
+"desfeita."
+msgstr ""
+
+#: my_aegbp/templates/volunteers/opportunities.html:10
+msgid "Criar Oportunidade"
+msgstr ""
+
+#: my_aegbp/templates/volunteers/opportunities.html:34
+msgid "Listar Registos"
+msgstr ""
+
+#: my_aegbp/templates/volunteers/opportunities.html:38
+msgid "Eliminar"
+msgstr ""
+
+#: my_aegbp/templates/volunteers/opportunities.html:49
+msgid "Nenhuma oportunidade de voluntariado disponível."
+msgstr ""
+
+#: my_aegbp/templates/volunteers/opportunity_detail.html:10
+msgid "Local"
+msgstr ""
+
+#: my_aegbp/templates/volunteers/opportunity_detail.html:12
+#: my_aegbp/templates/volunteers/register_volunteer.html:4
+#: my_aegbp/templates/volunteers/register_volunteer.html:8
+msgid "Registrar como Voluntário"
+msgstr ""
+
+#: my_aegbp/templates/volunteers/opportunity_detail.html:18
+#: my_aegbp/templates/volunteers/register_volunteer.html:14
+#: my_aegbp/templates/volunteers/volunteer_form.html:14
+#: my_aegbp/templates/volunteers/volunteer_opportunity_form.html:14
+msgid "Voltar às Oportunidades"
+msgstr ""
+
+#: my_aegbp/templates/volunteers/volunteer_form.html:4
+#: my_aegbp/templates/volunteers/volunteer_form.html:8
+msgid "Registrar-se para"
+msgstr ""
+
+#: my_aegbp/templates/volunteers/volunteer_opportunity_confirm_delete.html:4
+msgid "Confirmar Deleção"
+msgstr ""
+
+#: my_aegbp/templates/volunteers/volunteer_opportunity_confirm_delete.html:8
+msgid "Tem certeza de que deseja deletar"
+msgstr ""
+
+#: my_aegbp/templates/volunteers/volunteer_registrations.html:4
+msgid "Registros de Voluntariado"
+msgstr ""
+
+#: my_aegbp/templates/volunteers/volunteer_registrations.html:4
+msgid "para"
+msgstr ""
+
+#: my_aegbp/templates/volunteers/volunteer_registrations.html:9
+msgid "Registros de Voluntariado para"
+msgstr ""
+
+#: my_aegbp/templates/volunteers/volunteer_registrations.html:11
+msgid "Voltar para Oportunidades"
+msgstr ""
+
+#: my_aegbp/views.py:54
+#, python-brace-format
+msgid "Erro na view de busca: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:55
+msgid "Erro na view de busca"
+msgstr ""
+
+#: my_aegbp/views.py:56
+msgid "Ocorreu um erro durante a busca."
+msgstr ""
+
+#: my_aegbp/views.py:68
+#, python-brace-format
+msgid "Erro ao obter notificações totais: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:69
+msgid "Erro ao obter notificações totais"
+msgstr ""
+
+#: my_aegbp/views.py:82
+#, python-brace-format
+msgid "Erro ao atualizar notificações totais: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:83
+msgid "Erro ao atualizar notificações totais"
+msgstr ""
+
+#: my_aegbp/views.py:93
+msgid "Veja as fotos mais recentes da nossa atividade"
+msgstr ""
+
+#: my_aegbp/views.py:102
+msgid "Assista aos vídeos mais recentes da nossa atividade"
+msgstr ""
+
+#: my_aegbp/views.py:129
+msgid "Leia os artigos e posts do nosso blog."
+msgstr ""
+
+#: my_aegbp/views.py:138
+msgid "Veja os testemunhos de nossos participantes."
+msgstr ""
+
+#: my_aegbp/views.py:147
+msgid "Respostas para perguntas frequentes."
+msgstr ""
+
+#: my_aegbp/views.py:156
+msgid "Participe como voluntário em nossas atividades."
+msgstr ""
+
+#: my_aegbp/views.py:165
+msgid "Entre em contato conosco para mais informações."
+msgstr ""
+
+#: my_aegbp/views.py:174
+msgid "Descubra mais sobre nossas atividades."
+msgstr ""
+
+#: my_aegbp/views.py:183
+msgid "Apoie nossas atividades através de doações."
+msgstr ""
+
+#: my_aegbp/views.py:205
+#, python-brace-format
+msgid "Erro na view inicial: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:206
+msgid "Erro na view inicial"
+msgstr ""
+
+#: my_aegbp/views.py:207
+msgid "Ocorreu um erro ao carregar a página inicial."
+msgstr ""
+
+#: my_aegbp/views.py:235
+#, python-brace-format
+msgid "Erro na view de notificação: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:236
+msgid "Erro na view de notificação"
+msgstr ""
+
+#: my_aegbp/views.py:239
+msgid "Ocorreu um erro ao visualizar a notificação."
+msgstr ""
+
+#: my_aegbp/views.py:247
+#, python-brace-format
+msgid "Erro na galeria de fotos: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:248
+msgid "Erro na galeria de fotos"
+msgstr ""
+
+#: my_aegbp/views.py:249
+msgid "Ocorreu um erro ao carregar a galeria de fotos."
+msgstr ""
+
+#: my_aegbp/views.py:262
+#, python-brace-format
+msgid "Erro ao criar foto: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:263
+msgid "Erro ao criar foto"
+msgstr ""
+
+#: my_aegbp/views.py:264
+msgid "Ocorreu um erro ao criar a foto."
+msgstr ""
+
+#: my_aegbp/views.py:278
+#, python-brace-format
+msgid "Erro ao atualizar foto: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:279
+msgid "Erro ao atualizar foto"
+msgstr ""
+
+#: my_aegbp/views.py:280
+msgid "Ocorreu um erro ao atualizar a foto."
+msgstr ""
+
+#: my_aegbp/views.py:290
+#, python-brace-format
+msgid "Erro ao deletar foto: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:291
+msgid "Erro ao deletar foto"
+msgstr ""
+
+#: my_aegbp/views.py:292
+msgid "Ocorreu um erro ao deletar a foto."
+msgstr ""
+
+#: my_aegbp/views.py:300
+#, python-brace-format
+msgid "Erro na galeria de vídeos: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:301
+msgid "Erro na galeria de vídeos"
+msgstr ""
+
+#: my_aegbp/views.py:302
+msgid "Ocorreu um erro ao carregar a galeria de vídeos."
+msgstr ""
+
+#: my_aegbp/views.py:315
+#, python-brace-format
+msgid "Erro ao criar vídeo: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:316
+msgid "Erro ao criar vídeo"
+msgstr ""
+
+#: my_aegbp/views.py:317
+msgid "Ocorreu um erro ao criar o vídeo."
+msgstr ""
+
+#: my_aegbp/views.py:331
+#, python-brace-format
+msgid "Erro ao atualizar vídeo: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:332
+msgid "Erro ao atualizar vídeo"
+msgstr ""
+
+#: my_aegbp/views.py:333
+msgid "Ocorreu um erro ao atualizar o vídeo."
+msgstr ""
+
+#: my_aegbp/views.py:343
+#, python-brace-format
+msgid "Erro ao deletar vídeo: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:344
+msgid "Erro ao deletar vídeo"
+msgstr ""
+
+#: my_aegbp/views.py:345
+msgid "Ocorreu um erro ao deletar o vídeo."
+msgstr ""
+
+#: my_aegbp/views.py:353
+#, python-brace-format
+msgid "Erro ao carregar o calendário de eventos: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:354
+msgid "Erro ao carregar o calendário de eventos"
+msgstr ""
+
+#: my_aegbp/views.py:355
+msgid "Ocorreu um erro ao carregar o calendário de eventos."
+msgstr ""
+
+#: my_aegbp/views.py:368
+#, python-brace-format
+msgid "Erro ao criar evento: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:369
+msgid "Erro ao criar evento"
+msgstr ""
+
+#: my_aegbp/views.py:370
+msgid "Ocorreu um erro ao criar o evento."
+msgstr ""
+
+#: my_aegbp/views.py:384
+#, python-brace-format
+msgid "Erro ao atualizar evento: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:385
+msgid "Erro ao atualizar evento"
+msgstr ""
+
+#: my_aegbp/views.py:386
+msgid "Ocorreu um erro ao atualizar o evento."
+msgstr ""
+
+#: my_aegbp/views.py:396
+#, python-brace-format
+msgid "Erro ao deletar evento: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:397
+msgid "Erro ao deletar evento"
+msgstr ""
+
+#: my_aegbp/views.py:398
+msgid "Ocorreu um erro ao deletar o evento."
+msgstr ""
+
+#: my_aegbp/views.py:414
+#, python-brace-format
+msgid "Erro ao registrar-se no evento: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:415
+msgid "Erro ao registrar-se no evento"
+msgstr ""
+
+#: my_aegbp/views.py:416
+msgid "Ocorreu um erro ao registrar-se no evento."
+msgstr ""
+
+#: my_aegbp/views.py:424
+#, python-brace-format
+msgid "Erro ao carregar inscrições do evento: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:425
+msgid "Erro ao carregar inscrições do evento"
+msgstr ""
+
+#: my_aegbp/views.py:426
+msgid "Ocorreu um erro ao carregar as inscrições do evento."
+msgstr ""
+
+#: my_aegbp/views.py:435
+#, python-brace-format
+msgid "Erro ao carregar lista de documentos: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:436
+msgid "Erro ao carregar lista de documentos"
+msgstr ""
+
+#: my_aegbp/views.py:437
+msgid "Ocorreu um erro ao carregar a lista de documentos."
+msgstr ""
+
+#: my_aegbp/views.py:451
+#, python-brace-format
+msgid "Erro ao criar documento: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:452
+msgid "Erro ao criar documento"
+msgstr ""
+
+#: my_aegbp/views.py:453
+msgid "Ocorreu um erro ao criar o documento."
+msgstr ""
+
+#: my_aegbp/views.py:468
+#, python-brace-format
+msgid "Erro ao atualizar documento: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:469
+msgid "Erro ao atualizar documento"
+msgstr ""
+
+#: my_aegbp/views.py:470
+msgid "Ocorreu um erro ao atualizar o documento."
+msgstr ""
+
+#: my_aegbp/views.py:481
+#, python-brace-format
+msgid "Erro ao deletar documento: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:482
+msgid "Erro ao deletar documento"
+msgstr ""
+
+#: my_aegbp/views.py:483
+msgid "Ocorreu um erro ao deletar o documento."
+msgstr ""
+
+#: my_aegbp/views.py:492
+#, python-brace-format
+msgid "Erro ao carregar lista de postagens do blog: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:493
+msgid "Erro ao carregar lista de postagens do blog"
+msgstr ""
+
+#: my_aegbp/views.py:494
+msgid "Ocorreu um erro ao carregar a lista de postagens do blog."
+msgstr ""
+
+#: my_aegbp/views.py:511
+#, python-brace-format
+msgid "Erro ao carregar postagem do blog: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:512
+msgid "Erro ao carregar postagem do blog"
+msgstr ""
+
+#: my_aegbp/views.py:513
+msgid "Ocorreu um erro ao carregar a postagem do blog."
+msgstr ""
+
+#: my_aegbp/views.py:529
+#, python-brace-format
+msgid "Erro ao criar postagem no blog: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:530
+msgid "Erro ao criar postagem no blog"
+msgstr ""
+
+#: my_aegbp/views.py:531
+msgid "Ocorreu um erro ao criar a postagem no blog."
+msgstr ""
+
+#: my_aegbp/views.py:546
+#, python-brace-format
+msgid "Erro ao atualizar postagem no blog: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:547
+msgid "Erro ao atualizar postagem no blog"
+msgstr ""
+
+#: my_aegbp/views.py:548
+msgid "Ocorreu um erro ao atualizar a postagem no blog."
+msgstr ""
+
+#: my_aegbp/views.py:559
+#, python-brace-format
+msgid "Erro ao deletar postagem no blog: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:560
+msgid "Erro ao deletar postagem no blog"
+msgstr ""
+
+#: my_aegbp/views.py:561
+msgid "Ocorreu um erro ao deletar a postagem no blog."
+msgstr ""
+
+#: my_aegbp/views.py:570
+#, python-brace-format
+msgid "Erro ao carregar lista de testemunhos: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:571
+msgid "Erro ao carregar lista de testemunhos"
+msgstr ""
+
+#: my_aegbp/views.py:572
+msgid "Ocorreu um erro ao carregar a lista de testemunhos."
+msgstr ""
+
+#: my_aegbp/views.py:586
+#, python-brace-format
+msgid "Erro ao criar testemunho: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:587
+msgid "Erro ao criar testemunho"
+msgstr ""
+
+#: my_aegbp/views.py:588
+msgid "Ocorreu um erro ao criar o testemunho."
+msgstr ""
+
+#: my_aegbp/views.py:603
+#, python-brace-format
+msgid "Erro ao atualizar testemunho: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:604
+msgid "Erro ao atualizar testemunho"
+msgstr ""
+
+#: my_aegbp/views.py:605
+msgid "Ocorreu um erro ao atualizar o testemunho."
+msgstr ""
+
+#: my_aegbp/views.py:616
+#, python-brace-format
+msgid "Erro ao deletar testemunho: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:617
+msgid "Erro ao deletar testemunho"
+msgstr ""
+
+#: my_aegbp/views.py:618
+msgid "Ocorreu um erro ao deletar o testemunho."
+msgstr ""
+
+#: my_aegbp/views.py:627
+#, python-brace-format
+msgid "Erro ao carregar lista de FAQs: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:628
+msgid "Erro ao carregar lista de FAQs"
+msgstr ""
+
+#: my_aegbp/views.py:629
+msgid "Ocorreu um erro ao carregar a lista de FAQs."
+msgstr ""
+
+#: my_aegbp/views.py:643
+#, python-brace-format
+msgid "Erro ao criar FAQ: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:644
+msgid "Erro ao criar FAQ"
+msgstr ""
+
+#: my_aegbp/views.py:645
+msgid "Ocorreu um erro ao criar o FAQ."
+msgstr ""
+
+#: my_aegbp/views.py:660
+#, python-brace-format
+msgid "Erro ao atualizar FAQ: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:661
+msgid "Erro ao atualizar FAQ"
+msgstr ""
+
+#: my_aegbp/views.py:662
+msgid "Ocorreu um erro ao atualizar o FAQ."
+msgstr ""
+
+#: my_aegbp/views.py:673
+#, python-brace-format
+msgid "Erro ao deletar FAQ: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:674
+msgid "Erro ao deletar FAQ"
+msgstr ""
+
+#: my_aegbp/views.py:675
+msgid "Ocorreu um erro ao deletar o FAQ."
+msgstr ""
+
+#: my_aegbp/views.py:683
+#, python-brace-format
+msgid "Erro ao carregar lista de categorias: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:684
+msgid "Erro ao carregar lista de categorias"
+msgstr ""
+
+#: my_aegbp/views.py:685
+msgid "Ocorreu um erro ao carregar a lista de categorias."
+msgstr ""
+
+#: my_aegbp/views.py:699
+#, python-brace-format
+msgid "Erro ao criar categoria: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:700
+msgid "Erro ao criar categoria"
+msgstr ""
+
+#: my_aegbp/views.py:701
+msgid "Ocorreu um erro ao criar a categoria."
+msgstr ""
+
+#: my_aegbp/views.py:716
+#, python-brace-format
+msgid "Erro ao atualizar categoria: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:717
+msgid "Erro ao atualizar categoria"
+msgstr ""
+
+#: my_aegbp/views.py:718
+msgid "Ocorreu um erro ao atualizar a categoria."
+msgstr ""
+
+#: my_aegbp/views.py:729
+#, python-brace-format
+msgid "Erro ao deletar categoria: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:730
+msgid "Erro ao deletar categoria"
+msgstr ""
+
+#: my_aegbp/views.py:731
+msgid "Ocorreu um erro ao deletar a categoria."
+msgstr ""
+
+#: my_aegbp/views.py:740
+#, python-brace-format
+msgid "Erro ao carregar oportunidades de voluntariado: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:741
+msgid "Erro ao carregar oportunidades de voluntariado"
+msgstr ""
+
+#: my_aegbp/views.py:742
+msgid "Ocorreu um erro ao carregar as oportunidades de voluntariado."
+msgstr ""
+
+#: my_aegbp/views.py:751
+#, python-brace-format
+msgid "Erro ao carregar inscrições de voluntariado: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:752
+msgid "Erro ao carregar inscrições de voluntariado"
+msgstr ""
+
+#: my_aegbp/views.py:753
+msgid "Ocorreu um erro ao carregar as inscrições de voluntariado."
+msgstr ""
+
+#: my_aegbp/views.py:770
+#, python-brace-format
+msgid "Erro ao registrar voluntário: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:771
+msgid "Erro ao registrar voluntário"
+msgstr ""
+
+#: my_aegbp/views.py:772
+msgid "Ocorreu um erro ao registrar o voluntário."
+msgstr ""
+
+#: my_aegbp/views.py:786
+#, python-brace-format
+msgid "Erro ao criar oportunidade de voluntariado: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:787
+msgid "Erro ao criar oportunidade de voluntariado"
+msgstr ""
+
+#: my_aegbp/views.py:788
+msgid "Ocorreu um erro ao criar a oportunidade de voluntariado."
+msgstr ""
+
+#: my_aegbp/views.py:803
+#, python-brace-format
+msgid "Erro ao atualizar oportunidade de voluntariado: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:804
+msgid "Erro ao atualizar oportunidade de voluntariado"
+msgstr ""
+
+#: my_aegbp/views.py:805
+msgid "Ocorreu um erro ao atualizar a oportunidade de voluntariado."
+msgstr ""
+
+#: my_aegbp/views.py:816
+#, python-brace-format
+msgid "Erro ao deletar oportunidade de voluntariado: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:817
+msgid "Erro ao deletar oportunidade de voluntariado"
+msgstr ""
+
+#: my_aegbp/views.py:818
+msgid "Ocorreu um erro ao deletar a oportunidade de voluntariado."
+msgstr ""
+
+#: my_aegbp/views.py:826
+#, python-brace-format
+msgid "Erro ao carregar detalhes da oportunidade de voluntariado: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:827
+msgid "Erro ao carregar detalhes da oportunidade de voluntariado"
+msgstr ""
+
+#: my_aegbp/views.py:828
+msgid ""
+"Ocorreu um erro ao carregar os detalhes da oportunidade de voluntariado."
+msgstr ""
+
+#: my_aegbp/views.py:836
+#, python-brace-format
+msgid "Erro ao carregar lista de contatos: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:837
+msgid "Erro ao carregar lista de contatos"
+msgstr ""
+
+#: my_aegbp/views.py:838
+msgid "Ocorreu um erro ao carregar a lista de contatos."
+msgstr ""
+
+#: my_aegbp/views.py:852
+#, python-brace-format
+msgid "Erro ao criar contato: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:853
+msgid "Erro ao criar contato"
+msgstr ""
+
+#: my_aegbp/views.py:854
+msgid "Ocorreu um erro ao criar o contato."
+msgstr ""
+
+#: my_aegbp/views.py:865
+msgid "Admin"
+msgstr ""
+
+#: my_aegbp/views.py:869 my_aegbp/views.py:896
+#, python-brace-format
+msgid "Resposta ao seu contato: {subject}"
+msgstr ""
+
+#: my_aegbp/views.py:880
+#, python-brace-format
+msgid "Erro na conversa de contato: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:881
+msgid "Erro na conversa de contato"
+msgstr ""
+
+#: my_aegbp/views.py:882
+msgid "Ocorreu um erro ao responder à mensagem de contato."
+msgstr ""
+
+#: my_aegbp/views.py:907
+#, python-brace-format
+msgid "Erro ao responder contato: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:908
+msgid "Erro ao responder contato"
+msgstr ""
+
+#: my_aegbp/views.py:909
+msgid "Ocorreu um erro ao responder ao contato."
+msgstr ""
+
+#: my_aegbp/views.py:917 my_aegbp/views.py:926
+#, python-brace-format
+msgid "Erro ao carregar lista de projetos: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:918 my_aegbp/views.py:927
+msgid "Erro ao carregar lista de projetos"
+msgstr ""
+
+#: my_aegbp/views.py:919 my_aegbp/views.py:928
+msgid "Ocorreu um erro ao carregar a lista de projetos."
+msgstr ""
+
+#: my_aegbp/views.py:941
+#, python-brace-format
+msgid "Erro ao criar projeto: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:942
+msgid "Erro ao criar projeto"
+msgstr ""
+
+#: my_aegbp/views.py:943
+msgid "Ocorreu um erro ao criar o projeto."
+msgstr ""
+
+#: my_aegbp/views.py:957
+#, python-brace-format
+msgid "Erro ao atualizar projeto: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:958
+msgid "Erro ao atualizar projeto"
+msgstr ""
+
+#: my_aegbp/views.py:959
+msgid "Ocorreu um erro ao atualizar o projeto."
+msgstr ""
+
+#: my_aegbp/views.py:969
+#, python-brace-format
+msgid "Erro ao deletar projeto: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:970
+msgid "Erro ao deletar projeto"
+msgstr ""
+
+#: my_aegbp/views.py:971
+msgid "Ocorreu um erro ao deletar o projeto."
+msgstr ""
+
+#: my_aegbp/views.py:978
+#, python-brace-format
+msgid "Erro ao carregar detalhes do projeto: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:979
+msgid "Erro ao carregar detalhes do projeto"
+msgstr ""
+
+#: my_aegbp/views.py:980
+msgid "Ocorreu um erro ao carregar os detalhes do projeto."
+msgstr ""
+
+#: my_aegbp/views.py:988
+#, python-brace-format
+msgid "Erro ao carregar lista de doações: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:989
+msgid "Erro ao carregar lista de doações"
+msgstr ""
+
+#: my_aegbp/views.py:990
+msgid "Ocorreu um erro ao carregar a lista de doações."
+msgstr ""
+
+#: my_aegbp/views.py:1003
+#, python-brace-format
+msgid "Erro ao criar doação: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1004
+msgid "Erro ao criar doação"
+msgstr ""
+
+#: my_aegbp/views.py:1005
+msgid "Ocorreu um erro ao criar a doação."
+msgstr ""
+
+#: my_aegbp/views.py:1012
+#, python-brace-format
+msgid "Erro ao carregar detalhes da doação: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1013
+msgid "Erro ao carregar detalhes da doação"
+msgstr ""
+
+#: my_aegbp/views.py:1014
+msgid "Ocorreu um erro ao carregar os detalhes da doação."
+msgstr ""
+
+#: my_aegbp/views.py:1028
+#, python-brace-format
+msgid "Erro ao atualizar doação: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1029
+msgid "Erro ao atualizar doação"
+msgstr ""
+
+#: my_aegbp/views.py:1030
+msgid "Ocorreu um erro ao atualizar a doação."
+msgstr ""
+
+#: my_aegbp/views.py:1040
+#, python-brace-format
+msgid "Erro ao deletar doação: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1041
+msgid "Erro ao deletar doação"
+msgstr ""
+
+#: my_aegbp/views.py:1042
+msgid "Ocorreu um erro ao deletar a doação."
+msgstr ""
+
+#: my_aegbp/views.py:1063
+#, python-brace-format
+msgid "Erro ao enviar formulário de contato: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1064
+msgid "Erro ao enviar formulário de contato"
+msgstr ""
+
+#: my_aegbp/views.py:1065
+msgid "Ocorreu um erro ao enviar o formulário de contato."
+msgstr ""
+
+#: my_aegbp/views.py:1075
+#, python-brace-format
+msgid "Erro ao carregar lista de patrocinadores: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1076
+msgid "Erro ao carregar lista de patrocinadores"
+msgstr ""
+
+#: my_aegbp/views.py:1077
+msgid "Ocorreu um erro ao carregar a lista de patrocinadores."
+msgstr ""
+
+#: my_aegbp/views.py:1090
+#, python-brace-format
+msgid "Erro ao criar patrocinador: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1091
+msgid "Erro ao criar patrocinador"
+msgstr ""
+
+#: my_aegbp/views.py:1092
+msgid "Ocorreu um erro ao criar o patrocinador."
+msgstr ""
+
+#: my_aegbp/views.py:1106
+#, python-brace-format
+msgid "Erro ao atualizar patrocinador: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1107
+msgid "Erro ao atualizar patrocinador"
+msgstr ""
+
+#: my_aegbp/views.py:1108
+msgid "Ocorreu um erro ao atualizar o patrocinador."
+msgstr ""
+
+#: my_aegbp/views.py:1118
+#, python-brace-format
+msgid "Erro ao deletar patrocinador: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1119
+msgid "Erro ao deletar patrocinador"
+msgstr ""
+
+#: my_aegbp/views.py:1120
+msgid "Ocorreu um erro ao deletar o patrocinador."
+msgstr ""
+
+#: my_aegbp/views.py:1136
+msgid "Usuário registrado com sucesso!"
+msgstr ""
+
+#: my_aegbp/views.py:1144
+#, python-brace-format
+msgid "Erro ao registrar usuário: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1145
+msgid "Erro ao registrar usuário"
+msgstr ""
+
+#: my_aegbp/views.py:1146
+msgid "Ocorreu um erro ao registrar o usuário."
+msgstr ""
+
+#: my_aegbp/views.py:1160
+#, python-brace-format
+msgid "Erro ao fazer login: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1161
+msgid "Erro ao fazer login"
+msgstr ""
+
+#: my_aegbp/views.py:1162
+msgid "Ocorreu um erro ao fazer login."
+msgstr ""
+
+#: my_aegbp/views.py:1174
+#, python-brace-format
+msgid "Erro ao fazer logout: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1175
+msgid "Erro ao fazer logout"
+msgstr ""
+
+#: my_aegbp/views.py:1176
+msgid "Ocorreu um erro ao fazer logout."
+msgstr ""
+
+#: my_aegbp/views.py:1184
+#, python-brace-format
+msgid "Erro ao carregar perfil do usuário: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1185
+msgid "Erro ao carregar perfil do usuário"
+msgstr ""
+
+#: my_aegbp/views.py:1186
+msgid "Ocorreu um erro ao carregar o perfil do usuário."
+msgstr ""
+
+#: my_aegbp/views.py:1201
+#, python-brace-format
+msgid "Erro ao editar perfil: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1202
+msgid "Erro ao editar perfil"
+msgstr ""
+
+#: my_aegbp/views.py:1203
+msgid "Ocorreu um erro ao editar o perfil."
+msgstr ""
+
+#: my_aegbp/views.py:1217
+#, python-brace-format
+msgid "Erro ao deletar perfil: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1218
+msgid "Erro ao deletar perfil"
+msgstr ""
+
+#: my_aegbp/views.py:1219
+msgid "Ocorreu um erro ao deletar o perfil."
+msgstr ""
+
+#: my_aegbp/views.py:1237
+msgid "As senhas não coincidem."
+msgstr ""
+
+#: my_aegbp/views.py:1242
+msgid "A nova senha não pode ser igual à senha antiga."
+msgstr ""
+
+#: my_aegbp/views.py:1247
+#, python-brace-format
+msgid "Erro na confirmação de redefinição de senha: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1248
+msgid "Erro na confirmação de redefinição de senha"
+msgstr ""
+
+#: my_aegbp/views.py:1260
+msgid "Email de Teste"
+msgstr ""
+
+#: my_aegbp/views.py:1261
+msgid "Este é um email de teste enviado pelo Django."
+msgstr ""
+
+#: my_aegbp/views.py:1266
+msgid "Email de teste enviado com sucesso!"
+msgstr ""
+
+#: my_aegbp/views.py:1268
+#, python-brace-format
+msgid "Erro ao enviar email de teste: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1269
+msgid "Erro ao enviar email de teste"
+msgstr ""
+
+#: my_aegbp/views.py:1270
+msgid "Falha ao enviar email de teste."
+msgstr ""
+
+#: my_aegbp/views.py:1284
+#, python-brace-format
+msgid "Erro ao registrar membro: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1285
+msgid "Erro ao registrar membro"
+msgstr ""
+
+#: my_aegbp/views.py:1286
+msgid "Ocorreu um erro ao registrar o membro."
+msgstr ""
+
+#: my_aegbp/views.py:1300
+#, python-brace-format
+msgid "Erro ao adicionar membro: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1301
+msgid "Erro ao adicionar membro"
+msgstr ""
+
+#: my_aegbp/views.py:1302
+msgid "Ocorreu um erro ao adicionar o membro."
+msgstr ""
+
+#: my_aegbp/views.py:1310
+#, python-brace-format
+msgid "Erro ao carregar lista de membros: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1311
+msgid "Erro ao carregar lista de membros"
+msgstr ""
+
+#: my_aegbp/views.py:1312
+msgid "Ocorreu um erro ao carregar a lista de membros."
+msgstr ""
+
+#: my_aegbp/views.py:1332
+msgid "attachment; filename=membros.xlsx"
+msgstr ""
+
+#: my_aegbp/views.py:1338
+#, python-brace-format
+msgid "Erro ao baixar Excel de membros: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1339
+msgid "Erro ao baixar Excel de membros"
+msgstr ""
+
+#: my_aegbp/views.py:1340
+msgid "Ocorreu um erro ao baixar o arquivo Excel de membros."
+msgstr ""
+
+#: my_aegbp/views.py:1355
+#, python-brace-format
+msgid "Erro ao editar membro: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1356
+msgid "Erro ao editar membro"
+msgstr ""
+
+#: my_aegbp/views.py:1357
+msgid "Ocorreu um erro ao editar o membro."
+msgstr ""
+
+#: my_aegbp/views.py:1368
+#, python-brace-format
+msgid "Erro ao deletar membro: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1369
+msgid "Erro ao deletar membro"
+msgstr ""
+
+#: my_aegbp/views.py:1370
+msgid "Ocorreu um erro ao deletar o membro."
+msgstr ""
+
+#: my_aegbp/views.py:1378
+#, python-brace-format
+msgid "Erro ao carregar lista de membros pendentes: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1379
+msgid "Erro ao carregar lista de membros pendentes"
+msgstr ""
+
+#: my_aegbp/views.py:1380
+msgid "Ocorreu um erro ao carregar a lista de membros pendentes."
+msgstr ""
+
+#: my_aegbp/views.py:1393
+#, python-brace-format
+msgid "Erro ao aprovar membro: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1394
+msgid "Erro ao aprovar membro"
+msgstr ""
+
+#: my_aegbp/views.py:1395
+msgid "Ocorreu um erro ao aprovar o membro."
+msgstr ""
+
+#: my_aegbp/views.py:1407
+#, python-brace-format
+msgid "Erro ao rejeitar membro: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1408
+msgid "Erro ao rejeitar membro"
+msgstr ""
+
+#: my_aegbp/views.py:1409
+msgid "Ocorreu um erro ao rejeitar o membro."
+msgstr ""
+
+#: my_aegbp/views.py:1417
+#, python-brace-format
+msgid "Erro ao carregar detalhes do membro: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1418
+msgid "Erro ao carregar detalhes do membro"
+msgstr ""
+
+#: my_aegbp/views.py:1419
+msgid "Ocorreu um erro ao carregar os detalhes do membro."
+msgstr ""
+
+#: my_aegbp/views.py:1427
+#, python-brace-format
+msgid "Erro ao carregar detalhes do membro pendente: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1428
+msgid "Erro ao carregar detalhes do membro pendente"
+msgstr ""
+
+#: my_aegbp/views.py:1429
+msgid "Ocorreu um erro ao carregar os detalhes do membro pendente."
+msgstr ""
+
+#: my_aegbp/views.py:1432
+#, python-brace-format
+msgid "Status da sua inscrição: {status}"
+msgstr ""
+
+#: my_aegbp/views.py:1434
+#, python-brace-format
+msgid ""
+"Olá {name},\n"
+"\n"
+"Sua inscrição foi aprovada com sucesso. Parabéns e seja bem-vindo!"
+msgstr ""
+
+#: my_aegbp/views.py:1436
+#, python-brace-format
+msgid ""
+"Olá {name},\n"
+"\n"
+"Infelizmente, sua inscrição foi rejeitada. Agradecemos pelo seu interesse."
+msgstr ""
+
+#: my_aegbp/views.py:1452
+#, python-brace-format
+msgid "Erro ao carregar lista de políticas de privacidade: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1453
+msgid "Erro ao carregar lista de políticas de privacidade"
+msgstr ""
+
+#: my_aegbp/views.py:1454
+msgid "Ocorreu um erro ao carregar a lista de políticas de privacidade."
+msgstr ""
+
+#: my_aegbp/views.py:1462
+#, python-brace-format
+msgid "Erro ao carregar detalhes da política de privacidade: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1463
+msgid "Erro ao carregar detalhes da política de privacidade"
+msgstr ""
+
+#: my_aegbp/views.py:1464
+msgid "Ocorreu um erro ao carregar os detalhes da política de privacidade."
+msgstr ""
+
+#: my_aegbp/views.py:1478
+#, python-brace-format
+msgid "Erro ao criar política de privacidade: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1479
+msgid "Erro ao criar política de privacidade"
+msgstr ""
+
+#: my_aegbp/views.py:1480
+msgid "Ocorreu um erro ao criar a política de privacidade."
+msgstr ""
+
+#: my_aegbp/views.py:1495
+#, python-brace-format
+msgid "Erro ao atualizar política de privacidade: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1496
+msgid "Erro ao atualizar política de privacidade"
+msgstr ""
+
+#: my_aegbp/views.py:1497
+msgid "Ocorreu um erro ao atualizar a política de privacidade."
+msgstr ""
+
+#: my_aegbp/views.py:1508
+#, python-brace-format
+msgid "Erro ao deletar política de privacidade: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1509
+msgid "Erro ao deletar política de privacidade"
+msgstr ""
+
+#: my_aegbp/views.py:1510
+msgid "Ocorreu um erro ao deletar a política de privacidade."
+msgstr ""
+
+#: my_aegbp/views.py:1521
+#, python-brace-format
+msgid "Erro ao definir o idioma: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1522
+msgid "Erro ao definir o idioma"
+msgstr ""
+
+#: my_aegbp/views.py:1523
+msgid "Ocorreu um erro ao definir o idioma."
+msgstr ""
+
+#: my_aegbp/views.py:1532
+#, python-brace-format
+msgid "Erro ao carregar lista de informações de contato: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1533
+msgid "Erro ao carregar lista de informações de contato"
+msgstr ""
+
+#: my_aegbp/views.py:1534
+msgid "Ocorreu um erro ao carregar a lista de informações de contato."
+msgstr ""
+
+#: my_aegbp/views.py:1548
+#, python-brace-format
+msgid "Erro ao criar informação de contato: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1549
+msgid "Erro ao criar informação de contato"
+msgstr ""
+
+#: my_aegbp/views.py:1550
+msgid "Ocorreu um erro ao criar a informação de contato."
+msgstr ""
+
+#: my_aegbp/views.py:1565
+#, python-brace-format
+msgid "Erro ao atualizar informação de contato: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1566
+msgid "Erro ao atualizar informação de contato"
+msgstr ""
+
+#: my_aegbp/views.py:1567
+msgid "Ocorreu um erro ao atualizar a informação de contato."
+msgstr ""
+
+#: my_aegbp/views.py:1578
+#, python-brace-format
+msgid "Erro ao deletar informação de contato: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1579
+msgid "Erro ao deletar informação de contato"
+msgstr ""
+
+#: my_aegbp/views.py:1580
+msgid "Ocorreu um erro ao deletar a informação de contato."
+msgstr ""
+
+#: my_aegbp/views.py:1588
+#, python-brace-format
+msgid "Erro ao carregar lista de sobre: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1589
+msgid "Erro ao carregar lista de sobre"
+msgstr ""
+
+#: my_aegbp/views.py:1590
+msgid "Ocorreu um erro ao carregar a lista de sobre."
+msgstr ""
+
+#: my_aegbp/views.py:1597
+#, python-brace-format
+msgid "Erro ao carregar detalhes sobre: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1598
+msgid "Erro ao carregar detalhes sobre"
+msgstr ""
+
+#: my_aegbp/views.py:1599
+msgid "Ocorreu um erro ao carregar os detalhes sobre."
+msgstr ""
+
+#: my_aegbp/views.py:1613
+#, python-brace-format
+msgid "Erro ao criar sobre: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1614
+msgid "Erro ao criar sobre"
+msgstr ""
+
+#: my_aegbp/views.py:1615
+msgid "Ocorreu um erro ao criar o sobre."
+msgstr ""
+
+#: my_aegbp/views.py:1630
+#, python-brace-format
+msgid "Erro ao atualizar sobre: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1631
+msgid "Erro ao atualizar sobre"
+msgstr ""
+
+#: my_aegbp/views.py:1632
+msgid "Ocorreu um erro ao atualizar o sobre."
+msgstr ""
+
+#: my_aegbp/views.py:1643
+#, python-brace-format
+msgid "Erro ao deletar sobre: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1644
+msgid "Erro ao deletar sobre"
+msgstr ""
+
+#: my_aegbp/views.py:1645
+msgid "Ocorreu um erro ao deletar o sobre."
+msgstr ""
+
+#: my_aegbp/views.py:1652
+#, python-brace-format
+msgid "Erro ao carregar a lista de configurações: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1653
+msgid "Erro ao carregar a lista de configurações"
+msgstr ""
+
+#: my_aegbp/views.py:1654
+msgid "Ocorreu um erro ao carregar a lista de configurações."
+msgstr ""
+
+#: my_aegbp/views.py:1667
+#, python-brace-format
+msgid "Erro ao criar configuração: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1668
+msgid "Erro ao criar configuração"
+msgstr ""
+
+#: my_aegbp/views.py:1669
+msgid "Ocorreu um erro ao criar a configuração."
+msgstr ""
+
+#: my_aegbp/views.py:1683
+#, python-brace-format
+msgid "Erro ao atualizar configuração: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1684
+msgid "Erro ao atualizar configuração"
+msgstr ""
+
+#: my_aegbp/views.py:1685
+msgid "Ocorreu um erro ao atualizar a configuração."
+msgstr ""
+
+#: my_aegbp/views.py:1695
+#, python-brace-format
+msgid "Erro ao deletar configuração: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1696
+msgid "Erro ao deletar configuração"
+msgstr ""
+
+#: my_aegbp/views.py:1697
+msgid "Ocorreu um erro ao deletar a configuração."
+msgstr ""
+
+#: my_aegbp/views.py:1705
+#, python-brace-format
+msgid "Erro ao carregar lista de redes sociais: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1706
+msgid "Erro ao carregar lista de redes sociais"
+msgstr ""
+
+#: my_aegbp/views.py:1707
+msgid "Ocorreu um erro ao carregar a lista de redes sociais."
+msgstr ""
+
+#: my_aegbp/views.py:1721
+#, python-brace-format
+msgid "Erro ao criar rede social: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1722
+msgid "Erro ao criar rede social"
+msgstr ""
+
+#: my_aegbp/views.py:1723
+msgid "Ocorreu um erro ao criar a rede social."
+msgstr ""
+
+#: my_aegbp/views.py:1738
+#, python-brace-format
+msgid "Erro ao atualizar rede social: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1739
+msgid "Erro ao atualizar rede social"
+msgstr ""
+
+#: my_aegbp/views.py:1740
+msgid "Ocorreu um erro ao atualizar a rede social."
+msgstr ""
+
+#: my_aegbp/views.py:1751
+#, python-brace-format
+msgid "Erro ao deletar rede social: {e}"
+msgstr ""
+
+#: my_aegbp/views.py:1752
+msgid "Erro ao deletar rede social"
+msgstr ""
+
+#: my_aegbp/views.py:1753
+msgid "Ocorreu um erro ao deletar a rede social."
+msgstr ""
+
+#: my_aegbp/views.py:1772
+msgid "Email enviado com sucesso!"
+msgstr ""
+
+#: my_aegbp/views.py:1776
+msgid "Método não permitido"
+msgstr ""
+
+#: my_aegbp/views.py:1781
+#, python-brace-format
+msgid "attachment; filename=\"{filename}\""
+msgstr ""
+
+#: my_aegbp/views_react.py:51
+msgid "O post referenciado não existe."
+msgstr ""
+
+#: my_aegbp/views_react.py:64
+msgid "Não é possível criar voluntários com status rejeitado."
+msgstr ""
+
+#: my_aegbp/views_react.py:73
+msgid "Um endereço de email válido é necessário."
+msgstr ""
+
+#: my_aegbp/views_react.py:108
+msgid "Você não pode ter mais de uma entrada de informação de contato."
+msgstr ""
+
+#: my_aegbp/views_react.py:117
+msgid "Apenas uma entrada de Sobre é permitida."
+msgstr ""
+
+#: my_aegbp/views_react.py:126
+msgid "Você não pode ter mais de uma entrada de Configurações Gerais."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/contrib/messages/apps.py:16
+msgid "Messages"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/contrib/sitemaps/apps.py:8
+msgid "Site Maps"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/contrib/staticfiles/apps.py:9
+msgid "Static Files"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/contrib/syndication/apps.py:7
+msgid "Syndication"
+msgstr ""
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: myenv/lib/python3.12/site-packages/django/core/paginator.py:30
+msgid "…"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/paginator.py:32
+msgid "That page number is not an integer"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/paginator.py:33
+msgid "That page number is less than 1"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/paginator.py:34
+msgid "That page contains no results"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:22
+msgid "Enter a valid value."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:70
+msgid "Enter a valid domain name."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:152
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:768
+msgid "Enter a valid URL."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:213
+msgid "Enter a valid integer."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:224
+msgid "Enter a valid email address."
+msgstr ""
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:307
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:315
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:327
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:336
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:350
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2215
+#, python-format
+msgid "Enter a valid %(protocol)s address."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:329
+msgid "IPv4"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:338
+#: myenv/lib/python3.12/site-packages/django/utils/ipv6.py:30
+msgid "IPv6"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:352
+msgid "IPv4 or IPv6"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:393
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:399
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:434
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:443
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:452
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:459
+#, python-format
+msgid ""
+"Ensure this value is a multiple of step size %(limit_value)s, starting from "
+"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:491
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:509
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:532
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:359
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:398
+msgid "Enter a number."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:534
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:539
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:544
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:615
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/core/validators.py:677
+msgid "Null characters are not allowed."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/base.py:1571
+#: myenv/lib/python3.12/site-packages/django/forms/models.py:908
+msgid "and"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/base.py:1573
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/constraints.py:22
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:134
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:135
+msgid "This field cannot be null."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:136
+msgid "This field cannot be blank."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:137
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:141
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:180
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1156
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1157
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1159
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1209
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1211
+msgid "String (unlimited)"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1320
+msgid "Comma-separated integers"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1421
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1425
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1560
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1429
+msgid "Date (without time)"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1556
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1564
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1569
+msgid "Date (with time)"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1696
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1698
+msgid "Decimal number"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1859
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+"uuuuuu] format."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1863
+msgid "Duration"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1915
+msgid "Email address"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1940
+msgid "File path"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2018
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2020
+msgid "Floating point number"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2060
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2062
+msgid "Integer"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2158
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2175
+msgid "Small integer"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2183
+msgid "IPv4 address"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2214
+msgid "IP address"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2305
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2306
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2308
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2359
+msgid "Positive big integer"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2374
+msgid "Positive integer"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2389
+msgid "Positive small integer"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2405
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2441
+msgid "Text"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2521
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2525
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2529
+#: myenv/lib/python3.12/site-packages/haystack/templates/panels/haystack.html:8
+msgid "Time"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2661
+msgid "Raw binary data"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2726
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2728
+msgid "Universally unique identifier"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/files.py:244
+msgid "File"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/files.py:420
+msgid "Image"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/json.py:24
+msgid "A JSON object"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/json.py:26
+msgid "Value must be valid JSON."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/related.py:932
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/related.py:934
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/related.py:1228
+msgid "One-to-one relationship"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/related.py:1285
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/related.py:1287
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/db/models/fields/related.py:1335
+msgid "Many-to-many relationship"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: myenv/lib/python3.12/site-packages/django/forms/boundfield.py:185
+msgid ":?.!"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:95
+msgid "This field is required."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:308
+msgid "Enter a whole number."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:479
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:1260
+msgid "Enter a valid date."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:502
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:1261
+msgid "Enter a valid time."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:529
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:563
+msgid "Enter a valid duration."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:564
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:633
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:634
+msgid "No file was submitted."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:635
+msgid "The submitted file is empty."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:637
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:642
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:710
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:882
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:968
+#: myenv/lib/python3.12/site-packages/django/forms/models.py:1592
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:970
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:1089
+#: myenv/lib/python3.12/site-packages/django/forms/models.py:1590
+msgid "Enter a list of values."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:1090
+msgid "Enter a complete value."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:1329
+msgid "Enter a valid UUID."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/fields.py:1359
+msgid "Enter a valid JSON."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: myenv/lib/python3.12/site-packages/django/forms/forms.py:94
+msgid ":"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/forms.py:230
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/formsets.py:61
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/formsets.py:65
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/formsets.py:70
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/formsets.py:484
+#: myenv/lib/python3.12/site-packages/django/forms/formsets.py:491
+msgid "Order"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/formsets.py:499
+msgid "Delete"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/models.py:901
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/models.py:906
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/models.py:913
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/models.py:922
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/models.py:1359
+msgid "The inline value did not match the parent instance."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/models.py:1450
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/models.py:1594
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/utils.py:227
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/widgets.py:461
+msgid "Clear"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/widgets.py:462
+msgid "Currently"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/widgets.py:463
+msgid "Change"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/widgets.py:800
+msgid "Unknown"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/widgets.py:801
+msgid "Yes"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/forms/widgets.py:802
+msgid "No"
+msgstr ""
+
+#. Translators: Please do not add spaces around commas.
+#: myenv/lib/python3.12/site-packages/django/template/defaultfilters.py:873
+msgid "yes,no,maybe"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/template/defaultfilters.py:903
+#: myenv/lib/python3.12/site-packages/django/template/defaultfilters.py:920
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: myenv/lib/python3.12/site-packages/django/template/defaultfilters.py:922
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/template/defaultfilters.py:924
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/template/defaultfilters.py:926
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/template/defaultfilters.py:928
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/template/defaultfilters.py:930
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dateformat.py:74
+msgid "p.m."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dateformat.py:75
+msgid "a.m."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dateformat.py:80
+msgid "PM"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dateformat.py:81
+msgid "AM"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dateformat.py:153
+msgid "midnight"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dateformat.py:155
+msgid "noon"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:7
+msgid "Monday"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:8
+msgid "Tuesday"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:9
+msgid "Wednesday"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:10
+msgid "Thursday"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:11
+msgid "Friday"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:12
+msgid "Saturday"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:13
+msgid "Sunday"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:16
+msgid "Mon"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:17
+msgid "Tue"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:18
+msgid "Wed"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:19
+msgid "Thu"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:20
+msgid "Fri"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:21
+msgid "Sat"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:22
+msgid "Sun"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:25
+msgid "January"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:26
+msgid "February"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:27
+msgid "March"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:28
+msgid "April"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:29
+msgid "May"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:30
+msgid "June"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:31
+msgid "July"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:32
+msgid "August"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:33
+msgid "September"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:34
+msgid "October"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:35
+msgid "November"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:36
+msgid "December"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:39
+msgid "jan"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:40
+msgid "feb"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:41
+msgid "mar"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:42
+msgid "apr"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:43
+msgid "may"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:44
+msgid "jun"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:45
+msgid "jul"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:46
+msgid "aug"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:47
+msgid "sep"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:48
+msgid "oct"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:49
+msgid "nov"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:50
+msgid "dec"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/ipv6.py:8
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/text.py:75
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/text.py:286
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: myenv/lib/python3.12/site-packages/django/utils/text.py:305
+#: myenv/lib/python3.12/site-packages/django/utils/timesince.py:135
+msgid ", "
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: myenv/lib/python3.12/site-packages/django/utils/timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: myenv/lib/python3.12/site-packages/django/views/csrf.py:29
+msgid "Forbidden"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/csrf.py:30
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/csrf.py:34
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/csrf.py:40
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/csrf.py:45
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/csrf.py:54
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/csrf.py:60
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/csrf.py:66
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/generic/dates.py:44
+msgid "No year specified"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/generic/dates.py:64
+#: myenv/lib/python3.12/site-packages/django/views/generic/dates.py:115
+#: myenv/lib/python3.12/site-packages/django/views/generic/dates.py:214
+msgid "Date out of range"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/generic/dates.py:94
+msgid "No month specified"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/generic/dates.py:147
+msgid "No day specified"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/generic/dates.py:194
+msgid "No week specified"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/generic/dates.py:349
+#: myenv/lib/python3.12/site-packages/django/views/generic/dates.py:380
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/generic/dates.py:652
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/generic/dates.py:692
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/generic/detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/generic/list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/generic/list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/generic/list.py:169
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/static.py:49
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/static.py:51
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/static.py:68
+#: myenv/lib/python3.12/site-packages/django/views/templates/directory_index.html:8
+#: myenv/lib/python3.12/site-packages/django/views/templates/directory_index.html:11
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:7
+#: myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:204
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:208
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:217
+msgid "Django Documentation"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:218
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:226
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:227
+msgid "Get started with Django"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:235
+msgid "Django Community"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:236
+msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/haystack/admin.py:124
+#, python-format
+msgid "0 of %(count)d selected"
+msgid_plural "of %(count)d selected"
+msgstr[0] ""
+msgstr[1] ""
+
+#: myenv/lib/python3.12/site-packages/haystack/admin.py:129
+#, python-format
+msgid "%(total_count)s selected"
+msgid_plural "All %(total_count)s selected"
+msgstr[0] ""
+msgstr[1] ""
+
+#: myenv/lib/python3.12/site-packages/haystack/forms.py:102
+msgid "Search In"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/haystack/panels.py:28
+msgid "Haystack"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/haystack/panels.py:52
+msgid "Search Queries"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/haystack/templates/panels/haystack.html:5
+msgid "Query"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/haystack/templates/panels/haystack.html:6
+msgid "Backend Alias"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/haystack/templates/panels/haystack.html:7
+msgid "Timeline"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/haystack/templates/panels/haystack.html:9
+msgid "Kwargs"
+msgstr ""
+
+#: myenv/lib/python3.12/site-packages/modeltranslation/widgets.py:32
+msgid "None"
+msgstr ""

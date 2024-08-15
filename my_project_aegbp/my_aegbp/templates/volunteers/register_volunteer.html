@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% trans "Registrar como Voluntário" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% trans "Registrar como Voluntário" %}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">{% trans "Registrar" %}</button>
+    </form>
+    <a href="{% url 'volunteer_opportunities' %}" class="btn btn-secondary mt-3">{% trans "Voltar às Oportunidades" %}</a>
+</div>
+{% endblock %}

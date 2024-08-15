@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% trans "Editar Detalhes Bancários" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% trans "Editar Detalhes Bancários" %}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">{% trans "Salvar" %}</button>
+    </form>
+    <a href="{% url 'donation_info' donation.id %}" class="btn btn-secondary mt-3">{% trans "Voltar para os Detalhes da Doação" %}</a>
+</div>
+{% endblock %}

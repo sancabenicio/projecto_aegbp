@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Confirmar Exclusão" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% trans "Confirmar Exclusão" %}</h1>
+    <p>{% trans "Tem certeza de que deseja excluir o membro" %} "{{ member.full_name }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">{% trans "Confirmar Exclusão" %}</button>
+        <a href="{% url 'list_members' %}" class="btn btn-secondary">{% trans "Cancelar" %}</a>
+    </form>
+</div>
+{% endblock %}

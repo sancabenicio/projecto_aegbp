@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% if form.instance.pk %}{% trans "Editar" %}{% else %}{% trans "Adicionar" %}{% endif %} {% trans "Foto" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <header>
+        <h1>{% if form.instance.pk %}{% trans "Editar" %}{% else %}{% trans "Adicionar" %}{% endif %} {% trans "Foto" %}</h1>
+        <nav>
+            <a href="{% url 'photo_gallery' %}" class="btn btn-secondary">{% trans "Voltar à Galeria" %}</a>
+        </nav>
+    </header>
+    <main>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">{% trans "Salvar" %}</button>
+        </form>
+    </main>
+</div>
+{% endblock %}

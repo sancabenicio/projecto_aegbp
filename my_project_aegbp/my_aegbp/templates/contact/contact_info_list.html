@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Informações de Contato" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <header class="d-flex justify-content-between align-items-center mb-4">
+        <h1>{% trans "Informações de Contato" %}</h1>
+        <nav>
+            <a href="{% url 'index' %}" class="btn btn-secondary">{% trans "Home" %}</a>
+            <a href="{% url 'contact_info_create' %}" class="btn btn-primary ml-2">{% trans "Adicionar Informações de Contato" %}</a>
+        </nav>
+    </header>
+    <main class="mt-4">
+        {% if contacts %}
+            <div class="row">
+                {% for contact in contacts %}
+                    <div class="col-md-6 mb-3">
+                        {% if contact.address %}
+                            <p><strong>{% trans "Endereço:" %}</strong> {{ contact.address }}</p>
+                        {% endif %}
+                        {% if contact.phone1 or contact.phone2 %}
+                            <p><strong>{% trans "Telefone:" %}</strong> {{ contact.phone1 }}{% if contact.phone2 %}<br>{{ contact.phone2 }}{% endif %}</p>
+                        {% endif %}
+                        {% if contact.email1 or contact.email2 %}
+                            <p><strong>{% trans "Email:" %}</strong> {{ contact.email1 }}{% if contact.email2 %}<br>{{ contact.email2 }}{% endif %}</p>
+                        {% endif %}
+                        {% if contact.days_of_week or contact.hours %}
+                            <p><strong>{% trans "Horário:" %}</strong><br>{{ contact.days_of_week }}{% if contact.hours %}<br>{{ contact.hours }}{% endif %}</p>
+                        {% endif %}
+                        <a href="{% url 'contact_info_update' contact.id %}" class="btn btn-warning">{% trans "Editar" %}</a>
+                        <form action="{% url 'contact_info_delete' contact.id %}" method="post" style="display:inline;">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-danger">{% trans "Excluir" %}</button>
+                        </form>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>{% trans "Nenhuma informação de contato cadastrada." %}</p>
+        {% endif %}
+    </main>
+</div>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <title>{% block title %}{% trans "Dashboard - AEGB-Porto" %}{% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+    <!-- Conteúdo Principal -->
+    <div class="container-fluid mt-5">
+        <div class="text-center mb-5">
+            <img src="{% static 'images/logo_AEGBP.png' %}" alt="{% trans 'Logo AEGB-Porto' %}" class="img-fluid mb-3" style="max-width: 180px;">
+            <h1 class="display-4 text-primary font-weight-bold">{% trans "Bem-vindo de volta" %}, {{ user.first_name }} {{ user.last_name }}!</h1>
+            <p class="lead text-muted">{% trans "Associação de Estudante da Guiné-Bissau no Porto." %}</p>
+        </div>
+
+        <div class="row">
+            {% for card in cards %}
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card border-light shadow-lg h-100">
+                    <div class="card-body text-center">
+                        <div class="icon mb-4">
+                            <i class="fas {{ card.icon }} fa-3x {{ card.color }}"></i>
+                        </div>
+                        <h5 class="card-title">{{ card.title }}</h5>
+                        <p class="card-text">{{ card.description }}</p>
+                        <a href="{% url card.view_url %}" class="btn btn-{{ card.btn_color }} btn-lg">{% trans "Explorar" %}</a>
+                        <a href="{% url card.create_url %}" class="btn btn-outline-{{ card.btn_color }} btn-lg mt-2">{% trans "Adicionar" %}</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

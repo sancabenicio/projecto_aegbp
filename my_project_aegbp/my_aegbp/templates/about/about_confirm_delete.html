@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>{% trans "Confirmar Exclusão" %}</h1>
+    <p>{% trans "Tem certeza de que deseja excluir a seção" %} "{{ about_item.title }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">{% trans "Excluir" %}</button>
+        <a href="{% url 'about_list' %}" class="btn btn-secondary">{% trans "Cancelar" %}</a>
+    </form>
+</div>
+{% endblock %}

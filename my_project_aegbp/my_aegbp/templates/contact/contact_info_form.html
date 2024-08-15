@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}
+    {% if form.instance.id %}
+        {% trans "Editar Informações de Contato" %}
+    {% else %}
+        {% trans "Adicionar Informações de Contato" %}
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>
+        {% if form.instance.id %}
+            {% trans "Editar Informações de Contato" %}
+        {% else %}
+            {% trans "Adicionar Informações de Contato" %}
+        {% endif %}
+    </h1>
+    <form method="post">
+        {% csrf_token %}
+        
+        <div class="form-group">
+            <label for="id_address">{% trans "Endereço" %}</label>
+            {{ form.address }}
+        </div>
+        <div class="form-group">
+            <label for="id_phone1">{% trans "Telefone 1" %}</label>
+            {{ form.phone1 }}
+        </div>
+        <div class="form-group">
+            <label for="id_phone2">{% trans "Telefone 2" %}</label>
+            {{ form.phone2 }}
+        </div>
+        <div class="form-group">
+            <label for="id_email1">{% trans "Email 1" %}</label>
+            {{ form.email1 }}
+        </div>
+        <div class="form-group">
+            <label for="id_email2">{% trans "Email 2" %}</label>
+            {{ form.email2 }}
+        </div>
+
+        <div class="form-group">
+            <label for="id_days_of_week">{% trans "Dias da Semana" %}</label>
+            {{ form.days_of_week }}
+        </div>
+        <div class="form-group">
+            <label for="id_hours">{% trans "Horário" %}</label>
+            {{ form.hours }}
+        </div>
+
+        <button type="submit" class="btn btn-primary">{% trans "Salvar" %}</button>
+    </form>
+</div>
+{% endblock %}

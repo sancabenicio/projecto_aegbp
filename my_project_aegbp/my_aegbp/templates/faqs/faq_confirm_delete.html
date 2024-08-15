@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% trans "Deletar FAQ" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <header>
+        <h1>{% trans "Deletar FAQ" %}</h1>
+    </header>
+    <main>
+        <p>{% trans "Você tem certeza que deseja deletar a FAQ:" %} "{{ faq.question }}"?</p>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">{% trans "Deletar" %}</button>
+            <a href="{% url 'faqs' %}" class="btn btn-secondary">{% trans "Cancelar" %}</a>
+        </form>
+    </main>
+</div>
+{% endblock %}

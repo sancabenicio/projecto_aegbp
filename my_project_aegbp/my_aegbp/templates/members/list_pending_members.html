@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Membros Pendentes" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5" style="color: black;">
+    <h1 style="color: black;">{% trans "Membros Pendentes" %}</h1>
+    {% if members %}
+        <ul class="list-group">
+            {% for member in members %}
+                <li class="list-group-item d-flex justify-content-between align-items-center" style="color: black;">
+                    <div style="color: black;">
+                        <strong style="color: black;">{{ member.full_name }}</strong> - <span style="color: black;">{{ member.email }}</span>
+                    </div>
+                    <div>
+                        <a href="{% url 'approve_member' member.id %}" class="btn btn-success btn-sm mr-2">{% trans "Aprovar" %}</a>
+                        <a href="{% url 'reject_member' member.id %}" class="btn btn-danger btn-sm mr-2">{% trans "Rejeitar" %}</a>
+                        <a href="{% url 'member_detail_pend' member.id %}" class="btn btn-info btn-sm">{% trans "Ver mais" %}</a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <div class="alert alert-info" role="alert">
+            {% trans "Não existem membros pendentes para aprovar ou rejeitar." %}
+        </div>
+    {% endif %}
+</div>
+{% endblock %}
