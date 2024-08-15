@@ -1,0 +1,17 @@
+/* Blog.css */
+
+/* Certifique-se de que todos os Card.Bodies tenham pelo menos uma altura mínima */
+.card-body {
+    min-height: 200px; /* Ajuste esse valor conforme necessário */
+  }
+  
+  /* Assegure que o texto dentro do Card.Body ocupe o espaço disponível */
+  .card-body .card-text {
+    flex-grow: 1;
+  }
+  
+  /* Alinhe o link "Leia mais..." na parte inferior do Card */
+  .stretched-link.mt-auto {
+    margin-top: auto;
+  }
+  

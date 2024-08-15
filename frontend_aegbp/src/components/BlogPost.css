@@ -1,0 +1,54 @@
+/* BlogPost.css */
+
+.blog-post-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .blog-post-image {
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  
+  .blog-post-title {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .blog-post-author {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  .blog-post-content {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  .form-control.rounded-pill {
+    border-radius: 50px;
+  }
+  
+  button.rounded-pill {
+    border-radius: 50px;
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+  }
+  
+  button.rounded-pill:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  
+  .form-control.rounded {
+    border-radius: 0.5rem;
+  }
+  
+  h4.mt-5 {
+    color: #007bff;
+  }
+  

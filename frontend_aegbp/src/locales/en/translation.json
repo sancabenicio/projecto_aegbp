@@ -1,0 +1,286 @@
+{
+    "home": {
+      "title": "Guinea-Bissau Students Association in Porto",
+      "subtitle": "Your platform to engage and connect with the academic community",
+      "joinButton": "Become a Member"
+    },
+    "header": {
+      "home": "Home",
+      "about": "About",
+      "galleries": "Galleries",
+      "photoGallery": "Photo Gallery",
+      "videoGallery": "Video Gallery",
+      "resources": "Resources",
+      "calendar": "Calendar",
+      "documents": "Documents",
+      "blog": "Blog",
+      "testimonials": "Testimonials",
+      "faq": "FAQ",
+      "getInvolved": "Get Involved",
+      "volunteer": "Volunteer Opportunities",
+      "projects": "Projects",
+      "donations": "Donations",
+      "sponsors": "Sponsors",
+      "registerMember": "Register as Member",
+      "contacts": "Contacts"
+    },
+
+    "blog": {
+    "title": "Blog",
+    "subtitle": "Read the latest posts and updates from our blog.",
+    "loading": "Loading...",
+    "errorFetchingPosts": "Error fetching blog posts",
+    "noPostsFound": "No posts found.",
+    "readMore": "Read more...",
+    "comments": "Comments",
+    "leaveComment": "Leave a comment",
+    "name": "Name",
+    "comment": "Comment",
+    "submit": "Submit",
+    "noCommentsYet": "Be the first to comment!",
+    "commentSuccess": "Comment submitted successfully!",
+    "commentError": "Error submitting comment. Please try again.",
+    "postNotFound": "Post not found!"
+  },
+    "calendar": {
+      "title": "Events",
+      "subtitle": "Stay updated with upcoming events and activities organized by our association.",
+      "loading": "Loading...",
+      "errorLoading": "Error loading calendar",
+      "noEventsFound": "No events found.",
+      "noEventName": "Event name not available",
+      "date": "Date",
+      "time": "Time",
+      "noDateAvailable": "Date not available",
+      "noStartTimeAvailable": "Start time not available",
+      "noEndTimeAvailable": "End time not available",
+      "noDescriptionAvailable": "Description not available"
+    },
+
+    "contact": {
+    "title": "Contact",
+    "subtitle": "If you have any questions or would like to get in touch with us, use the information below or fill out the form.",
+    "address": "Address",
+    "noAddress": "Address not available",
+    "phone": "Phone",
+    "noPhone": "Phone not available",
+    "email": "Email",
+    "noEmail": "Email not available",
+    "hours": "Hours",
+    "noDays": "Operating days not available",
+    "noHours": "Hours not available",
+    "yourName": "Your Name",
+    "yourEmail": "Your Email",
+    "subject": "Subject",
+    "message": "Message",
+    "sending": "Sending...",
+    "sendMessage": "Send Message",
+    "successMessage": "Message sent successfully!",
+    "errorFetchingInfo": "Error fetching contact information.",
+    "errorSendingMessage": "Error sending the message. Please try again."
+  },
+
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "See what members of our community have to say about their experiences.",
+    "loading": "Loading...",
+    "errorLoading": "Error loading testimonials",
+    "noTestimonialsFound": "No testimonials found.",
+    "noNameAvailable": "Name not available",
+    "noDateAvailable": "Date not available",
+    "noContentAvailable": "Content not available"
+  },
+
+  "donations": {
+    "title": "Make a Donation",
+    "paymentInfoTitle": "Payment Information",
+    "iban": "IBAN",
+    "mbWay": "MB WAY",
+    "formTitle": "Donation Form",
+    "name": "Name",
+    "namePlaceholder": "Your Name",
+    "email": "Email",
+    "emailPlaceholder": "Your Email",
+    "amount": "Donation Amount (€)",
+    "amountPlaceholder": "Enter donation amount",
+    "description": "Description (optional)",
+    "descriptionPlaceholder": "Enter a description or message (optional)",
+    "proof": "Proof of Donation",
+    "submitButton": "Submit Donation",
+    "successMessage": "Thank you for your donation! Your contribution has been successfully received.",
+    "errorFetchingPaymentInfo": "Error fetching payment information.",
+    "errorSendingDonation": "Error sending donation. Please try again."
+  },
+
+  "documents": {
+    "title": "Documents",
+    "subtitle": "Access important documents and resources provided by our association.",
+    "loading": "Loading...",
+    "errorLoading": "Error loading documents",
+    "noDocumentsFound": "No documents found.",
+    "noTitleAvailable": "Title not available",
+    "noDescriptionAvailable": "Description not available",
+    "downloadButton": "View Document"
+  },
+
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to the most common questions about our association.",
+    "loading": "Loading...",
+    "errorLoading": "Error loading FAQs",
+    "noFaqsFound": "No frequently asked questions found.",
+    "noQuestionAvailable": "Question not available",
+    "noAnswerAvailable": "Answer not available"
+  },
+
+  "footer": {
+    "aegbPorto": "AEGB-Porto",
+    "allRightsReserved": "All rights reserved.",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "aboutUs": "About Us",
+    "projects": "Projects",
+    "contactUs": "Contact Us",
+    "privacyPolicy": "Privacy Policy",
+    "information": "Information",
+    "followUs": "Follow Us",
+    "downloadPrivacyPolicy": "Download Privacy Policy",
+    "close": "Close",
+    "errorFetchingPrivacyPolicy": "Error fetching privacy policy.",
+    "errorFetchingSocialLinks": "Error fetching social links."
+  },
+
+  "gallery": {
+    "videoNotSupported": "Your browser does not support the video element.",
+    "noItemsFound": "No items found."
+  },
+
+  "galleryFotos": {
+    "title": "Photo Gallery",
+    "loading": "Loading...",
+    "errorFetchingPhotos": "Error fetching photos:",
+    "errorLoadingGallery": "Error loading photo gallery"
+  },
+
+  "galleryVideos": {
+    "title": "Video Gallery",
+    "loading": "Loading...",
+    "errorFetchingVideos": "Error fetching videos:",
+    "errorLoadingGallery": "Error loading video gallery"
+  },
+
+  "sponsors": {
+    "title": "Sponsors/Partners",
+    "subtitle": "Meet the sponsors who help us bring our projects and events to life.",
+    "loading": "Loading...",
+    "errorFetchingSponsors": "Error fetching sponsors:",
+    "errorLoadingSponsorsList": "Error loading sponsors list",
+    "noSponsorsFound": "No sponsors found.",
+    "nameUnavailable": "Sponsor name not available",
+    "descriptionUnavailable": "Description not available"
+  },
+
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Learn more about the projects we are working on and how you can participate.",
+    "loading": "Loading...",
+    "errorFetchingProjects": "Error fetching projects:",
+    "errorLoadingProjects": "Error loading projects",
+    "noProjectsFound": "No projects found.",
+    "titleUnavailable": "Title not available",
+    "startDate": "Start Date",
+    "startDateUnavailable": "Start date not available",
+    "endDate": "End Date",
+    "endDateUnavailable": "End date not available",
+    "description": "Description",
+    "descriptionUnavailable": "Description not available"
+  },
+
+  "registerMember": {
+    "title": "Member Registration",
+    "subtitle": "Fill out the form below to register as a member.",
+    "fetchError": "Error fetching existing members:",
+    "ageError": "The minimum age is 14 years.",
+    "postalCodeError": "Invalid postal code.",
+    "phoneError": "Invalid phone number.",
+    "emailError": "Invalid email address.",
+    "emailExistsError": "This email is already registered.",
+    "documentExistsError": "This document number is already registered.",
+    "confirmationEmailMessage": "Hello,\n\nPlease note that your registration is subject to approval, and you will receive a notification by email once the process is complete.\n\nWe are excited to have you with us!\n\nBest regards,\nRegistration Team",
+    "confirmationEmailSubject": "Registration Confirmation",
+    "emailSendError": "Error sending confirmation email:",
+    "registrationError": "Error registering member. Please try again.",
+    "successMessage": "Registration completed successfully! Your registration is subject to approval. Please await our confirmation email. We are excited to have you with us!",
+    "fullName": "Full Name",
+    "birthDate": "Date of Birth",
+    "documentNumber": "Document Number",
+    "documentType": "Document Type",
+    "passport": "Passport",
+    "citizenCard": "Citizen Card",
+    "residencePermit": "Residence Permit",
+    "documentValidity": "Document Validity",
+    "nationality": "Nationality",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "otherGender": "Other Gender",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "postalCode": "Postal Code",
+    "city": "City",
+    "isStudent": "Are you a student?",
+    "school": "School",
+    "educationType": "Education Type",
+    "higherEducation": "Higher",
+    "professionalEducation": "Professional",
+    "secondaryEducation": "Secondary",
+    "course": "Course",
+    "academicYear": "Academic Year",
+    "isScholar": "Are you a scholar?",
+    "isWorkingStudent": "Are you a working student?",
+    "occupation": "Occupation",
+    "submitButton": "Register"
+  },
+
+  "sobre": {
+    "errorLoading": "Error loading about information",
+    "errorLoadingMessage": "Failed to load information. Please try again.",
+    "loading": "Loading...",
+    "defaultTitle": "About Us",
+    "defaultDescription": "Organization information is not available at the moment."
+  },
+
+  "voluntariado": {
+    "errorLoadingOpportunities": "Error loading volunteer opportunities",
+    "invalidEmail": "Please enter a valid email address.",
+    "emailAlreadyRegistered": "This email is already registered for this opportunity.",
+    "successMessage": "Successfully registered for the opportunity {{title}}",
+    "errorRegistering": "Error registering. Please try again.",
+    "errorCheckingEmails": "Error checking emails. Please try again.",
+    "loading": "Loading...",
+    "noOpportunitiesFound": "No volunteer opportunities found.",
+    "title": "Volunteer Opportunities",
+    "description": "Discover how you can get involved and contribute to our community through volunteering.",
+    "noTitle": "Title not available",
+    "location": "Location",
+    "noLocation": "Location not available",
+    "date": "Date",
+    "noDate": "Date not available",
+    "description": "Description",
+    "noDescription": "Description not available",
+    "register": "Register",
+    "registerFor": "Register for",
+    "name": "Name",
+    "email": "Email",
+    "placeholderName": "Your Name",
+    "placeholderEmail": "Your Email",
+    "cancel": "Cancel",
+    "confirmRegistration": "Confirm Registration"
+  }
+  
+  
+
+  }
+  

@@ -1,0 +1,306 @@
+{
+    "home": {
+      "title": "Associação de Estudantes da Guiné-Bissau no Porto",
+      "subtitle": "Sua plataforma para se envolver e conectar-se com a comunidade acadêmica",
+      "joinButton": "Torna-se Membro"
+    },
+    "header": {
+      "home": "Home",
+      "about": "Sobre",
+      "galleries": "Galerias",
+      "photoGallery": "Galeria de Fotos",
+      "videoGallery": "Galeria de Vídeos",
+      "resources": "Recursos",
+      "calendar": "Calendário",
+      "documents": "Documentos",
+      "blog": "Blog",
+      "testimonials": "Depoimentos",
+      "faq": "Perguntas Frequentes",
+      "getInvolved": "Envolva-se",
+      "volunteer": "Oportunidades de Voluntariado",
+      "projects": "Projetos",
+      "donations": "Doações",
+      "sponsors": "Patrocinadores",
+      "registerMember": "Regista-se como Membros",
+      "contacts": "Contatos"
+    },
+
+    "blog": {
+      "title": "Blog",
+      "subtitle": "Leia as últimas postagens e atualizações do nosso blog.",
+      "loading": "Carregando...",
+      "errorFetchingPosts": "Erro ao buscar os posts do blog",
+      "noPostsFound": "Nenhum post encontrado.",
+      "readMore": "Leia mais...",
+      "comments": "Comentários",
+    "leaveComment": "Deixe um comentário",
+    "name": "Nome",
+    "comment": "Comentário",
+    "submit": "Enviar",
+    "noCommentsYet": "Seja o primeiro a comentar!",
+    "commentSuccess": "Comentário enviado com sucesso!",
+    "commentError": "Erro ao enviar o comentário. Por favor, tente novamente.",
+    "postNotFound": "Postagem não encontrada!"
+    },
+
+    "calendar": {
+    "title": "Eventos",
+    "subtitle": "Fique por dentro dos próximos eventos e atividades organizados pela nossa associação.",
+    "loading": "Carregando...",
+    "errorLoading": "Erro ao carregar o calendário",
+    "noEventsFound": "Nenhum evento encontrado.",
+    "noEventName": "Nome do evento não disponível",
+    "date": "Data",
+    "time": "Horário",
+    "noDateAvailable": "Data não disponível",
+    "noStartTimeAvailable": "Horário de início não disponível",
+    "noEndTimeAvailable": "Horário de término não disponível",
+    "noDescriptionAvailable": "Descrição não disponível"
+  },
+
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Se tiver alguma dúvida ou quiser entrar em contato conosco, use as informações abaixo ou preencha o formulário.",
+    "address": "Endereço",
+    "noAddress": "Endereço não disponível",
+    "phone": "Telefone",
+    "noPhone": "Telefone não disponível",
+    "email": "Email",
+    "noEmail": "Email não disponível",
+    "hours": "Horário",
+    "noDays": "Dias de funcionamento não disponíveis",
+    "noHours": "Horário não disponível",
+    "yourName": "Seu Nome",
+    "yourEmail": "Seu Email",
+    "subject": "Assunto",
+    "message": "Mensagem",
+    "sending": "Enviando...",
+    "sendMessage": "Enviar Mensagem",
+    "successMessage": "Mensagem enviada com sucesso!",
+    "errorFetchingInfo": "Erro ao buscar as informações de contato.",
+    "errorSendingMessage": "Erro ao enviar a mensagem. Por favor, tente novamente."
+  },
+
+  "cookieBanner": {
+    "message": "Usamos cookies para melhorar sua experiência. Ao continuar a navegar, você concorda com nossa",
+    "privacyPolicy": "Política de Privacidade",
+    "reject": "Recusar",
+    "acceptAll": "Aceitar Tudo",
+    "managePreferences": "Gerir Preferências",
+    "managePreferencesTitle": "Gerir Preferências de Cookies",
+    "essentialCookies": "Cookies Essenciais",
+    "essentialCookiesDescription": "Esses cookies são necessários para o funcionamento do site e não podem ser desativados.",
+    "analyticsCookies": "Cookies de Análise",
+    "analyticsCookiesDescription": "Esses cookies nos ajudam a entender como você usa nosso site.",
+    "marketingCookies": "Cookies de Marketing",
+    "marketingCookiesDescription": "Esses cookies são usados para mostrar anúncios relevantes para você.",
+    "cancel": "Cancelar",
+    "savePreferences": "Salvar Preferências"
+  },
+
+  "testimonials": {
+    "title": "Depoimentos",
+    "subtitle": "Veja o que os membros da nossa comunidade têm a dizer sobre suas experiências.",
+    "loading": "Carregando...",
+    "errorLoading": "Erro ao carregar os depoimentos",
+    "noTestimonialsFound": "Nenhum depoimento encontrado.",
+    "noNameAvailable": "Nome não disponível",
+    "noDateAvailable": "Data não disponível",
+    "noContentAvailable": "Conteúdo não disponível"
+  },
+
+  "donations": {
+    "title": "Faça uma Doação",
+    "paymentInfoTitle": "Informações de Pagamento",
+    "iban": "IBAN",
+    "mbWay": "MB WAY",
+    "formTitle": "Formulário de Doação",
+    "name": "Nome",
+    "namePlaceholder": "Seu Nome",
+    "email": "Email",
+    "emailPlaceholder": "Seu Email",
+    "amount": "Valor da Doação (€)",
+    "amountPlaceholder": "Digite o valor da doação",
+    "description": "Descrição (opcional)",
+    "descriptionPlaceholder": "Digite uma descrição ou mensagem (opcional)",
+    "proof": "Comprovativo de Doação",
+    "submitButton": "Enviar Doação",
+    "successMessage": "Obrigado pela sua doação! Sua contribuição foi recebida com sucesso.",
+    "errorFetchingPaymentInfo": "Erro ao buscar as informações de pagamento.",
+    "errorSendingDonation": "Erro ao enviar a doação. Por favor, tente novamente."
+  },
+
+  "documents": {
+    "title": "Documentos",
+    "subtitle": "Acesse documentos importantes e recursos disponibilizados pela nossa associação.",
+    "loading": "Carregando...",
+    "errorLoading": "Erro ao carregar os documentos",
+    "noDocumentsFound": "Nenhum documento encontrado.",
+    "noTitleAvailable": "Título não disponível",
+    "noDescriptionAvailable": "Descrição não disponível",
+    "downloadButton": "Ver Documento"
+  },
+
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Encontre respostas para as perguntas mais comuns sobre a nossa associação.",
+    "loading": "Carregando...",
+    "errorLoading": "Erro ao carregar as perguntas frequentes",
+    "noFaqsFound": "Nenhuma pergunta frequente encontrada.",
+    "noQuestionAvailable": "Pergunta não disponível",
+    "noAnswerAvailable": "Resposta não disponível"
+  },
+
+  "footer": {
+    "aegbPorto": "AEGB-Porto",
+    "allRightsReserved": "Todos os direitos reservados.",
+    "quickLinks": "Links Rápidos",
+    "home": "Início",
+    "aboutUs": "Sobre Nós",
+    "projects": "Projetos",
+    "contactUs": "Contate-Nos",
+    "privacyPolicy": "Política de Privacidade",
+    "information": "Informações",
+    "followUs": "Siga-nos",
+    "downloadPrivacyPolicy": "Descarregar Política de Privacidade",
+    "close": "Fechar",
+    "errorFetchingPrivacyPolicy": "Erro ao buscar a política de privacidade.",
+    "errorFetchingSocialLinks": "Erro ao buscar os links de redes sociais."
+  },
+
+  "gallery": {
+    "videoNotSupported": "Seu navegador não suporta o elemento de vídeo.",
+    "noItemsFound": "Nenhum item encontrado."
+  },
+
+  "galleryFotos": {
+    "title": "Galeria de Fotos",
+    "loading": "Carregando...",
+    "errorFetchingPhotos": "Erro ao buscar as fotos:",
+    "errorLoadingGallery": "Erro ao carregar a galeria de fotos"
+  },
+
+  "galleryVideos": {
+    "title": "Galeria de Vídeos",
+    "loading": "Carregando...",
+    "errorFetchingVideos": "Erro ao buscar os vídeos:",
+    "errorLoadingGallery": "Erro ao carregar a galeria de vídeos"
+  },
+
+  "sponsors": {
+    "title": "Patrocinadores/Parceiros",
+    "subtitle": "Conheça os patrocinadores que nos ajudam a realizar nossas atividades e eventos.",
+    "loading": "Carregando...",
+    "errorFetchingSponsors": "Erro ao buscar os patrocinadores:",
+    "errorLoadingSponsorsList": "Erro ao carregar a lista de patrocinadores",
+    "noSponsorsFound": "Nenhum patrocinador encontrado.",
+    "nameUnavailable": "Nome do patrocinador não disponível",
+    "descriptionUnavailable": "Descrição não disponível"
+  },
+
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Saiba mais sobre os projetos em que estamos trabalhando e como você pode participar.",
+    "loading": "Carregando...",
+    "errorFetchingProjects": "Erro ao buscar os projetos:",
+    "errorLoadingProjects": "Erro ao carregar os projetos",
+    "noProjectsFound": "Nenhum projeto encontrado.",
+    "titleUnavailable": "Título não disponível",
+    "startDate": "Data de início",
+    "startDateUnavailable": "Data de início não disponível",
+    "endDate": "Data de término",
+    "endDateUnavailable": "Data de término não disponível",
+    "description": "Descrição",
+    "descriptionUnavailable": "Descrição não disponível"
+  },
+
+  "registerMember": {
+    "title": "Registo de Membros",
+    "subtitle": "Preencha o formulário abaixo para se registar como membro.",
+    "fetchError": "Erro ao buscar membros existentes:",
+    "ageError": "A idade mínima é de 14 anos.",
+    "postalCodeError": "Código postal inválido.",
+    "phoneError": "Número de telefone inválido.",
+    "emailError": "Endereço de e-mail inválido.",
+    "emailExistsError": "Este e-mail já está registrado.",
+    "documentExistsError": "Este número de documento já está registrado.",
+    "confirmationEmailMessage": "Olá,\n\nInformamos que a sua inscrição está sujeita a aprovação, e você receberá uma notificação por e-mail assim que o processo for concluído.\n\nEstamos ansiosos para ter você conosco!\n\nAtenciosamente,\nEquipa de Registo",
+    "confirmationEmailSubject": "Confirmação de Registo",
+    "emailSendError": "Erro ao enviar e-mail de confirmação:",
+    "registrationError": "Erro ao registar o membro. Por favor, tente novamente.",
+    "successMessage": "Registo concluído com sucesso! Sua inscrição está sujeita a aprovação. Aguarde nosso e-mail de confirmação. Estamos animados para tê-lo conosco!",
+    "fullName": "Nome Completo",
+    "birthDate": "Data de Nascimento",
+    "documentNumber": "Número do Documento",
+    "documentType": "Tipo de Documento",
+    "passport": "Passaporte",
+    "citizenCard": "Cartão de Cidadão",
+    "residencePermit": "Autorização de Residência",
+    "documentValidity": "Validade do Documento",
+    "nationality": "Nacionalidade",
+    "gender": "Gênero",
+    "male": "Masculino",
+    "female": "Feminino",
+    "other": "Outro",
+    "otherGender": "Outro Gênero",
+    "phone": "Telefone",
+    "email": "Email",
+    "address": "Endereço",
+    "postalCode": "Código Postal",
+    "city": "Cidade",
+    "isStudent": "É estudante?",
+    "school": "Escola",
+    "educationType": "Tipo de Educação",
+    "higherEducation": "Superior",
+    "professionalEducation": "Profissional",
+    "secondaryEducation": "Secundário",
+    "course": "Curso",
+    "academicYear": "Ano Acadêmico",
+    "isScholar": "É Bolseiro?",
+    "isWorkingStudent": "É estudante trabalhador?",
+    "occupation": "Ocupação",
+    "submitButton": "Registar"
+  },
+
+  "sobre": {
+    "errorLoading": "Erro ao carregar as informações sobre nós",
+    "errorLoadingMessage": "Erro ao carregar as informações. Por favor, tente novamente.",
+    "loading": "Carregando...",
+    "defaultTitle": "Sobre Nós",
+    "defaultDescription": "Informações sobre a organização não disponíveis no momento."
+  },
+
+  "voluntariado": {
+    "errorLoadingOpportunities": "Erro ao carregar as oportunidades de voluntariado",
+    "invalidEmail": "Por favor, insira um endereço de e-mail válido.",
+    "emailAlreadyRegistered": "Este e-mail já está registrado para esta oportunidade.",
+    "successMessage": "Registrado com sucesso na oportunidade {{title}}",
+    "errorRegistering": "Erro ao registrar-se. Por favor, tente novamente.",
+    "errorCheckingEmails": "Erro ao verificar e-mails. Por favor, tente novamente.",
+    "loading": "Carregando...",
+    "noOpportunitiesFound": "Nenhuma oportunidade de voluntariado encontrada.",
+    "title": "Oportunidades de Voluntariado",
+    "description": "Descubra como você pode se envolver e contribuir para nossa comunidade através do voluntariado.",
+    "noTitle": "Título não disponível",
+    "location": "Local",
+    "noLocation": "Local não disponível",
+    "date": "Data",
+    "noDate": "Data não disponível",
+    "description": "Descrição",
+    "noDescription": "Descrição não disponível",
+    "register": "Registrar-se",
+    "registerFor": "Registrar-se para",
+    "name": "Nome",
+    "email": "Email",
+    "placeholderName": "Seu Nome",
+    "placeholderEmail": "Seu Email",
+    "cancel": "Cancelar",
+    "confirmRegistration": "Confirmar Registro"
+  }
+    
+  }
+  
+  
+    
+  
+  
