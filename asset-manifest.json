@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/projecto_aegbp/static/css/main.4622ac53.css",
+    "main.js": "/projecto_aegbp/static/js/main.01659a81.js",
+    "static/js/453.394c1204.chunk.js": "/projecto_aegbp/static/js/453.394c1204.chunk.js",
+    "index.html": "/projecto_aegbp/index.html",
+    "main.4622ac53.css.map": "/projecto_aegbp/static/css/main.4622ac53.css.map",
+    "main.01659a81.js.map": "/projecto_aegbp/static/js/main.01659a81.js.map",
+    "453.394c1204.chunk.js.map": "/projecto_aegbp/static/js/453.394c1204.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4622ac53.css",
+    "static/js/main.01659a81.js"
+  ]
+}
