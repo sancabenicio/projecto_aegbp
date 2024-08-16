@@ -207,8 +207,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'aegbp_database',
         'USER': 'aegbpbase',
-        'PASSWORD': '123456789',
-        'HOST': 'localhost',
+        'PASSWORD': 'cPV2szHrJbxhwfinwIRqVKcjH9KLeCeS',
+        'HOST': 'dpg-cqviumdds78s739kg19g-a.oregon-postgres.render.com',  # host fornecido pelo Render
         'PORT': '5432',
     }
 }
