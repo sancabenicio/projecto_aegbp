@@ -245,16 +245,19 @@ def photo_gallery(request):
         photos = Photo.objects.all()
         return render(request, 'gallery/photo_gallery.html', {'photos': photos})
     except Exception as e:
-        logger.error(_("Erro na galeria de fotos: {e}").format(e=e), exc_info=True)
-        mail_admins(_("Erro na galeria de fotos"), str(e))
+        logger.error(_("Erro ao carregar galeria de fotos: {e}").format(e=e), exc_info=True)
+        mail_admins(_("Erro ao carregar galeria de fotos"), str(e))
         return render(request, 'error.html', {'message': _('Ocorreu um erro ao carregar a galeria de fotos.')})
 
+
+@login_required
 def photo_create(request):
     try:
         if request.method == 'POST':
             form = PhotoForm(request.POST, request.FILES)
             if form.is_valid():
                 form.save()
+                messages.success(request, _('Foto carregada com sucesso!'))
                 return redirect('photo_gallery')
         else:
             form = PhotoForm()
@@ -262,7 +265,8 @@ def photo_create(request):
     except Exception as e:
         logger.error(_("Erro ao criar foto: {e}").format(e=e), exc_info=True)
         mail_admins(_("Erro ao criar foto"), str(e))
-        return render(request, 'error.html', {'message': _('Ocorreu um erro ao criar a foto.')})
+        return render(request, 'error.html', {'message': _('Ocorreu um erro ao carregar a foto.')})
+
 
 def photo_update(request, id):
     try:
@@ -293,29 +297,34 @@ def photo_delete(request, id):
         return render(request, 'error.html', {'message': _('Ocorreu um erro ao deletar a foto.')})
 
 # Galeria de Vídeos
+@login_required
 def video_gallery(request):
     try:
         videos = Video.objects.all()
         return render(request, 'gallery/video_gallery.html', {'videos': videos})
     except Exception as e:
-        logger.error(_("Erro na galeria de vídeos: {e}").format(e=e), exc_info=True)
-        mail_admins(_("Erro na galeria de vídeos"), str(e))
+        logger.error(_("Erro ao carregar galeria de vídeos: {e}").format(e=e), exc_info=True)
+        mail_admins(_("Erro ao carregar galeria de vídeos"), str(e))
         return render(request, 'error.html', {'message': _('Ocorreu um erro ao carregar a galeria de vídeos.')})
 
+
+@login_required
 def video_create(request):
     try:
         if request.method == 'POST':
             form = VideoForm(request.POST, request.FILES)
             if form.is_valid():
                 form.save()
+                messages.success(request, _('Vídeo carregado com sucesso!'))
                 return redirect('video_gallery')
         else:
             form = VideoForm()
         return render(request, 'gallery/video_form.html', {'form': form})
     except Exception as e:
-        logger.error(_("Erro ao criar vídeo: {e}").format(e=e), exc_info=True)
-        mail_admins(_("Erro ao criar vídeo"), str(e))
-        return render(request, 'error.html', {'message': _('Ocorreu um erro ao criar o vídeo.')})
+        logger.error(_("Erro ao carregar vídeo: {e}").format(e=e), exc_info=True)
+        mail_admins(_("Erro ao carregar vídeo"), str(e))
+        return render(request, 'error.html', {'message': _('Ocorreu um erro ao carregar o vídeo.')})
+
 
 def video_update(request, id):
     try:
@@ -1203,6 +1212,7 @@ def edit_profile(request):
         mail_admins(_("Erro ao editar perfil"), str(e))
         return render(request, 'error.html', {'message': _('Ocorreu um erro ao editar o perfil.')})
 
+
 @login_required
 def delete_profile(request):
     try:
@@ -1581,7 +1591,7 @@ def contact_info_delete(request, id):
         mail_admins(_("Erro ao deletar informação de contato"), str(e))
         return render(request, 'error.html', {'message': _('Ocorreu um erro ao deletar a informação de contato.')})
 
-@login_required
+
 @login_required
 def about_list(request):
     try:
@@ -1755,6 +1765,18 @@ def social_media_delete(request, id):
         logger.error(_("Erro ao deletar rede social: {e}").format(e=e), exc_info=True)
         mail_admins(_("Erro ao deletar rede social"), str(e))
         return render(request, 'error.html', {'message': _('Ocorreu um erro ao deletar a rede social.')})
+
+@login_required
+def download_document(request, document_id):
+    try:
+        document = get_object_or_404(Document, id=document_id)
+        response = HttpResponse(document.file, content_type='application/octet-stream')
+        response['Content-Disposition'] = f'attachment; filename="{document.file.name}"'
+        return response
+    except Exception as e:
+        logger.error(_("Erro ao baixar documento: {e}").format(e=e), exc_info=True)
+        mail_admins(_("Erro ao baixar documento"), str(e))
+        return render(request, 'error.html', {'message': _('Ocorreu um erro ao baixar o documento.')})
     
 
 @csrf_exempt
@@ -1769,7 +1791,7 @@ def send_email(request):
             send_mail(
                 subject,
                 message,
-                'aegbsuporte@gmail.com',  # Coloque aqui o mesmo email configurado no settings.py
+                settings.DEFAULT_FROM_EMAIL,
                 [email],
                 fail_silently=False,
             )
@@ -1779,8 +1801,3 @@ def send_email(request):
 
     return JsonResponse({'error': _('Método não permitido')}, status=405)
 
-def download_document(request, document_id):
-    document = get_object_or_404(Document, id=document_id)
-    response = HttpResponse(document.file, content_type='application/octet-stream')
-    response['Content-Disposition'] = _('attachment; filename="{filename}"').format(filename=document.file.name)
-    return response

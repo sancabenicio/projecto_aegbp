@@ -4666,3 +4666,5 @@ Internal Server Error: /pt/password_reset/
 "GET /pt/password_reset/ HTTP/1.1" 500 216
 Internal Server Error: /pt/password_reset/
 "POST /pt/password_reset/ HTTP/1.1" 500 216
+Internal Server Error: /pt/accounts/login/
+"GET /pt/accounts/login/?next=/pt/ HTTP/1.1" 500 216

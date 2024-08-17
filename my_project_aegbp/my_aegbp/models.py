@@ -8,6 +8,10 @@ from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
 from django.conf import settings
 from googletrans import Translator
+from django.db import models
+from urllib.parse import urlparse, parse_qs
+from django.utils.translation import gettext_lazy as _
+from cloudinary.models import CloudinaryField 
 
 translator = Translator()
 
@@ -74,10 +78,11 @@ class Registration(models.Model):
 
 class Photo(models.Model):
     event = models.ForeignKey(Event, related_name='photos', on_delete=models.CASCADE, verbose_name=_("Evento"))
-    image = models.ImageField(upload_to='photos/', verbose_name=_("Imagem"))
+    image = CloudinaryField(resource_type='image', verbose_name=_("Imagem"))  # Corrigido o uso de CloudinaryField
     caption = models.CharField(max_length=255, blank=True, null=True, verbose_name=_("Legenda"))
 
     def save(self, *args, **kwargs):
+        # Tradução da legenda na criação ou atualização
         if not self.id:
             translate_fields(self, ['caption'])
         else:
@@ -85,6 +90,7 @@ class Photo(models.Model):
             if old_instance.caption != self.caption:
                 translate_fields(self, ['caption'])
 
+        # Chamar o método save original
         super(Photo, self).save(*args, **kwargs)
 
     def __str__(self):
@@ -98,56 +104,68 @@ class Photo(models.Model):
 class Video(models.Model):
     title = models.CharField(max_length=200, default=_('Título Padrão'), verbose_name=_("Título"))
     description = models.TextField(default=_('Descrição Padrão'), verbose_name=_("Descrição"))
-    file = models.FileField(upload_to='videos/', blank=True, null=True, verbose_name=_("Arquivo"))
-    link = models.URLField(blank=True, null=True, verbose_name=_("Link"))
+    file = CloudinaryField(resource_type='video', blank=True, null=True, verbose_name=_("Arquivo"))  # Corrigido o uso de CloudinaryField
+    link = models.URLField(blank=True, null=True, verbose_name=_("Link Externo"))
     event = models.ForeignKey('Event', on_delete=models.CASCADE, related_name='videos', blank=True, null=True, verbose_name=_("Evento"))
 
     def save(self, *args, **kwargs):
-        # Converte objetos de tradução preguiçosa para strings
+        # Garantir que os campos de tradução estejam como strings
         self.title = str(self.title)
         self.description = str(self.description)
 
+        # Tradução na criação ou atualização
         if not self.id:
-            # Tradução na criação
             translate_fields(self, ['title', 'description'])
         else:
-            # Atualização - verifica se houve mudança nos campos traduzidos
             old_instance = Video.objects.get(id=self.id)
             if old_instance.title != self.title or old_instance.description != self.description:
                 translate_fields(self, ['title', 'description'])
 
+        # Chamar o método save original
         super(Video, self).save(*args, **kwargs)
 
     def video_url(self):
+        """
+        Retorna a URL do arquivo de vídeo, se existir, ou a URL fornecida.
+        """
         if self.file:
-            return self.file.url
+            return self.file.url  # URL fornecida pelo Cloudinary
         return self.link
 
     def embed_url(self):
+        """
+        Retorna a URL embutida do vídeo, se existir. Para vídeos do YouTube,
+        transforma a URL em uma URL de embed.
+        """
         if self.link:
             return self.get_embed_url()
         return self.video_url()
 
     def get_embed_url(self):
+        """
+        Retorna a URL de embed para vídeos do YouTube, se for o caso.
+        """
         parsed_url = urlparse(self.link)
         if parsed_url.hostname in ['www.youtube.com', 'youtube.com', 'youtu.be']:
             return self.get_youtube_embed_url(parsed_url)
         return self.link
 
     def get_youtube_embed_url(self, parsed_url):
+        """
+        Converte uma URL do YouTube em uma URL de embed.
+        """
         if parsed_url.hostname == 'youtu.be':
             video_id = parsed_url.path[1:]
         elif parsed_url.hostname in ['www.youtube.com', 'youtube.com']:
             if parsed_url.path == '/watch':
                 video_id = parse_qs(parsed_url.query).get('v', [None])[0]
-            elif parsed_url.path.startswith('/embed/'):
-                video_id = parsed_url.path.split('/')[2]
-            elif parsed_url.path.startswith('/v/'):
+            elif parsed_url.path.startswith('/embed/') or parsed_url.path.startswith('/v/'):
                 video_id = parsed_url.path.split('/')[2]
             else:
                 video_id = None
         else:
             video_id = None
+
         if video_id:
             return f'https://www.youtube.com/embed/{video_id}'
         return self.link
@@ -553,9 +571,15 @@ class GeneralSettings(models.Model):
         verbose_name_plural = _("Configurações Gerais")
 
 
+def validate_image(fieldfile_obj):
+    filesize = fieldfile_obj.file.size
+    megabyte_limit = 5.0
+    if filesize > megabyte_limit * 1024 * 1024:
+        raise ValidationError(f"O tamanho máximo do arquivo é {megabyte_limit}MB")
+
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, verbose_name=_("utilizador"))
-    profile_picture = models.ImageField(upload_to='profile_pictures/', blank=True, null=True, verbose_name=_("Foto de Perfil"))
+    profile_picture = models.ImageField(upload_to='profile_pictures/', blank=True, null=True, validators=[validate_image], verbose_name=_("Foto de Perfil"))
     job_title = models.CharField(max_length=100, blank=True, default='', verbose_name=_("Cargo"))
     address = models.CharField(max_length=255, blank=True, default='', verbose_name=_("Endereço"))
     city = models.CharField(max_length=100, blank=True, default='', verbose_name=_("Cidade"))
@@ -564,13 +588,18 @@ class UserProfile(models.Model):
     description = models.TextField(blank=True, default='', verbose_name=_("Descrição"))
 
     def save(self, *args, **kwargs):
-        if not self.id:
+        if self.pk is None:
+            # Novo objeto
             translate_fields(self, ['job_title', 'address', 'city', 'state', 'zip_code', 'description'])
         else:
-            old_instance = UserProfile.objects.get(id=self.id)
-            if old_instance.job_title != self.job_title or old_instance.address != self.address or old_instance.city != self.city or old_instance.state != self.state or old_instance.zip_code != self.zip_code or old_instance.description != self.description:
-                translate_fields(self, ['job_title', 'address', 'city', 'state', 'zip_code', 'description'])
-
+            # Atualizar objeto existente
+            old_instance = UserProfile.objects.get(pk=self.pk)
+            fields_to_translate = []
+            for field in ['job_title', 'address', 'city', 'state', 'zip_code', 'description']:
+                if getattr(old_instance, field) != getattr(self, field):
+                    fields_to_translate.append(field)
+            if fields_to_translate:
+                translate_fields(self, fields_to_translate)
         super(UserProfile, self).save(*args, **kwargs)
 
     def __str__(self):
@@ -578,8 +607,8 @@ class UserProfile(models.Model):
 
     class Meta:
         verbose_name = _("Perfil de utilizador")
-        verbose_name_plural = _("Perfis de utilizadors")
-
+        verbose_name_plural = _("Perfis de utilizadores")
+        
 
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):

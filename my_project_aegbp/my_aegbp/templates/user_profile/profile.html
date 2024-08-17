@@ -1,98 +1,94 @@
 {% extends "base.html" %}
 {% load static %}
 {% load i18n %}
-<html lang="{{ LANGUAGE_CODE }}">
-<head>
-    <title>{% trans "Detalhes da Conta" %}</title>
-    <link rel="stylesheet" href="{% static 'css/custom-styles.css' %}">
-    <link rel="stylesheet" href="https://stackpath.bootstrap.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
-    {% block content %}
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="card shadow-sm">
-                    <div class="card-body text-center">
-                        {% if not request.user.userprofile.profile_picture %}
-                            <img src="{% static 'images/default-avatar.png' %}" alt="{% trans 'Avatar padrão' %}" class="img-fluid mb-3" style="width: 150px; height: 150px; object-fit: cover;">
-                        {% else %}
-                            <img src="{{ request.user.userprofile.profile_picture.url }}" alt="{{ request.user.first_name }}" class="img-fluid mb-3" style="width: 150px; height: 150px; object-fit: cover;">
-                        {% endif %}
-                        <h3>{{ request.user.first_name }} {{ request.user.last_name }}</h3>
-                        <h5 class="text-muted">{{ request.user.userprofile.job_title }}</h5> <!-- Adicione o cargo se houver -->
-                        <a href="#" class="btn btn-outline-primary mt-2">{% trans "Seguir" %}</a>
-                        <hr>
-                        <div class="mt-3">
-                            <p><strong>{% trans "Descrição" %}</strong></p>
-                            <p>{{ request.user.userprofile.description }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-8">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h4 class="card-title">{% trans "Detalhes da Conta" %}</h4>
-                        <form method="post" enctype="multipart/form-data">
-                            {% csrf_token %}
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="first_name">{% trans "Primeiro Nome" %}</label>
-                                        <input type="text" class="form-control" id="first_name" value="{{ request.user.first_name }}" readonly>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="last_name">{% trans "Último Nome" %}</label>
-                                        <input type="text" class="form-control" id="last_name" value="{{ request.user.last_name }}" readonly>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">{% trans "Email" %}</label>
-                                <input type="email" class="form-control" id="email" value="{{ request.user.email }}" readonly>
-                            </div>
-                            <div class="form-group">
-                                <label for="address">{% trans "Endereço" %}</label>
-                                <input type="text" class="form-control" id="address" value="{{ request.user.userprofile.address }}" readonly>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="city">{% trans "Cidade" %}</label>
-                                        <input type="text" class="form-control" id="city" value="{{ request.user.userprofile.city }}" readonly>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="state">{% trans "Estado" %}</label>
-                                        <input type="text" class="form-control" id="state" value="{{ request.user.userprofile.state }}" readonly>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="zip_code">{% trans "CEP" %}</label>
-                                        <input type="text" class="form-control" id="zip_code" value="{{ request.user.userprofile.zip_code }}" readonly>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="description">{% trans "Descrição" %}</label>
-                                <textarea class="form-control" id="description" rows="3" readonly>{{ request.user.userprofile.description }}</textarea>
-                            </div>
-                            <a href="{% url 'edit_profile' %}" class="btn btn-primary">{% trans "Editar Perfil" %}</a>
-                            <a href="{% url 'delete_profile' %}" class="btn btn-danger">{% trans "Excluir Perfil" %}</a>
-                        </form>
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body text-center">
+                    {% if request.user.userprofile.profile_picture %}
+                    <img src="{{ request.user.userprofile.profile_picture.url }}" alt="{{ request.user.first_name }}" class="img-fluid mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                {% else %}
+                    <img src="{% static 'images/default-avatar.png' %}" alt="{% trans 'Avatar padrão' %}" class="img-fluid mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                {% endif %}
+                
+                    <h3>{{ request.user.first_name }} {{ request.user.last_name }}</h3>
+                    <h5 class="text-muted">{{ request.user.userprofile.job_title }}</h5>
+                    <a href="#" class="btn btn-outline-primary mt-2">{% trans "Seguir" %}</a>
+                    <hr>
+                    <div class="mt-3">
+                        <p><strong>{% trans "Descrição" %}</strong></p>
+                        <p>{{ request.user.userprofile.description }}</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="col-lg-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">{% trans "Detalhes da Conta" %}</h4>
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="first_name">{% trans "Primeiro Nome" %}</label>
+                                    <input type="text" class="form-control" id="first_name" value="{{ request.user.first_name }}" readonly>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="last_name">{% trans "Último Nome" %}</label>
+                                    <input type="text" class="form-control" id="last_name" value="{{ request.user.last_name }}" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">{% trans "Email" %}</label>
+                            <input type="email" class="form-control" id="email" value="{{ request.user.email }}" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">{% trans "Endereço" %}</label>
+                            <input type="text" class="form-control" id="address" value="{{ request.user.userprofile.address }}" readonly>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="city">{% trans "Cidade" %}</label>
+                                    <input type="text" class="form-control" id="city" value="{{ request.user.userprofile.city }}" readonly>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="state">{% trans "Estado" %}</label>
+                                    <input type="text" class="form-control" id="state" value="{{ request.user.userprofile.state }}" readonly>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="zip_code">{% trans "CEP" %}</label>
+                                    <input type="text" class="form-control" id="zip_code" value="{{ request.user.userprofile.zip_code }}" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">{% trans "Descrição" %}</label>
+                            <textarea class="form-control" id="description" rows="3" readonly>{{ request.user.userprofile.description }}</textarea>
+                        </div>
+                        <a href="{% url 'edit_profile' %}" class="btn btn-primary">{% trans "Editar Perfil" %}</a>
+                        <a href="{% url 'delete_profile' %}" class="btn btn-danger">{% trans "Excluir Perfil" %}</a>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    {% endblock %}
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrap.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{% endblock %}

@@ -4,7 +4,10 @@ services:
   - name: my-django-backend
     type: web
     runtime: python
-    buildCommand: cd my_project_aegbp && pip install -r requirements.txt
+    buildCommand: |
+      cd my_project_aegbp
+      pip install -r requirements.txt
+      python manage.py collectstatic --noinput
     startCommand: cd my_project_aegbp && gunicorn my_project_aegbp.wsgi:application --bind 0.0.0.0:8000
     envVars:
       - key: DATABASE_URL

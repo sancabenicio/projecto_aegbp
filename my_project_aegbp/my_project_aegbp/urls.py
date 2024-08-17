@@ -51,9 +51,6 @@ urlpatterns += i18n_patterns(
     path('accounts/register/', views.register, name='register'),
     path('api/', include(router.urls)),
 )
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     
 
 handler404 = 'my_project_aegbp.error_handling.handle_404'
